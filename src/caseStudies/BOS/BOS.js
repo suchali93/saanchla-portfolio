@@ -21,7 +21,7 @@ import services5x from './images/Services5x-1.png';
 import title from './images/Title-Banner.png';
 import virustotal from './images/VIRUSTOTAL.png';
 import wot from './images/WOT.png';
-import './BOS.css';
+import './BOS.scss';
 
 const BOS = () => {
   return (
