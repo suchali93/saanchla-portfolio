@@ -9,6 +9,8 @@ import Home from './Home';
 import OtherWork from './OtherWork';
 import About from './About';
 import Contact from './Contact';
+import BOS from './caseStudies/BOS';
+import CultureFit from './caseStudies/CultureFit';
 import './index.scss';
 
 ReactDOM.render(
@@ -22,6 +24,8 @@ ReactDOM.render(
             <Route path="/other" component={OtherWork} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/case/bos" component={BOS} />
+            <Route path="/case/culture-fit" component={CultureFit} />
           </Switch>
         </Box>
       </Container>

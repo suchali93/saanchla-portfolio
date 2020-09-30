@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AppBar } from '@material-ui/core';
+import { AppBar, Box } from '@material-ui/core';
 
 import ElevationScroll from './ElevationScroll';
 import './navigation.scss';
@@ -9,7 +9,7 @@ const Navigation = () => {
   return (
     <ElevationScroll>
       <AppBar>
-        <div className="nav">
+        <Box mx={10} className="nav">
           <NavLink exact to="/" activeClassName="active">
             Home
           </NavLink>
@@ -22,7 +22,7 @@ const Navigation = () => {
           <NavLink exact to="/contact" activeClassName="active">
             Contact
           </NavLink>
-        </div>
+        </Box>
       </AppBar>
     </ElevationScroll>
   );
