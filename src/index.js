@@ -1,23 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Box, Container } from '@material-ui/core';
 
 import * as serviceWorker from './serviceWorker';
-import Home from './Home';
-import BOS from './caseStudies/BOS/BOS';
-import CultureFit from './caseStudies/CultureFit';
-import './index.css';
 import Navigation from './Navigation';
+import Home from './Home';
+import OtherWork from './OtherWork';
+import About from './About';
+import Contact from './Contact';
+import './index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Navigation />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/case/bos" component={BOS} />
-        <Route path="/case/culture-fit" component={CultureFit} />
-      </Switch>
+      <Container>
+        <Box py={10}>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/other" component={OtherWork} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+          </Switch>
+        </Box>
+      </Container>
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),

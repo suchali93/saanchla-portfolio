@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './CultureFit.css';
+import './CultureFit.scss';
 
 const CultureFit = () => {
   return (

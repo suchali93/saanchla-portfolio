@@ -1,14 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { AppBar, Box } from '@material-ui/core';
+
+import ElevationScroll from './ElevationScroll';
+import './navigation.scss';
 
 const Navigation = () => {
   return (
-    <>
-      <Link to="/">Home</Link>
-      <Link to="/other">Other Work</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-    </>
+    <ElevationScroll>
+      <AppBar>
+        <Box mx={10} className="nav">
+          <NavLink exact to="/" activeClassName="active">
+            Home
+          </NavLink>
+          <NavLink exact to="/other" activeClassName="active">
+            Other Work
+          </NavLink>
+          <NavLink exact to="/about" activeClassName="active">
+            About
+          </NavLink>
+          <NavLink exact to="/contact" activeClassName="active">
+            Contact
+          </NavLink>
+        </Box>
+      </AppBar>
+    </ElevationScroll>
   );
 };
 

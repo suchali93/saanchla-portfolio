@@ -1,11 +1,16 @@
+import { Box } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
-      <Link to="/case/bos">Bos</Link>
-      <Link to="/case/culture-fit">CultureFit</Link>
+      <Box>
+        <Link to="/case/bos">Bos</Link>
+      </Box>
+      <Box>
+        <Link to="/case/culture-fit">CultureFit</Link>
+      </Box>
     </>
   );
 };
