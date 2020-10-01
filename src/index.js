@@ -11,6 +11,7 @@ import About from './About';
 import Contact from './Contact';
 import BOS from './caseStudies/BOS';
 import CultureFit from './caseStudies/CultureFit';
+import TeamsVR from './caseStudies/TeamsVR';
 import './index.scss';
 
 ReactDOM.render(
@@ -26,6 +27,7 @@ ReactDOM.render(
             <Route path="/contact" component={Contact} />
             <Route path="/case/bos" component={BOS} />
             <Route path="/case/culture-fit" component={CultureFit} />
+            <Route path="/case/teams-vr" component={TeamsVR} />
           </Switch>
         </Box>
       </Container>

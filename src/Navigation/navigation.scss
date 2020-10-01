@@ -1,11 +1,12 @@
 .nav {
   padding: 20px 0;
+  text-align: right;
   a {
     padding: 10px;
     text-decoration: none;
-    color: #ffffff;
+    color: #000000;
     &.active {
-      border-bottom: 1px solid red;
+      font-weight: 600;
     }
   }
 }

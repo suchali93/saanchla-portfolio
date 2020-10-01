@@ -51,7 +51,11 @@ const BOS = () => {
             <br />
             <strong>Deliverable:</strong>
             <br />
-            <a href="https://www.scamblock.org/wp/" rel="noreferrer" target="_blank">
+            <a
+              href="https://www.scamblock.org/wp/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
               https://www.scamblock.org/wp/
             </a>
           </div>
