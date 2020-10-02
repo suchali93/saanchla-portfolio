@@ -9,9 +9,9 @@ import Home from './Home';
 import OtherWork from './OtherWork';
 import About from './About';
 import Contact from './Contact';
-import BOS from './caseStudies/BOS';
-import CultureFit from './caseStudies/CultureFit';
-import TeamsVR from './caseStudies/TeamsVR';
+import BOS from './CaseStudies/BOS';
+import CultureFit from './CaseStudies/CultureFit';
+import TeamsVR from './CaseStudies/TeamsVR';
 import './index.scss';
 
 ReactDOM.render(

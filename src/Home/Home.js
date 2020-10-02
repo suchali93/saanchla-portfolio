@@ -1,56 +1,34 @@
-import { Box, Grid, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import React from 'react';
-import { Link } from 'react-router-dom';
+
+import BOSImage from '../CaseStudies/BOS/images/Banner.png';
+import CultureFitImage from '../CaseStudies/CultureFit/images/Banner.png';
+import TeamsVRImage from '../CaseStudies/TeamsVR/images/Banner.png';
+import CaseStudy from './CaseStudy';
 import './Home.scss';
 
 const Home = () => {
   return (
     <>
-      <Link to="/case/bos">
-        <Box p={5} className="case">
-          <Grid container justify="space-between" alignItems="center">
-            <Grid item>
-              <Typography variant="h4" gutterBottom>
-                BOS
-              </Typography>
-              <Typography variant="subtitle1" gutterBottom>
-                Something about BOS
-              </Typography>
-              <Typography variant="button" gutterBottom>
-                Case Study
-              </Typography>
-            </Grid>
-            <Grid item>Image</Grid>
-          </Grid>
-        </Box>
-      </Link>
-
-      <Link to="/case/culture-fit">
-        <Box my={5} p={5} className="case">
-          <Typography variant="h4" gutterBottom>
-            Culture Fit
-          </Typography>
-          <Typography variant="subtitle1" gutterBottom>
-            Something about Culture Fit
-          </Typography>
-          <Typography variant="button" gutterBottom>
-            Case Study
-          </Typography>
-        </Box>
-      </Link>
-      <Link to="/case/teams-vr">
-        <Box my={5} p={5} className="case">
-          <Typography variant="h4" gutterBottom>
-            Teams VR
-          </Typography>
-          <Typography variant="subtitle1" gutterBottom>
-            Something about Teams VR
-          </Typography>
-          <Typography variant="button" gutterBottom>
-            Case Study
-          </Typography>
-        </Box>
-      </Link>
+      <Typography variant="h2">Welcome!</Typography>
+      <CaseStudy
+        to="/case/bos"
+        title="BOS"
+        description="Something about BOS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
+        imageSrc={BOSImage}
+      />
+      <CaseStudy
+        to="/case/culture-fit"
+        title="Culture Fit"
+        description="A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit."
+        imageSrc={CultureFitImage}
+      />
+      <CaseStudy
+        to="/case/teams-vr"
+        title="Teams VR"
+        description="Something about Teams VR. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
+        imageSrc={TeamsVRImage}
+      />
     </>
   );
 };
