@@ -13,13 +13,14 @@ import BOS from './CaseStudies/BOS';
 import CultureFit from './CaseStudies/CultureFit';
 import TeamsVR from './CaseStudies/TeamsVR';
 import './index.scss';
+import Footer from './Footer';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Navigation />
-      <Container>
-        <Box py={10}>
+      <Container className="main-content">
+        <Box pt={10}>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/side-gigs" component={SideGigs} />
@@ -31,6 +32,7 @@ ReactDOM.render(
           </Switch>
         </Box>
       </Container>
+      <Footer />
     </Router>
   </React.StrictMode>,
   document.getElementById('root'),

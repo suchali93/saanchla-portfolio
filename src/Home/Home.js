@@ -10,20 +10,22 @@ import './Home.scss';
 const Home = () => {
   return (
     <>
-      <Box mt={6} mb={10} justifyContent="center">
-        <Typography variant="h2">Welcome to my portfolio!</Typography>
+      <Box display="flex" alignItems="center" justifyContent="center" mt={7} mb={10}>
+        <Typography variant="h4">
+          Hello! My name is Sanchala and I’m a UX/UI designer.
+        </Typography>
       </Box>
-      <CaseStudy
-        to="/case/bos"
-        title="BOS"
-        description="Something about BOS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
-        imageSrc={BOSImage}
-      />
       <CaseStudy
         to="/case/culture-fit"
         title="Culture Fit"
         description="A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit."
         imageSrc={CultureFitImage}
+      />
+      <CaseStudy
+        to="/case/bos"
+        title="BOS"
+        description="Something about BOS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
+        imageSrc={BOSImage}
       />
       <CaseStudy
         to="/case/teams-vr"

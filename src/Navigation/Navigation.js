@@ -1,20 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { AppBar, Container, Grid, SvgIcon } from '@material-ui/core';
+import { AppBar, Container, Grid, SvgIcon, Typography } from '@material-ui/core';
 
 import HideOnScroll from './HideOnScroll';
-import { ReactComponent as Logo } from '../logo.svg';
+import Logo from '../logo.png';
 import './Navigation.scss';
 
 const Navigation = () => {
   return (
     <HideOnScroll>
-      <AppBar color="" className="nav">
+      <AppBar style={{ background: 'white', boxShadow: 'none' }} className="nav">
         <Container>
           <Grid container justify="space-between" alignItems="center">
             <Grid item>
-              <SvgIcon component={Logo} viewBox="0 0 325 325" />
-              <span className="name">Saanchla Tripathi</span>
+              <img src={Logo} alt="logo" aria-hidden className="logo" />
             </Grid>
             <Grid item>
               <NavLink exact to="/" activeClassName="active">
