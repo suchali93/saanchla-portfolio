@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Box, Typography } from '@material-ui/core';
 import React from 'react';
 
 import BOSImage from '../CaseStudies/BOS/images/Banner.png';
@@ -10,7 +10,9 @@ import './Home.scss';
 const Home = () => {
   return (
     <>
-      <Typography variant="h2">Welcome!</Typography>
+      <Box mt={6} mb={10} justifyContent="center">
+        <Typography variant="h2">Welcome to my portfolio!</Typography>
+      </Box>
       <CaseStudy
         to="/case/bos"
         title="BOS"

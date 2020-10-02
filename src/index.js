@@ -6,7 +6,7 @@ import { Box, Container } from '@material-ui/core';
 import * as serviceWorker from './serviceWorker';
 import Navigation from './Navigation';
 import Home from './Home';
-import OtherWork from './OtherWork';
+import SideGigs from './SideGigs';
 import About from './About';
 import Contact from './Contact';
 import BOS from './CaseStudies/BOS';
@@ -22,7 +22,7 @@ ReactDOM.render(
         <Box py={10}>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/other" component={OtherWork} />
+            <Route path="/side-gigs" component={SideGigs} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/case/bos" component={BOS} />

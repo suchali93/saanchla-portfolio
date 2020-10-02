@@ -1,8 +1,11 @@
 .nav {
-  padding: 20px 0;
-  text-align: right;
+  padding: 20px;
+  .name {
+    margin-left: 20px;
+    font-size: 20px;
+  }
   a {
-    padding: 10px;
+    padding: 0 30px;
     text-decoration: none;
     color: #333333;
     &.active {
