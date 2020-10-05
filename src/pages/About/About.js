@@ -1,8 +1,9 @@
 import React from 'react';
+import { Container } from '@material-ui/core';
 
 const About = () => {
   return (
-    <>
+    <Container>
       A little about me. I am a curious, self-driven designer who is passionate in
       emerging technologies and advocating UX design across all fields of work. Having
       studied psychology in my undergrad, I worked as a recruiter for nearly 2 years.
@@ -11,9 +12,9 @@ const About = () => {
       my clients’ needs. Most importantly, I learned to make the candidate the focus of
       the process. At BrainStation I learned how to use this skill within the field of UX.
       I look forward to continue to apply this knowledge in new and challenging ways. When
-      I'm not wireframing, I like taking different dance classes, and indulging my love
-      for trying new foods.
-    </>
+      I&apos;m not wireframing, I like taking different dance classes, and indulging my
+      love for trying new foods.
+    </Container>
   );
 };
 

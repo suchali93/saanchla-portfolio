@@ -1,39 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Box, Container } from '@material-ui/core';
+import { Box, CssBaseline, ThemeProvider } from '@material-ui/core';
 
+import theme from './theme';
 import * as serviceWorker from './serviceWorker';
-import Navigation from './Navigation';
-import Home from './Home';
-import SideGigs from './SideGigs';
-import About from './About';
-import Contact from './Contact';
-import BOS from './CaseStudies/BOS';
-import CultureFit from './CaseStudies/CultureFit';
-import TeamsVR from './CaseStudies/TeamsVR';
-import './index.scss';
-import Footer from './Footer';
+import Navigation from './common/Navigation';
+import Home from './pages/Home';
+import SideGigs from './pages/SideGigs';
+import About from './pages/About';
+import CultureFit from './pages/CaseStudies/CultureFit';
+import BOS from './pages/CaseStudies/BOS';
+import TeamsVR from './pages/CaseStudies/TeamsVR';
+import Orygyns from './pages/CaseStudies/Orygyns';
+import Footer from './common/Footer';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Navigation />
-      <Container className="main-content">
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <Navigation />
         <Box pt={10}>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/side-gigs" component={SideGigs} />
             <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/case/bos" component={BOS} />
             <Route path="/case/culture-fit" component={CultureFit} />
+            <Route path="/case/bos" component={BOS} />
             <Route path="/case/teams-vr" component={TeamsVR} />
+            <Route path="/case/orygyns" component={Orygyns} />
           </Switch>
         </Box>
-      </Container>
-      <Footer />
-    </Router>
+        <Footer />
+      </Router>
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
