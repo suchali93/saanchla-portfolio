@@ -4,10 +4,12 @@ import { Box, Grid } from '@material-ui/core';
 
 export const Header = styled(Box)`
   && {
-    background-image: url(${({ background }) => background});
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+      url(${({ background }) => background});
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align: right;
   }
 `;
 
@@ -17,7 +19,7 @@ export const Overlay = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100%;
   z-index: 2;

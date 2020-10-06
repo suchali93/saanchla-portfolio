@@ -1,4 +1,4 @@
-import { Container, Typography } from '@material-ui/core';
+import { Box, Button, Container, Typography } from '@material-ui/core';
 import React from 'react';
 
 import CultureFitImage from '../CaseStudies/CultureFit/images/Banner.png';
@@ -16,12 +16,18 @@ const Home = () => {
         background={background}
         display="flex"
         alignItems="center"
-        justifyContent="center"
+        justifyContent="flex-end"
         mb={10}
       >
-        <Typography variant="h4">
-          Hello! My name is Sanchala and I’m a UX/UI designer.
-        </Typography>
+        <Box m={7}>
+          <Typography variant="h2" gutterBottom>
+            Hi! I&apos;m Saanchla
+          </Typography>
+          <Typography variant="h4" gutterBottom>
+            I’m a UX/UI designer.
+          </Typography>
+          <Button mt={10}>CTA</Button>
+        </Box>
       </Header>
       <Container>
         <Project

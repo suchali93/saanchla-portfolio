@@ -1,46 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Grid, Typography } from '@material-ui/core';
+import { Box, Button, Grid, Typography } from '@material-ui/core';
 
-import {
-  Overlay,
-  ProjectGridContainter,
-  ProjectLink,
-  ProjectBox,
-  ProjectImage,
-} from './styledComponents';
+import { Link } from 'react-router-dom';
+import { ProjectGridContainter, ProjectBox, ProjectImage } from './styledComponents';
 
 const Project = ({ to, title, description, imageSrc, backgroundColor }) => {
-  const [open, setOpen] = useState(false);
   return (
-    <>
-      <ProjectLink to={to}>
-        <ProjectBox mb={7} backgroundColor={backgroundColor}>
-          <ProjectGridContainter
-            container
-            justify="space-between"
-            alignItems="center"
-            onMouseEnter={() => setOpen(true)}
-            onMouseLeave={() => setOpen(false)}
-          >
-            <Overlay open={open} />
-            <Grid item lg={6} sm={12}>
-              <Box p={7}>
-                <Typography variant="h4" gutterBottom>
-                  {title}
-                </Typography>
-                <Typography variant="subtitle1" gutterBottom>
-                  {description}
-                </Typography>
-              </Box>
-            </Grid>
-            <Grid item lg={6} sm={12} p={3}>
-              <ProjectImage src={imageSrc} alt={title} />
-            </Grid>
-          </ProjectGridContainter>
-        </ProjectBox>
-      </ProjectLink>
-    </>
+    <ProjectBox mb={7} backgroundColor={backgroundColor}>
+      <ProjectGridContainter container justify="space-between" alignItems="center">
+        <Grid item lg={6} sm={12}>
+          <Box p={7}>
+            <Typography variant="h4" gutterBottom>
+              {title}
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom>
+              {description}
+            </Typography>
+            <Button component={Link} to={to}>
+              View Case Study
+            </Button>
+          </Box>
+        </Grid>
+        <Grid item lg={6} sm={12} p={3}>
+          <ProjectImage src={imageSrc} alt={title} />
+        </Grid>
+      </ProjectGridContainter>
+    </ProjectBox>
   );
 };
 
