@@ -26,17 +26,16 @@ export const theme = createMuiTheme({
         minWidth: 200,
         marginTop: 30,
         boxShadow: 'none',
+        transition: 'all 0.1s',
         '&:hover': {
           boxShadow: 'none',
           backgroundColor: '#4c6ae1',
           color: '#fff',
         },
       },
-      text: {
+      outlined: {
         color: '#4c6ae1',
-        border: '2px sold #4c6ae1',
-        fontSize: 15,
-        padding: '0 20px',
+        border: '2px solid #4c6ae1',
       },
     },
   },

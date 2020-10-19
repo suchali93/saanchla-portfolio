@@ -26,7 +26,9 @@ const Home = () => {
           <Typography variant="h4" gutterBottom>
             I’m a UX/UI designer.
           </Typography>
-          <Button mt={10}>Let's connect!</Button>
+          <Button variant="outlined" mt={10}>
+            Let&apos;s connect!
+          </Button>
         </Box>
       </Header>
       <Container>

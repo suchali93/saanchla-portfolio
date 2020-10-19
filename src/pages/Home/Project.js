@@ -17,8 +17,8 @@ const Project = ({ to, title, description, imageSrc, backgroundColor, inProgress
             <Typography variant="subtitle1" gutterBottom>
               {description}
             </Typography>
-            <Button component={Link} to={to}>
-              { inProgress ? 'Coming Soon' : 'View Case Study' }
+            <Button variant="outlined" component={Link} to={to}>
+              {inProgress ? 'Coming Soon' : 'View Case Study'}
             </Button>
           </Box>
         </Grid>
