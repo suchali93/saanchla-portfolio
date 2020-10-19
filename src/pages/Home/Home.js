@@ -4,7 +4,7 @@ import { Box, Button, Container, Typography } from '@material-ui/core';
 import CultureFitImage from '../CaseStudies/CultureFit/images/Banner.png';
 import BOSImage from '../CaseStudies/BOS/images/Banner.png';
 import TeamsVRImage from '../CaseStudies/TeamsVR/images/Banner.png';
-import OrygynsImage from '../CaseStudies/Orygyns/images/Banner.png';
+import OrigynsImage from '../CaseStudies/Origyns/images/Banner.png';
 import background from './images/background.png';
 import Project from './Project';
 import { Header } from './styledComponents';
@@ -53,9 +53,9 @@ const Home = () => {
         />
         <Project
           to="/case/orygyns"
-          title="Orygyns"
-          description="Something about Orygyns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
-          imageSrc={OrygynsImage}
+          title="Origyns"
+          description="Something about Origyns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
+          imageSrc={OrigynsImage}
           backgroundColor="#fcf2f0"
         />
       </Container>

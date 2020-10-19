@@ -13,7 +13,7 @@ import About from './pages/About';
 import CultureFit from './pages/CaseStudies/CultureFit';
 import BOS from './pages/CaseStudies/BOS';
 import TeamsVR from './pages/CaseStudies/TeamsVR';
-import Orygyns from './pages/CaseStudies/Orygyns';
+import Origyns from './pages/CaseStudies/Origyns';
 import Footer from './common/Footer';
 
 ReactDOM.render(
@@ -31,7 +31,7 @@ ReactDOM.render(
             <Route path="/case/culture-fit" component={CultureFit} />
             <Route path="/case/bos" component={BOS} />
             <Route path="/case/teams-vr" component={TeamsVR} />
-            <Route path="/case/orygyns" component={Orygyns} />
+            <Route path="/case/orygyns" component={Origyns} />
           </Switch>
         </Box>
         <Footer />
