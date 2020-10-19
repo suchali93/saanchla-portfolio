@@ -5,7 +5,7 @@ import { Box, Button, Grid, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { ProjectGridContainter, ProjectBox, ProjectImage } from './styledComponents';
 
-const Project = ({ to, title, description, imageSrc, backgroundColor }) => {
+const Project = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
   return (
     <ProjectBox mb={10} backgroundColor={backgroundColor}>
       <ProjectGridContainter container justify="space-between" alignItems="center">
@@ -18,7 +18,7 @@ const Project = ({ to, title, description, imageSrc, backgroundColor }) => {
               {description}
             </Typography>
             <Button component={Link} to={to}>
-              View Case Study
+              { inProgress ? 'Coming Soon' : 'View Case Study' }
             </Button>
           </Box>
         </Grid>
@@ -36,10 +36,12 @@ Project.propTypes = {
   description: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
+  inProgress: PropTypes.bool,
 };
 
 Project.defaultProps = {
   backgroundColor: undefined,
+  inProgress: false,
 };
 
 export default Project;

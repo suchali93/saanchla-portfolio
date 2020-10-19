@@ -20,19 +20,21 @@ export const theme = createMuiTheme({
     },
     MuiButton: {
       root: {
-        backgroundColor: '#6d737d',
-        borderRadius: 20,
+        backgroundColor: '#fff',
+        borderRadius: 5,
         minHeight: 45,
         minWidth: 200,
         marginTop: 30,
         boxShadow: 'none',
         '&:hover': {
           boxShadow: 'none',
-          backgroundColor: '#8a919e',
+          backgroundColor: '#4c6ae1',
+          color: '#fff',
         },
       },
       text: {
-        color: '#fff',
+        color: '#4c6ae1',
+        border: '2px sold #4c6ae1',
         fontSize: 15,
         padding: '0 20px',
       },

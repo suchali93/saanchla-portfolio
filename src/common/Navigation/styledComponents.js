@@ -14,6 +14,9 @@ export const NavBar = styled(AppBar)`
         font-weight: 600;
         color: #4c6ae1;
       }
+      :hover {
+        color: #4c6ae1;
+      }
     }
   }
 `;

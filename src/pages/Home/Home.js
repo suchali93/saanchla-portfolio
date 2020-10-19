@@ -26,7 +26,7 @@ const Home = () => {
           <Typography variant="h4" gutterBottom>
             I’m a UX/UI designer.
           </Typography>
-          <Button mt={10}>CTA</Button>
+          <Button mt={10}>Let's connect!</Button>
         </Box>
       </Header>
       <Container>
@@ -57,6 +57,7 @@ const Home = () => {
           description="Something about Origyns. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
           imageSrc={OrigynsImage}
           backgroundColor="#fcf2f0"
+          inProgress
         />
       </Container>
     </>
