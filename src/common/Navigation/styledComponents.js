@@ -8,9 +8,11 @@ export const NavBar = styled(AppBar)`
     a {
       margin: 0 30px;
       text-decoration: none;
-      color: #333333;
+      color: #242424;
+      text-transform: uppercase;
       &.active {
         font-weight: 600;
+        color: #4c6ae1;
       }
     }
   }
