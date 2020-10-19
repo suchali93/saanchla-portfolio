@@ -11,6 +11,13 @@ export const theme = createMuiTheme({
         },
       },
     },
+    MuiContainer: {
+      maxWidthLg: {
+        '@media (min-width: 1280px)': {
+          maxWidth: '1100px',
+        },
+      },
+    },
     MuiButton: {
       root: {
         backgroundColor: '#6d737d',

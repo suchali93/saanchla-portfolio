@@ -7,7 +7,7 @@ import { ProjectGridContainter, ProjectBox, ProjectImage } from './styledCompone
 
 const Project = ({ to, title, description, imageSrc, backgroundColor }) => {
   return (
-    <ProjectBox mb={7} backgroundColor={backgroundColor}>
+    <ProjectBox mb={10} backgroundColor={backgroundColor}>
       <ProjectGridContainter container justify="space-between" alignItems="center">
         <Grid item lg={6} sm={12}>
           <Box p={7}>
@@ -41,4 +41,5 @@ Project.propTypes = {
 Project.defaultProps = {
   backgroundColor: undefined,
 };
+
 export default Project;

@@ -6,6 +6,7 @@ import { Box, CssBaseline, ThemeProvider } from '@material-ui/core';
 import theme from './theme';
 import * as serviceWorker from './serviceWorker';
 import Navigation from './common/Navigation';
+import ScrollToTop from './common/ScrollToTop';
 import Home from './pages/Home';
 import SideGigs from './pages/SideGigs';
 import About from './pages/About';
@@ -20,6 +21,7 @@ ReactDOM.render(
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Router>
+        <ScrollToTop />
         <Navigation />
         <Box pt={10}>
           <Switch>

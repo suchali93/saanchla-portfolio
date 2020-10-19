@@ -1,3 +1,3 @@
-import CaseStudies from './CaseStudies';
+import CaseStudy from './CaseStudy';
 
-export default CaseStudies;
+export default CaseStudy;

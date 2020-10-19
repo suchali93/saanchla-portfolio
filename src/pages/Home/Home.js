@@ -1,5 +1,5 @@
-import { Box, Button, Container, Typography } from '@material-ui/core';
 import React from 'react';
+import { Box, Button, Container, Typography } from '@material-ui/core';
 
 import CultureFitImage from '../CaseStudies/CultureFit/images/Banner.png';
 import BOSImage from '../CaseStudies/BOS/images/Banner.png';
@@ -39,15 +39,15 @@ const Home = () => {
         />
         <Project
           to="/case/bos"
-          title="BOS"
-          description="Something about BOS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
+          title="Blockers of Scam"
+          description="A platform that compliments the existing 'scamBlock' Chrome extension in its goal of reporting potentially dangerous websites and social media profiles."
           imageSrc={BOSImage}
           backgroundColor="#eef9f6"
         />
         <Project
           to="/case/teams-vr"
           title="Teams VR"
-          description="Something about Teams VR. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus purus tellus, quis bibendum tellus luctus eu. Nunc elementum vel tortor sit amet posuere. Nulla eleifend efficitur mauris eget iaculis. Curabitur fringilla pulvinar massa nec maximus. "
+          description="An extension for Microsoft Teams to support a better work from home experience."
           imageSrc={TeamsVRImage}
           backgroundColor="#f1f1f5"
         />
