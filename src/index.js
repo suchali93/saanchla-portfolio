@@ -15,6 +15,16 @@ import BOS from './pages/CaseStudies/BOS';
 import TeamsVR from './pages/CaseStudies/TeamsVR';
 import Origyns from './pages/CaseStudies/Origyns';
 import Footer from './common/Footer';
+import {
+  ABOUT,
+  BLOCKERS_OF_SCAM,
+  CULTURE_FIT,
+  DETAILS,
+  HOME,
+  ORIGYNS,
+  SIDE_GIGS,
+  TEAMS_VR,
+} from './common/constants';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,15 +33,15 @@ ReactDOM.render(
       <Router>
         <ScrollToTop />
         <Navigation />
-        <Box pt={10}>
+        <Box minHeight="100vh" pt={7}>
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/side-gigs" component={SideGigs} />
-            <Route path="/about" component={About} />
-            <Route path="/case/culture-fit" component={CultureFit} />
-            <Route path="/case/bos" component={BOS} />
-            <Route path="/case/teams-vr" component={TeamsVR} />
-            <Route path="/case/orygyns" component={Origyns} />
+            <Route exact path={DETAILS[HOME].pathname} component={Home} />
+            <Route path={DETAILS[SIDE_GIGS].pathname} component={SideGigs} />
+            <Route path={DETAILS[ABOUT].pathname} component={About} />
+            <Route path={DETAILS[CULTURE_FIT].pathname} component={CultureFit} />
+            <Route path={DETAILS[BLOCKERS_OF_SCAM].pathname} component={BOS} />
+            <Route path={DETAILS[TEAMS_VR].pathname} component={TeamsVR} />
+            <Route path={DETAILS[ORIGYNS].pathname} component={Origyns} />
           </Switch>
         </Box>
         <Footer />

@@ -1,31 +1,44 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
 import { Box, Container, Grid } from '@material-ui/core';
-import { ProjectImage, ProjectInfo } from './styledComponents';
+import { CaseStudyImage, CaseStudyInfo } from './styledComponents';
+import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
 const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) => {
+  const activePath = useLocation().pathname;
+  const currentPageIdx = CASE_STUDY_PAGES.findIndex(
+    (caseStudy) => DETAILS[caseStudy].pathname === activePath,
+  );
+  const prevPageIdx = currentPageIdx !== 0 ? currentPageIdx - 1 : -1;
+  const prevPage = CASE_STUDY_PAGES[prevPageIdx];
+  const nextPageIdx =
+    currentPageIdx !== CASE_STUDY_PAGES.length - 1 ? currentPageIdx + 1 : -1;
+  const nextPage = CASE_STUDY_PAGES[nextPageIdx];
   return (
     <Container>
+      {prevPage && <Link to={DETAILS[prevPage].pathname}>{prevPage}</Link>}
+      {nextPage && <Link to={DETAILS[nextPage].pathname}>{nextPage}</Link>}
       <Box pt={5}>
         <Grid container alignItems="center" spacing={10}>
           <Grid item lg={6}>
-            <ProjectImage src={imageSrc} alt="" />
+            <CaseStudyImage src={imageSrc} alt="" />
           </Grid>
           <Grid item lg={6}>
             <Box mb={5}>
-              <ProjectInfo>My role</ProjectInfo>
+              <CaseStudyInfo>My role</CaseStudyInfo>
               {myRole}
             </Box>
             <Box mb={5}>
-              <ProjectInfo>Tools</ProjectInfo>
+              <CaseStudyInfo>Tools</CaseStudyInfo>
               {tools}
             </Box>
             <Box mb={5}>
-              <ProjectInfo>Timeline</ProjectInfo>
+              <CaseStudyInfo>Timeline</CaseStudyInfo>
               {timeline}
             </Box>
             <Box>
-              <ProjectInfo>Platform</ProjectInfo>
+              <CaseStudyInfo>Platform</CaseStudyInfo>
               {platform}
             </Box>
           </Grid>
@@ -37,7 +50,7 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
 };
 
 CaseStudy.propTypes = {
-  role: PropTypes.string.isRequired,
+  myRole: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   tools: PropTypes.string,
   timeline: PropTypes.string,

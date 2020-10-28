@@ -38,6 +38,16 @@ export const theme = createMuiTheme({
         border: '2px solid #4c6ae1',
       },
     },
+    MuiIconButton: {
+      root: {
+        color: '#000',
+        transition: 'all 0.2s',
+        '&:hover': {
+          backgroundColor: 'transparent',
+          transform: 'scale(1.5)',
+        },
+      },
+    },
   },
 });
 

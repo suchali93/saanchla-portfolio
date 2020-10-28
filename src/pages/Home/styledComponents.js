@@ -28,24 +28,24 @@ export const Overlay = styled.div`
   transition: all 0.2s ease;
 `;
 
-export const ProjectLink = styled(Link)`
+export const CaseStudyLink = styled(Link)`
   position: relative;
   text-decoration: none;
 `;
 
-export const ProjectBox = styled(Box)`
+export const CaseStudyBox = styled(Box)`
   && {
     background-color: ${({ backgroundColor }) => backgroundColor || '#ededed'};
     color: #333333;
   }
 `;
 
-export const ProjectGridContainter = styled(Grid)`
+export const CaseStudyGridContainter = styled(Grid)`
   && {
     position: relative;
   }
 `;
 
-export const ProjectImage = styled.img`
+export const CaseStudyImage = styled.img`
   padding: 30px;
 `;

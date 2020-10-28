@@ -3,12 +3,16 @@ import PropTypes from 'prop-types';
 import { Box, Button, Grid, Typography } from '@material-ui/core';
 
 import { Link } from 'react-router-dom';
-import { ProjectGridContainter, ProjectBox, ProjectImage } from './styledComponents';
+import {
+  CaseStudyGridContainter,
+  CaseStudyBox,
+  CaseStudyImage,
+} from './styledComponents';
 
-const Project = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
+const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
   return (
-    <ProjectBox mb={10} backgroundColor={backgroundColor}>
-      <ProjectGridContainter container justify="space-between" alignItems="center">
+    <CaseStudyBox mb={10} backgroundColor={backgroundColor}>
+      <CaseStudyGridContainter container justify="space-between" alignItems="center">
         <Grid item lg={6} sm={12}>
           <Box p={7}>
             <Typography variant="h4" gutterBottom>
@@ -23,14 +27,14 @@ const Project = ({ to, title, description, imageSrc, backgroundColor, inProgress
           </Box>
         </Grid>
         <Grid item lg={6} sm={12} p={3}>
-          <ProjectImage src={imageSrc} alt={title} />
+          <CaseStudyImage src={imageSrc} alt={title} />
         </Grid>
-      </ProjectGridContainter>
-    </ProjectBox>
+      </CaseStudyGridContainter>
+    </CaseStudyBox>
   );
 };
 
-Project.propTypes = {
+CaseStudy.propTypes = {
   to: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
@@ -39,9 +43,9 @@ Project.propTypes = {
   inProgress: PropTypes.bool,
 };
 
-Project.defaultProps = {
+CaseStudy.defaultProps = {
   backgroundColor: undefined,
   inProgress: false,
 };
 
-export default Project;
+export default CaseStudy;
