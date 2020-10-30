@@ -3,8 +3,6 @@ import AppBar from '@material-ui/core/AppBar';
 
 export const NavBar = styled(AppBar)`
   && {
-    background-color: white;
-    padding: 10px 20px;
     a {
       margin: 0 30px;
       text-decoration: none;

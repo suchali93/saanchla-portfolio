@@ -20,7 +20,7 @@ export const DETAILS = {
     description:
       'A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit.',
     imageSrc: CultureFitImage,
-    backgroundColor: '#eaf3fe',
+    backgroundColor: '#edf5fd',
   },
   [BLOCKERS_OF_SCAM]: {
     pathname: '/case/bos',
@@ -34,7 +34,7 @@ export const DETAILS = {
     description:
       'An extension for Microsoft Teams to support a better work from home experience.',
     imageSrc: TeamsVRImage,
-    backgroundColor: '#f1f1f5',
+    backgroundColor: '#f2f2f9',
   },
   [ORIGYNS]: {
     pathname: '/case/origyns',

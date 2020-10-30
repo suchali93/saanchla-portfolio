@@ -10,6 +10,9 @@ export const Header = styled(Box)`
     background-repeat: no-repeat;
     background-size: cover;
     text-align: right;
+    @media (max-width: 1280px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -43,6 +46,14 @@ export const CaseStudyBox = styled(Box)`
 export const CaseStudyGridContainter = styled(Grid)`
   && {
     position: relative;
+  }
+`;
+
+export const CaseStudyContent = styled(Box)`
+  && {
+    @media (max-width: 960px) {
+      text-align: center;
+    }
   }
 `;
 

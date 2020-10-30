@@ -1,14 +1,37 @@
 import { createMuiTheme } from '@material-ui/core';
+import './typography/fonts.css';
 
 export const theme = createMuiTheme({
+  typography: {
+    fontFamily: ['Montserrat', 'sans-serif'],
+  },
   overrides: {
     MuiCssBaseline: {
       '@global': {
         body: {
+          fontWeight: 400,
           fontSize: '16px',
           color: '#333',
           backgroundColor: '#fff',
         },
+      },
+    },
+    MuiTypography: {
+      subtitle2: {
+        fontFamily: ['EB Garamond', 'serif'],
+        fontWeight: 400,
+        fontSize: '27px',
+        letterSpacing: '1px',
+        fontStyle: 'italic',
+      },
+    },
+    MuiAppBar: {
+      root: {
+        padding: '10px 0',
+      },
+      colorPrimary: {
+        backgroundColor: '#fff',
+        fontSize: '14px',
       },
     },
     MuiContainer: {

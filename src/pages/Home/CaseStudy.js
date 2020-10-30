@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Button, Grid, Typography } from '@material-ui/core';
+import { Button, Grid, Typography } from '@material-ui/core';
 
 import { Link } from 'react-router-dom';
 import {
   CaseStudyGridContainter,
   CaseStudyBox,
+  CaseStudyContent,
   CaseStudyImage,
 } from './styledComponents';
 
@@ -13,8 +14,8 @@ const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgre
   return (
     <CaseStudyBox mb={10} backgroundColor={backgroundColor}>
       <CaseStudyGridContainter container justify="space-between" alignItems="center">
-        <Grid item lg={6} sm={12}>
-          <Box p={7}>
+        <Grid item lg={6} md={6} sm={12}>
+          <CaseStudyContent p={7}>
             <Typography variant="h4" gutterBottom>
               {title}
             </Typography>
@@ -24,9 +25,9 @@ const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgre
             <Button variant="outlined" component={Link} to={to}>
               {inProgress ? 'Coming Soon' : 'View Case Study'}
             </Button>
-          </Box>
+          </CaseStudyContent>
         </Grid>
-        <Grid item lg={6} sm={12} p={3}>
+        <Grid item lg={6} md={6} sm={12} p={3}>
           <CaseStudyImage src={imageSrc} alt={title} />
         </Grid>
       </CaseStudyGridContainter>
@@ -44,7 +45,7 @@ CaseStudy.propTypes = {
 };
 
 CaseStudy.defaultProps = {
-  backgroundColor: undefined,
+  backgroundColor: '#fff',
   inProgress: false,
 };
 

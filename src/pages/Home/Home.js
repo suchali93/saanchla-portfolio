@@ -8,19 +8,16 @@ import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 const Home = () => {
   return (
     <>
-      <Header
-        background={background}
-        display="flex"
-        alignItems="center"
-        justifyContent="flex-end"
-        mb={10}
-      >
-        <Box m={7}>
-          <Typography variant="h2" gutterBottom>
-            Hi! I&apos;m Saanchla
+      <Header background={background} display="flex" alignItems="center" mb={10}>
+        <Box m={7} mr={10} width="100%">
+          <Typography variant="subtitle2" gutterBottom>
+            <i>Hello there, I am</i>
           </Typography>
-          <Typography variant="h4" gutterBottom>
-            I’m a UX/UI designer.
+          <Typography variant="h3" gutterBottom>
+            SAANCHLA TRIPATHI
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            a Toronto based UX/UI designer.
           </Typography>
           <Button variant="outlined" mt={10}>
             Let&apos;s connect!
