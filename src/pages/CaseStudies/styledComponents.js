@@ -6,7 +6,8 @@ export const CaseStudyImage = styled.img`
 
 export const CaseStudyInfo = styled.div`
   font-size: 18px;
-  font-weight: 600;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
   margin: 0 10px 10px 0;
   text-transform: uppercase;
 `;

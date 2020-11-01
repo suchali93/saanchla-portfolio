@@ -19,11 +19,24 @@ export const theme = createMuiTheme({
       },
     },
     MuiTypography: {
+      h1: {
+        fontFamily: ['Oswald', 'sans-serif'],
+        fontSize: '50px',
+        fontWeight: 400,
+      },
+      h2: {
+        fontFamily: ['Oswald', 'sans-serif'],
+        fontSize: '35px',
+        fontWeight: 400,
+      },
       h3: {
         fontFamily: ['Oswald', 'sans-serif'],
+        fontSize: '20px',
+        lineHeight: 2.8,
+        textTransform: 'uppercase',
       },
-      h4: {
-        fontFamily: ['Oswald', 'sans-serif'],
+      body1: {
+        lineHeight: 1.75,
       },
     },
     MuiAppBar: {
@@ -36,6 +49,10 @@ export const theme = createMuiTheme({
         background:
           'linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0))',
         fontSize: '14px',
+        '@media (max-width: 600px)': {
+          background:
+            'linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))',
+        },
       },
     },
     MuiContainer: {
@@ -79,10 +96,17 @@ export const theme = createMuiTheme({
     MuiIconButton: {
       root: {
         color: '#000',
+        fontFamily: ['Oswald', 'sans-serif'],
+        fontWeight: 400,
         transition: 'all 0.2s',
         '&:hover': {
           backgroundColor: 'transparent',
           transform: 'scale(1.5)',
+        },
+      },
+      sizeSmall: {
+        '&:hover': {
+          transform: 'scale(1.1)',
         },
       },
     },

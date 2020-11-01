@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Box, Grid } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 export const Header = styled(Box)`
   && {
@@ -43,16 +43,10 @@ export const CaseStudyLink = styled(Link)`
   text-decoration: none;
 `;
 
+// TODO: Keep?
 export const CaseStudyBox = styled(Box)`
   && {
     background-color: ${({ backgroundColor }) => backgroundColor || '#ededed'};
-    color: #333333;
-  }
-`;
-
-export const CaseStudyGridContainter = styled(Grid)`
-  && {
-    position: relative;
   }
 `;
 

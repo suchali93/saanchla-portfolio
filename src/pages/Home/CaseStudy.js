@@ -3,26 +3,31 @@ import PropTypes from 'prop-types';
 import { Button, Grid, Typography } from '@material-ui/core';
 
 import { Link } from 'react-router-dom';
-import {
-  CaseStudyGridContainter,
-  CaseStudyBox,
-  CaseStudyContent,
-  CaseStudyImage,
-} from './styledComponents';
+import { CaseStudyBox, CaseStudyContent, CaseStudyImage } from './styledComponents';
 
 const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
   return (
     <CaseStudyBox mb={10} backgroundColor={backgroundColor}>
-      <CaseStudyGridContainter container justify="space-between" alignItems="center">
+      <Grid container justify="space-between" alignItems="center">
         <Grid item lg={6} md={6} sm={12}>
-          <CaseStudyContent p={7}>
-            <Typography variant="h4" gutterBottom>
+          <CaseStudyContent p={4}>
+            <Typography variant="h2" gutterBottom>
               {title}
             </Typography>
-            <Typography variant="subtitle1" gutterBottom>
+            <Typography variant="body1" gutterBottom>
               {description}
             </Typography>
-            <Button variant="outlined" color="primary" component={Link} to={to}>
+            <Button
+              variant="outlined"
+              color="primary"
+              component={Link}
+              to={to}
+              aria-label={
+                inProgress
+                  ? `${title} case study coming soon`
+                  : `View ${title} case study`
+              }
+            >
               {inProgress ? 'Coming Soon' : 'View Case Study'}
             </Button>
           </CaseStudyContent>
@@ -30,7 +35,7 @@ const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgre
         <Grid item lg={6} md={6} sm={12} p={3}>
           <CaseStudyImage src={imageSrc} alt={title} />
         </Grid>
-      </CaseStudyGridContainter>
+      </Grid>
     </CaseStudyBox>
   );
 };

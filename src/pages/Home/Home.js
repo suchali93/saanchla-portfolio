@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Header background={background} display="flex" alignItems="center" mb={10}>
-        <Box mb={10} width="100%">
+        <Box mb={5} width="100%">
           <Intro variant="italic">Hello there, I am</Intro>
           <Intro>SAANCHLA TRIPATHI</Intro>
           <Intro variant="italic">a Toronto based UX/UI designer.</Intro>
@@ -30,7 +30,7 @@ const Home = () => {
         </Box>
       </Header>
       <Box display="flex" justifyContent="center" px={10} py={5} my={10}>
-        <Typography variant="h3">Test. Iterate. Rinse. Repeat.</Typography>
+        <Typography variant="h1">Test. Iterate. Rinse. Repeat.</Typography>
       </Box>
       <Container>
         {CASE_STUDY_PAGES.map((caseStudy) => (

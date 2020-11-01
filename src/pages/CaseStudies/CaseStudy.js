@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import { Box, Container, Grid } from '@material-ui/core';
+import { Box, Container, Grid, IconButton, Typography } from '@material-ui/core';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { CaseStudyImage, CaseStudyInfo } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
@@ -15,35 +17,57 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
   const nextPageIdx =
     currentPageIdx !== CASE_STUDY_PAGES.length - 1 ? currentPageIdx + 1 : -1;
   const nextPage = CASE_STUDY_PAGES[nextPageIdx];
+
+  const showNextAndPrev = () => (
+    <>
+      {prevPage ? (
+        <IconButton size="small" component={Link} to={DETAILS[prevPage].pathname}>
+          <ChevronLeftIcon />
+          Prev: {prevPage}
+        </IconButton>
+      ) : (
+        <IconButton size="small" disabled />
+      )}
+      {nextPage ? (
+        <IconButton size="small" component={Link} to={DETAILS[nextPage].pathname}>
+          Next: {nextPage}
+          <ChevronRightIcon />
+        </IconButton>
+      ) : (
+        <IconButton size="small" disabled />
+      )}
+    </>
+  );
   return (
     <Container>
-      {prevPage && <Link to={DETAILS[prevPage].pathname}>{prevPage}</Link>}
-      {nextPage && <Link to={DETAILS[nextPage].pathname}>{nextPage}</Link>}
       <Box pt={5}>
-        <Grid container alignItems="center" spacing={10}>
-          <Grid item lg={6}>
+        <Grid container>
+          <Grid item lg={7}>
             <CaseStudyImage src={imageSrc} alt="" />
           </Grid>
-          <Grid item lg={6}>
+          <Grid item lg={5}>
             <Box mb={5}>
-              <CaseStudyInfo>My role</CaseStudyInfo>
+              <Typography variant="h3">My role</Typography>
               {myRole}
             </Box>
             <Box mb={5}>
-              <CaseStudyInfo>Tools</CaseStudyInfo>
+              <Typography variant="h3">Tools</Typography>
               {tools}
             </Box>
             <Box mb={5}>
-              <CaseStudyInfo>Timeline</CaseStudyInfo>
+              <Typography variant="h3">Timeline</Typography>
               {timeline}
             </Box>
             <Box>
-              <CaseStudyInfo>Platform</CaseStudyInfo>
+              <Typography variant="h3">Platform</Typography>
               {platform}
             </Box>
           </Grid>
         </Grid>
         {children}
+      </Box>
+      <Box display="flex" justifyContent="space-between" my={5}>
+        {showNextAndPrev()}
       </Box>
     </Container>
   );
