@@ -22,7 +22,7 @@ const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgre
             <Typography variant="subtitle1" gutterBottom>
               {description}
             </Typography>
-            <Button variant="outlined" component={Link} to={to}>
+            <Button variant="outlined" color="primary" component={Link} to={to}>
               {inProgress ? 'Coming Soon' : 'View Case Study'}
             </Button>
           </CaseStudyContent>

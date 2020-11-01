@@ -9,11 +9,18 @@ export const Header = styled(Box)`
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: right;
-    @media (max-width: 1280px) {
-      text-align: center;
-    }
+    text-align: center;
   }
+`;
+
+export const Intro = styled.div`
+  font-family: ${({ variant }) =>
+    variant === 'italic' ? "'EB Garamond', serif" : "'Oswald', sans-serif"};
+  font-size: ${({ variant }) => (variant === 'italic' ? '27px' : '65px')};
+  font-style: ${({ variant }) => (variant === 'italic' ? 'italic' : 'normal')};
+  font-weight: ${({ variant }) => (variant === 'italic' ? '500' : '400')};
+  letter-spacing: ${({ variant }) => (variant === 'italic' ? '1px' : '5px')};
+  margin-bottom: 10px;
 `;
 
 // TODO: Keep?

@@ -4,6 +4,8 @@ import './typography/fonts.css';
 export const theme = createMuiTheme({
   typography: {
     fontFamily: ['Montserrat', 'sans-serif'],
+    colorPrimary: '#333',
+    colorSecondar: '#fff',
   },
   overrides: {
     MuiCssBaseline: {
@@ -17,20 +19,22 @@ export const theme = createMuiTheme({
       },
     },
     MuiTypography: {
-      subtitle2: {
-        fontFamily: ['EB Garamond', 'serif'],
-        fontWeight: 400,
-        fontSize: '27px',
-        letterSpacing: '1px',
-        fontStyle: 'italic',
+      h3: {
+        fontFamily: ['Oswald', 'sans-serif'],
+      },
+      h4: {
+        fontFamily: ['Oswald', 'sans-serif'],
       },
     },
     MuiAppBar: {
       root: {
+        fontFamily: ['Oswald', 'sans-serif'],
         padding: '10px 0',
       },
       colorPrimary: {
-        backgroundColor: '#fff',
+        backgroundColor: 'transparent',
+        background:
+          'linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0))',
         fontSize: '14px',
       },
     },
@@ -45,20 +49,31 @@ export const theme = createMuiTheme({
       root: {
         backgroundColor: '#fff',
         borderRadius: 5,
+        boxShadow: 'none',
+        fontFamily: ['Oswald', 'sans-serif'],
+        fontWeight: 400,
+        marginTop: 30,
         minHeight: 45,
         minWidth: 200,
-        marginTop: 30,
-        boxShadow: 'none',
         transition: 'all 0.1s',
+      },
+      outlinedPrimary: {
+        border: '2px solid #4c6ae1',
         '&:hover': {
-          boxShadow: 'none',
           backgroundColor: '#4c6ae1',
+          border: '2px solid #4c6ae1',
           color: '#fff',
         },
       },
-      outlined: {
-        color: '#4c6ae1',
+      outlinedSecondary: {
+        backgroundColor: '#4c6ae1',
         border: '2px solid #4c6ae1',
+        color: '#fff',
+        '&:hover': {
+          backgroundColor: '#4c6ae1',
+          border: '2px solid #4c6ae1',
+          color: '#fff',
+        },
       },
     },
     MuiIconButton: {

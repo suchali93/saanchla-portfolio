@@ -4,13 +4,14 @@ import AppBar from '@material-ui/core/AppBar';
 export const NavBar = styled(AppBar)`
   && {
     a {
+      color: #333;
+      font-weight: 400;
       margin: 0 30px;
       text-decoration: none;
-      color: #242424;
       text-transform: uppercase;
       &.active {
-        font-weight: 600;
         color: #4c6ae1;
+        font-weight: 600;
       }
       :hover {
         color: #4c6ae1;

@@ -20,27 +20,23 @@ export const DETAILS = {
     description:
       'A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit.',
     imageSrc: CultureFitImage,
-    backgroundColor: '#edf5fd',
   },
   [BLOCKERS_OF_SCAM]: {
     pathname: '/case/bos',
     description:
       "A platform that compliments the existing 'scamBlock' Chrome extension in its goal of reporting potentially dangerous websites and social media profiles.",
     imageSrc: BOSImage,
-    backgroundColor: '#eef9f6',
   },
   [TEAMS_VR]: {
     pathname: '/case/teams-vr',
     description:
       'An extension for Microsoft Teams to support a better work from home experience.',
     imageSrc: TeamsVRImage,
-    backgroundColor: '#f2f2f9',
   },
   [ORIGYNS]: {
     pathname: '/case/origyns',
     description: 'A furniture company that designs and sells modern pieces.',
     imageSrc: OrigynsImage,
-    backgroundColor: '#fcf2f0',
     inProgress: true,
   },
 };
