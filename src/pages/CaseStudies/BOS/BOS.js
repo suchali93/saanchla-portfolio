@@ -24,9 +24,17 @@ import wot from './images/WOT.png';
 import './BOS.css';
 import BannerImage from './images/Banner.png';
 import CaseStudy from '..';
+import Content from '../Content';
 
 const BOS = () => {
-  return <CaseStudy myRole="UX Designer" timeline="2 months" imageSrc={BannerImage} />;
+  return (
+    <CaseStudy myRole="UX Designer" timeline="2 months" imageSrc={BannerImage}>
+      <Content heading="Overview" level={2}>
+        As designers we were tasked with redesigning the Blockers of Scam website to
+        promote the new scamBlock Chrome extension and foster community engagement.
+      </Content>
+    </CaseStudy>
+  );
   // return (
   //   <div>
   //     <div>

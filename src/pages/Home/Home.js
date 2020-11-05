@@ -1,8 +1,8 @@
 import React from 'react';
-import { Box, Button, Container, Typography } from '@material-ui/core';
+import { Box, Button, Container, Divider, Typography } from '@material-ui/core';
 import background from './images/background.png';
 import CaseStudy from './CaseStudy';
-import { Header, Intro } from './styledComponents';
+import { BannerBox, Header, Intro } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
 const Home = () => {
@@ -29,20 +29,23 @@ const Home = () => {
           </Button>
         </Box>
       </Header>
-      <Box display="flex" justifyContent="center" px={10} py={5} my={10}>
+      <BannerBox display="flex" justifyContent="center" px={10} py={5} my={10}>
         <Typography variant="h1">Test. Iterate. Rinse. Repeat.</Typography>
-      </Box>
+      </BannerBox>
       <Container>
-        {CASE_STUDY_PAGES.map((caseStudy) => (
-          <CaseStudy
-            key={caseStudy.replace(/\s+/g, '')}
-            title={caseStudy}
-            to={DETAILS[caseStudy].pathname}
-            description={DETAILS[caseStudy].description}
-            imageSrc={DETAILS[caseStudy].imageSrc}
-            backgroundColor={DETAILS[caseStudy].backgroundColor}
-            inProgress={DETAILS[caseStudy].inProgress}
-          />
+        {CASE_STUDY_PAGES.map((caseStudy, idx) => (
+          <>
+            <CaseStudy
+              key={caseStudy.replace(/\s+/g, '')}
+              title={caseStudy}
+              to={DETAILS[caseStudy].pathname}
+              description={DETAILS[caseStudy].description}
+              imageSrc={DETAILS[caseStudy].imageSrc}
+              backgroundColor={DETAILS[caseStudy].backgroundColor}
+              inProgress={DETAILS[caseStudy].inProgress}
+            />
+            {idx !== CASE_STUDY_PAGES.length - 1 && <Divider variant="middle" />}
+          </>
         ))}
       </Container>
     </>

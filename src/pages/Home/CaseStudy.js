@@ -1,19 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Grid, Typography } from '@material-ui/core';
+import { Button, Grid, Typography, useMediaQuery, useTheme } from '@material-ui/core';
 
 import { Link } from 'react-router-dom';
-import { CaseStudyBox, CaseStudyContent, CaseStudyImage } from './styledComponents';
+import {
+  CaseStudyBox,
+  CaseStudyTitle,
+  CaseStudyContent,
+  CaseStudyImage,
+} from './styledComponents';
 
 const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
-    <CaseStudyBox mb={10} backgroundColor={backgroundColor}>
+    <CaseStudyBox my={isMobile ? 3 : 10} backgroundColor={backgroundColor}>
       <Grid container justify="space-between" alignItems="center">
         <Grid item lg={6} md={6} sm={12}>
           <CaseStudyContent p={4}>
-            <Typography variant="h2" gutterBottom>
-              {title}
-            </Typography>
+            <CaseStudyTitle>{title}</CaseStudyTitle>
             <Typography variant="body1" gutterBottom>
               {description}
             </Typography>

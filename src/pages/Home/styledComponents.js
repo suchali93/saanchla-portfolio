@@ -23,6 +23,12 @@ export const Intro = styled.div`
   margin-bottom: 10px;
 `;
 
+export const BannerBox = styled(Box)`
+  && {
+    background-color: #f8f8f8;
+  }
+`;
+
 // TODO: Keep?
 export const Overlay = styled.div`
   display: flex;
@@ -48,6 +54,14 @@ export const CaseStudyBox = styled(Box)`
   && {
     background-color: ${({ backgroundColor }) => backgroundColor || '#ededed'};
   }
+`;
+
+export const CaseStudyTitle = styled.div`
+  font-family: 'Oswald', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 12px;
 `;
 
 export const CaseStudyContent = styled(Box)`

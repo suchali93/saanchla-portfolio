@@ -4,8 +4,14 @@ import './typography/fonts.css';
 export const theme = createMuiTheme({
   typography: {
     fontFamily: ['Montserrat', 'sans-serif'],
-    colorPrimary: '#333',
-    colorSecondar: '#fff',
+  },
+  props: {
+    MuiTypography: {
+      variantMapping: {
+        h1: 'div',
+        body1: 'p',
+      },
+    },
   },
   overrides: {
     MuiCssBaseline: {
@@ -24,19 +30,11 @@ export const theme = createMuiTheme({
         fontSize: '50px',
         fontWeight: 400,
       },
-      h2: {
-        fontFamily: ['Oswald', 'sans-serif'],
-        fontSize: '35px',
-        fontWeight: 400,
-      },
-      h3: {
-        fontFamily: ['Oswald', 'sans-serif'],
-        fontSize: '20px',
-        lineHeight: 2.8,
-        textTransform: 'uppercase',
-      },
       body1: {
         lineHeight: 1.75,
+      },
+      gutterBottom: {
+        marginBottom: '15px',
       },
     },
     MuiAppBar: {
@@ -108,6 +106,13 @@ export const theme = createMuiTheme({
         '&:hover': {
           transform: 'scale(1.1)',
         },
+      },
+    },
+    MuiDivider: {
+      middle: {
+        maxWidth: '50%',
+        marginLeft: 'auto',
+        marginRight: 'auto',
       },
     },
   },

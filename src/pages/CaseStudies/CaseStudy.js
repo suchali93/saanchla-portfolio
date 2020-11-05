@@ -1,13 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import { Box, Container, Grid, IconButton, Typography } from '@material-ui/core';
+import {
+  Box,
+  Container,
+  Grid,
+  IconButton,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { CaseStudyImage, CaseStudyInfo } from './styledComponents';
+import { CaseStudyImage, Heading } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
 const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
   const activePath = useLocation().pathname;
   const currentPageIdx = CASE_STUDY_PAGES.findIndex(
     (caseStudy) => DETAILS[caseStudy].pathname === activePath,
@@ -38,34 +49,44 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
       )}
     </>
   );
+
   return (
     <Container>
-      <Box pt={5}>
-        <Grid container>
-          <Grid item lg={7}>
-            <CaseStudyImage src={imageSrc} alt="" />
-          </Grid>
-          <Grid item lg={5}>
-            <Box mb={5}>
-              <Typography variant="h3">My role</Typography>
-              {myRole}
-            </Box>
-            <Box mb={5}>
-              <Typography variant="h3">Tools</Typography>
-              {tools}
-            </Box>
-            <Box mb={5}>
-              <Typography variant="h3">Timeline</Typography>
-              {timeline}
+      <Grid container>
+        <Grid item lg={7} md={7} sm={12} xs={12}>
+          <CaseStudyImage src={imageSrc} alt="" />
+        </Grid>
+        <Grid item lg={5} md={5} sm={12} xs={12}>
+          <Box
+            mx={isMobile ? 0 : 5}
+            mt={5}
+            display={isMobile ? 'flex' : 'block'}
+            justifyContent={isMobile ? 'space-between' : 'normal'}
+          >
+            <Box maxWidth={isMobile ? '50%' : '100%'}>
+              <Heading variant="sm">My role</Heading>
+              <Typography variant="body1" gutterBottom>
+                {myRole}
+              </Typography>
+              <Heading variant="sm">Tools</Heading>
+              <Typography variant="body1" gutterBottom>
+                {tools}
+              </Typography>
             </Box>
             <Box>
-              <Typography variant="h3">Platform</Typography>
-              {platform}
+              <Heading variant="sm">Timeline</Heading>
+              <Typography variant="body1" gutterBottom>
+                {timeline}
+              </Typography>
+              <Heading variant="sm">Platform</Heading>
+              <Typography variant="body1" gutterBottom>
+                {platform}
+              </Typography>
             </Box>
-          </Grid>
+          </Box>
         </Grid>
-        {children}
-      </Box>
+      </Grid>
+      {children}
       <Box display="flex" justifyContent="space-between" my={5}>
         {showNextAndPrev()}
       </Box>

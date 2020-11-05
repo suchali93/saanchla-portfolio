@@ -1,6 +1,7 @@
 import React from 'react';
 import BannerImage from './images/Banner.png';
 import CaseStudy from '..';
+import Content from '../Content';
 
 const CultureFit = () => {
   return (
@@ -10,7 +11,13 @@ const CultureFit = () => {
       imageSrc={BannerImage}
       tools="Sketch, InVision"
       platform="iOS"
-    />
+    >
+      <Content heading="Overview" level={2}>
+        CultureFit is a platform for recruiters to evaluate candidates beyond the resume,
+        by focussing on workplace culture fit. This was completed as an individual project
+        during the full-time UX Program at Brainstation.
+      </Content>
+    </CaseStudy>
   );
 };
 
