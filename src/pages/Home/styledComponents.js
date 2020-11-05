@@ -25,7 +25,7 @@ export const Intro = styled.div`
 
 export const BannerBox = styled(Box)`
   && {
-    background-color: #f8f8f8;
+    // background-color: #f8f8f8;
   }
 `;
 

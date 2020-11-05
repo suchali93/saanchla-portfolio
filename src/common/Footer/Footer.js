@@ -8,7 +8,7 @@ const Footer = () => {
     <FooterWrapper>
       <Container>
         <Grid container justify="space-between" alignItems="center">
-          <Grid item>What would you like to see me solve?</Grid>
+          <Grid item>Test. Iterate. Rinse. Repeat.</Grid>
           <Grid item>
             <IconButton
               href="https://www.linkedin.com/in/sanchala-tripathi"
