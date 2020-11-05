@@ -20,7 +20,7 @@ const Content = ({ heading, level, showDivider, children }) => {
         <Heading variant={headingVariant()}>{heading}</Heading>
         {children && <Typography variant="body1">{children}</Typography>}
       </Box>
-      {showDivider && <Divider variant="middle" />}
+      {(level === 1 || showDivider) && <Divider variant="middle" />}
     </>
   );
 };
@@ -34,7 +34,7 @@ Content.propTypes = {
 
 Content.defaultProps = {
   level: 1,
-  showDivider: true,
+  showDivider: false,
   children: undefined,
 };
 
