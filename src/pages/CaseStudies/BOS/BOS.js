@@ -62,32 +62,29 @@ const BOS = () => {
       </Content>
 
       <Content heading="Market Research" level={2}>
-      Virustotal is an established company that combines AI powered algorithms along with a user report system to identify malicious sites. However, they do not have an extension and lack a space for their community to interact.
-
-      WOT is a competitor of scamBlock that gives reputation and rating to websites. They regularly post blogs in their platform, but seem to lack a sense of community.
+      <p><b>Virustotal</b> is an established company that combines AI powered algorithms along with a user report system to identify malicious sites. However, they do not have an extension and lack a space for their community to interact.</p>
+      <p><b>WOT</b> is a competitor of scamBlock that gives reputation and rating to websites. They regularly post blogs in their platform, but seem to lack a sense of community.</p>
       </Content>
 
       <Content heading="Forum" level={2}>
-      During market research, it was clear that many of our competitors lacked a sense of community and largely ignored improving the interaction experience between individual users. We wanted users to see the impact they are making by helping each other on our platform. It also addressed some of the shortcomings of the current Chrome extension.
-      Preliminary research showed that the highest mode of delivery used by scammers is telephone, followed by online social networking. Ideally it would be best to target mobile devices via an app to best mitigate scams used in the social networking space. However, due to budget and time constraints, an extension was used in order to focus on a much simpler platform. The forum allows the community to discuss scams of all modes of delivery, not just limited to the types of scams that the extension is currently able to address (ie. web browsers).
-
-      Main Challenge
-      The main focus of the forum was on how to make it more user-friendly. Most of the existing forums we examined were not user-friendly and often contained many irrelevant functions. In order to motivate users to utilise the forum, we aimed to make the user experience less complicated and more suitable for our determined persona.
-      Our main focus was to identify a suitable information architecture since there are many different types of scams and we want to prioritize easy navigation. Based on research and information we obtained from the client, we created main topics that were inclusive to the main types of scams. Consequently, we conducted an internal card sorting session to  forum topics and each sub-categories. We included the main topics in tabs and the sub-categories are visible once the user clicks into them. This allows the user to see the wider range of categories when compared to the traditional hover drop menu.
+      <p>During market research, it was clear that many of our competitors lacked a sense of community and largely ignored improving the interaction experience between individual users. We wanted users to see the impact they are making by helping each other on our platform. It also addressed some of the shortcomings of the current Chrome extension.</p>
+      <p>Preliminary research showed that the highest mode of delivery used by scammers is telephone, followed by online social networking. Ideally it would be best to target mobile devices via an app to best mitigate scams used in the social networking space. However, due to budget and time constraints, an extension was used in order to focus on a much simpler platform. The forum allows the community to discuss scams of all modes of delivery, not just limited to the types of scams that the extension is currently able to address (ie. web browsers).</p>
+      <p><b>Main Challenge</b></p>
+      <p>The main focus of the forum was on how to make it more user-friendly. Most of the existing forums we examined were not user-friendly and often contained many irrelevant functions. In order to motivate users to utilise the forum, we aimed to make the user experience less complicated and more suitable for our determined persona.</p>
+      <p>Our main focus was to identify a suitable information architecture since there are many different types of scams and we want to prioritize easy navigation. Based on research and information we obtained from the client, we created main topics that were inclusive to the main types of scams. Consequently, we conducted an internal card sorting session to  forum topics and each sub-categories. We included the main topics in tabs and the sub-categories are visible once the user clicks into them. This allows the user to see the wider range of categories when compared to the traditional hover drop menu.</p>
       </Content>
 
       <Content heading="Forum - Commenting / Posting Fields" level={2}>
-      Challenge
-      The existing commenting section had the following issues:
-      1. No options to add in attachments to the comment.
-      2. The publish button wasn’t visible and therefore violated accessibility guidelines.
-      Solution
-      1. Ensured that the publish button was clearly visible and met the accessibility guidelines.
-      2. Added options for users to attach files or images
-      3. Added other editing options for users to customize their posts
-      Impact
-      82%
-      We noticed that the rate of people posting and commenting went up by 82% compared to how it was before the redesign.
+      <p><b>Challenge</b></p>
+      <p>The existing commenting section had the following issues:</p>
+      <p>1. No options to add in attachments to the comment.</p>
+      <p>2. The publish button wasn’t visible and therefore violated accessibility guidelines.</p>
+      <p><b>Solution</b></p>
+      <p>1. Ensured that the publish button was clearly visible and met the accessibility guidelines.</p>
+      <p>2. Added options for users to attach files or images</p>
+      <p>3. Added other editing options for users to customize their posts</p>
+      <p><b>Impact</b></p>
+      <p><b>82%</b> We noticed that the rate of people posting and commenting went up by 82% compared to how it was before the redesign.</p>
       </Content>
 
       <Content heading="Profile and Achievements" level={2}>
