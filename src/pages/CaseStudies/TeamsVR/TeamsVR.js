@@ -9,6 +9,8 @@ const TeamsVR = () => {
       myRole="UX Research, UX Strategy, UI Design"
       timeline="3 days"
       imageSrc={BannerImage}
+      tools="Figma, Adobe XD"
+      platform="VR"
       overview="TeamsVR is a virtual reality extension for Microsoft Teams targeted at young professionals working from home. It brings the office space to you so you can still experience an 'in person' conversation with your colleagues."
     >
       <Content heading="Overview" level={2}>

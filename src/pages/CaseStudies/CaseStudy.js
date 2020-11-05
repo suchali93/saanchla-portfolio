@@ -58,8 +58,8 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
         </Grid>
         <Grid item lg={5} md={5} sm={12} xs={12}>
           <Box
-            mx={isMobile ? 0 : 5}
-            mt={5}
+            ml={isMobile ? 0 : 10}
+            mt={isMobile ? 5 : 3}
             display={isMobile ? 'flex' : 'block'}
             justifyContent={isMobile ? 'space-between' : 'normal'}
           >

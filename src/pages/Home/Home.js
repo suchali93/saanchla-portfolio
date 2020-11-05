@@ -24,7 +24,7 @@ const Home = () => {
         </Box>
       </Header>
       <BannerBox display="flex" justifyContent="center" px={10} py={5} my={10}>
-        <Typography variant="h3">What would you like to see me solve?</Typography>
+        What would you like to see me solve?
       </BannerBox>
       <Container>
         {CASE_STUDY_PAGES.map((caseStudy, idx) => (
