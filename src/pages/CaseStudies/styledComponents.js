@@ -5,7 +5,7 @@ export const Heading = styled.div`
   ${({ variant }) => {
     if (variant === 'sm') {
       return `
-      font-size: 18px;
+      font-size: 16px;
       line-height: 2.2;
       letter-spacing: 1px;
       text-transform: uppercase;
@@ -13,7 +13,7 @@ export const Heading = styled.div`
     }
     if (variant === 'md') {
       return `
-      font-size: 25px;
+      font-size: 20px;
       line-height: 2.8;
       letter-spacing: 1px;
       text-transform: uppercase;

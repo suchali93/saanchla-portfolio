@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Box, Divider, Typography } from '@material-ui/core';
 import { Heading } from './styledComponents';
 
-const Content = ({ heading, level, showDivider, children }) => {
+const Content = ({ heading, level, showDivider, mt, children }) => {
   const headingVariant = () => {
     if (level === 3) {
       return 'sm';
@@ -16,9 +16,11 @@ const Content = ({ heading, level, showDivider, children }) => {
 
   return (
     <>
-      <Box my={7}>
+      <Box mt={level === 2 ? mt : 7} mb={7}>
         <Heading variant={headingVariant()}>{heading}</Heading>
-        {children && <Typography variant="body1">{children}</Typography>}
+        <Box mt={level === 1 ? 4 : 1}>
+          {children && <Typography variant="body1">{children}</Typography>}
+        </Box>
       </Box>
       {(level === 1 || showDivider) && <Divider variant="middle" />}
     </>
@@ -28,6 +30,7 @@ const Content = ({ heading, level, showDivider, children }) => {
 Content.propTypes = {
   heading: PropTypes.string.isRequired,
   level: PropTypes.number,
+  mt: PropTypes.number,
   showDivider: PropTypes.bool,
   children: PropTypes.node,
 };
@@ -35,6 +38,7 @@ Content.propTypes = {
 Content.defaultProps = {
   level: 1,
   showDivider: false,
+  mt: 0,
   children: undefined,
 };
 

@@ -64,21 +64,21 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
             justifyContent={isMobile ? 'space-between' : 'normal'}
           >
             <Box maxWidth={isMobile ? '50%' : '100%'}>
-              <Heading variant="sm">My role</Heading>
+              <Heading variant={isMobile ? 'md' : 'sm'}>My role</Heading>
               <Typography variant="body1" gutterBottom>
                 {myRole}
               </Typography>
-              <Heading variant="sm">Tools</Heading>
+              <Heading variant={isMobile ? 'md' : 'sm'}>Tools</Heading>
               <Typography variant="body1" gutterBottom>
                 {tools}
               </Typography>
             </Box>
             <Box>
-              <Heading variant="sm">Timeline</Heading>
+              <Heading variant={isMobile ? 'md' : 'sm'}>Timeline</Heading>
               <Typography variant="body1" gutterBottom>
                 {timeline}
               </Typography>
-              <Heading variant="sm">Platform</Heading>
+              <Heading variant={isMobile ? 'md' : 'sm'}>Platform</Heading>
               <Typography variant="body1" gutterBottom>
                 {platform}
               </Typography>
@@ -86,7 +86,7 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
           </Box>
         </Grid>
       </Grid>
-      {children}
+      <Box mt={7}>{children}</Box>
       <Box display="flex" justifyContent="space-between" my={5}>
         {showNextAndPrev()}
       </Box>

@@ -9,7 +9,7 @@ export const theme = createMuiTheme({
     MuiTypography: {
       variantMapping: {
         h1: 'div',
-        body1: 'p',
+        body1: 'div',
       },
     },
   },
