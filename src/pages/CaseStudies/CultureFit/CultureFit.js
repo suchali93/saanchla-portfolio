@@ -13,12 +13,12 @@ const CultureFit = () => {
       tools="Sketch, InVision"
       platform="iOS"
     >
-      <Content heading="Overview" level={1}>
+      <Content heading="Overview">
         CultureFit is a platform for recruiters to evaluate candidates beyond the resume,
         by focussing on workplace culture fit. This was completed as an individual project
         during the full-time UX Program at Brainstation.
       </Content>
-      <Content heading="Identifying the Problem Space" level={1}>
+      <Content heading="Identifying the Problem Space">
         Drawing from my own experience in recruitment, I decided to think about the
         recurring challenges for recruiters. I noticed that despite having the right
         skills on their resume, some candidates did not last more than 6 months on the
@@ -35,7 +35,7 @@ const CultureFit = () => {
           </p>
           <p>
             Upon further investigation, I found that workplace culture fit independently
-            predicts commitment, job satisfaction and job performance.{' '}
+            predicts commitment, job satisfaction and job performance.
           </p>
         </Content>
         <Content heading="MARKET RESEARCH ON CURRENT INITIATIVES" level={2}>
@@ -46,11 +46,11 @@ const CultureFit = () => {
           time-consuming and not data-driven.
         </Content>
       </Content>
-      <Content heading="Design Challenge" level={1}>
+      <Content heading="Design Challenge">
         My project goal was to help recruiters make data-driven candidate selections to
         ensure workplace culture fit, and ultimately lower turnover. In other words,
       </Content>
-      <Content heading="Empathizing with the Target Users" level={1}>
+      <Content heading="Empathizing with the Target Users">
         After secondary research, I did some user interviews to further validate my
         hypothesis that creating a platform to assess the alignment of a candidate to the
         workplace culture will help recruiters in the selection process, and reduce
@@ -87,7 +87,7 @@ const CultureFit = () => {
           </p>
         </Content>
       </Content>
-      <Content heading="Understanding the Target Users" level={1}>
+      <Content heading="Understanding the Target Users">
         To ensure that the user stayed at the forefront through the process and to build
         empathy for a more meaningful solution, I created a primary persona (Jennifer
         James) to look at some of their goals, frustrations and motivations.
@@ -102,7 +102,7 @@ const CultureFit = () => {
           interviews.
         </p>
       </Content>
-      <Content heading="User Stories and Task Flow" level={1}>
+      <Content heading="User Stories and Task Flow">
         Once I found the opportunity for my persona, it was time to create user stories.
         By doing this, I aimed to define the minimum set of product features which would
         help users achieve their goals, whilst also providing valuable learnings and
@@ -113,7 +113,7 @@ const CultureFit = () => {
           the series of steps to create a customized candidate assessment.
         </p>
       </Content>
-      <Content heading="Concept Sketching and Ideation" level={1}>
+      <Content heading="Concept Sketching and Ideation">
         To better understand how users would expect to interact and navigate through the
         features and content available in the app, a reasonable next step was to start
         sketching. I used inspirations from other existing UI components and looked at
@@ -123,7 +123,7 @@ const CultureFit = () => {
           overall structure and layout of the design.
         </Content>
       </Content>
-      <Content heading="Usability Testing" level={1}>
+      <Content heading="Usability Testing">
         Two rounds of user testing were conducted with 10 participants, with the second
         round being a revised iteration based on feedback gathered from the first round.
         <p>
@@ -143,7 +143,7 @@ const CultureFit = () => {
         <Content heading="Design Iteration 1" level={2} />
         <Content heading="Design Iteration 2" level={2} />
       </Content>
-      <Content heading="Visual Identity" level={1}>
+      <Content heading="Visual Identity">
         In preparation for taking the wireframe concepts through a round of visual design
         and further testing, I produced a Visual Style Guide that includes ﻿moodboards,
         typography and colour palette that would appropriately fit with the purpose of the
@@ -192,7 +192,7 @@ const CultureFit = () => {
           without seeming text heavy.
         </Content>
       </Content>
-      <Content heading="Final Prototype" level={1}>
+      <Content heading="Final Prototype">
         Finishing up with the design process, here’s a walkthrough via the interactive
         prototype.
         <p>Below are some of the high-fidelity screens from my app.</p>
@@ -207,7 +207,7 @@ const CultureFit = () => {
           questions suggested by the app personalized for her.
         </p>
       </Content>
-      <Content heading="Marketing Website" level={1}>
+      <Content heading="Marketing Website">
         As an additional challenge, I created a landing page for a responsive website to
         market CultureFit. The main goal of this website was to advertise my app's value
         proposition in order for my target users to want to download the app
@@ -216,7 +216,7 @@ const CultureFit = () => {
           website
         </p>
       </Content>
-      <Content heading="Future Considerations" level={1}>
+      <Content heading="Future Considerations">
         Due to a time constraint, certain features of the app that were not explored but
         can be in future iterations would be:
         <p>
@@ -230,7 +230,7 @@ const CultureFit = () => {
         </p>
         <p>- A way to gauge candidate’s alignment with the team</p>
       </Content>
-      <Content heading="Key Takeaways" level={1}>
+      <Content heading="Key Takeaways">
         I really enjoyed learning about and putting into practice each different stage of
         the UX process, end-to-end. Here are some of the key learnings I will take on to
         my next project:

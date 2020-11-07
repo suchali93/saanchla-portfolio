@@ -40,7 +40,6 @@ export const theme = createMuiTheme({
     MuiAppBar: {
       root: {
         fontFamily: ['Oswald', 'sans-serif'],
-        padding: '10px 0',
       },
       colorPrimary: {
         backgroundColor: 'transparent',

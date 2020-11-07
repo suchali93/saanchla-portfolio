@@ -39,7 +39,7 @@ const BOS = () => {
       imageSrc={BannerImage}
       platform="Desktop"
     >
-      <Content heading="Overview" level={2}>
+      <Content heading="Overview">
         As designers we were tasked with redesigning the Blockers of Scam website to
         promote the new scamBlock Chrome extension and foster community engagement.
       </Content>
@@ -96,7 +96,7 @@ const BOS = () => {
       </Content>
 
       <Content heading="Redesigned Pages">
-        <Content heading="Forum Page" level={2} showDivider={false}>
+        <Content heading="Forum Page" level={2}>
           During market research, it was clear that many of our competitors lacked a sense
           of community and largely ignored improving the interaction experience between
           individual users. We wanted users to see the impact they are making by helping
@@ -123,7 +123,7 @@ const BOS = () => {
           </p>
         </Content>
 
-        <Content heading="Profile and Achievements Page" level={2} showDivider={false}>
+        <Content heading="Profile and Achievements Page" level={2}>
           Considering a user’s intention for visiting and actively engaging with a site
           centred around Internet security was difficult, to say the least. Websites are
           generally expected to act as a natural extension to a product/service, but our
@@ -147,7 +147,7 @@ const BOS = () => {
           to the replies, simply by clicking on the poster’s profile image.
         </Content>
 
-        <Content heading="Newsfeed Page" level={2} showDivider={false}>
+        <Content heading="Newsfeed Page" level={2}>
           For the redesign of the newsfeed page we decided to take inspiration from
           existing news websites. The original website did not have a hero section to
           capture visitor’s attention and was lacking hierarchy in the typography and
@@ -170,7 +170,7 @@ const BOS = () => {
           real scams.
         </Content>
 
-        <Content heading="Marketing Page" level={2} showDivider={false}>
+        <Content heading="Marketing Page" level={2}>
           The Marketing page is the first page that the user lands on to learn more about
           their new product, which is the ScamBlock chrome extension. So the page has the
           ScamBlock logo and the tag line followed by the “Add to Chrome” CTA to notify
@@ -185,7 +185,7 @@ const BOS = () => {
           are now convinced they want to download the extension.
         </Content>
 
-        <Content heading="Services Page" level={2} showDivider={false}>
+        <Content heading="Services Page" level={2}>
           We added a banner at the top to briefly inform the user of the details of the
           services provided by the company. They then select the plan suitable for them -
           each plan is displayed as a separate card with specific colours for
@@ -194,7 +194,7 @@ const BOS = () => {
           CTA, to optimally use this space for marketing.
         </Content>
 
-        <Content heading="About Us Page" level={2} showDivider={false}>
+        <Content heading="About Us Page" level={2}>
           The original About Us page was cluttered, hard to read with little to no
           information hierarchy. We wanted to ensure as a user that copy was kept concise
           without taking away the company’s mission statement. To bring together the
@@ -203,7 +203,7 @@ const BOS = () => {
           it easier to read.
         </Content>
 
-        <Content heading="FAQ Page" level={2} showDivider={false}>
+        <Content heading="FAQ Page" level={2}>
           FAQ pages can sometimes be tricky depending on the business. They are made to
           help customers get their questions answered quickly without having to spend too
           much time looking. Instead of a long scroll of countless questions and answers,

@@ -17,7 +17,7 @@ const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgre
     <CaseStudyBox my={isMobile ? 3 : 10} backgroundColor={backgroundColor}>
       <Grid container justify="space-between" alignItems="center">
         <Grid item lg={6} md={6} sm={12}>
-          <CaseStudyContent p={4}>
+          <CaseStudyContent isMobile={isMobile} p={4}>
             <CaseStudyTitle>{title}</CaseStudyTitle>
             <Typography variant="body1" gutterBottom>
               {description}

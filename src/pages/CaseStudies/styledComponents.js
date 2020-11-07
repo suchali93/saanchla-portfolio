@@ -8,7 +8,6 @@ export const Heading = styled.div`
       font-size: 16px;
       line-height: 2.2;
       letter-spacing: 1px;
-      text-transform: uppercase;
       `;
     }
     if (variant === 'md') {
@@ -17,6 +16,7 @@ export const Heading = styled.div`
       line-height: 2.8;
       letter-spacing: 1px;
       text-transform: uppercase;
+      margin-bottom: 20px;
       `;
     }
     if (variant === 'lg') {
@@ -24,6 +24,7 @@ export const Heading = styled.div`
       font-size: 35px;
       font-weight: 400;
       line-height: 2;
+      margin-bottom: 30px;
       `;
     }
     return '';

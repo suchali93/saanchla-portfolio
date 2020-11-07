@@ -86,7 +86,7 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, children }) =>
           </Box>
         </Grid>
       </Grid>
-      <Box mt={7}>{children}</Box>
+      {children}
       <Box display="flex" justifyContent="space-between" my={5}>
         {showNextAndPrev()}
       </Box>

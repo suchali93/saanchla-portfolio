@@ -66,9 +66,7 @@ export const CaseStudyTitle = styled.div`
 
 export const CaseStudyContent = styled(Box)`
   && {
-    @media (max-width: 960px) {
-      text-align: center;
-    }
+    text-align: ${({ isMobile }) => (isMobile ? 'center' : 'left')};
   }
 `;
 
