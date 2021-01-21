@@ -31,7 +31,7 @@ const Router = () => {
       <BrowserRouter>
         <ScrollToTop />
         <Navigation />
-        <Box minHeight="100vh">
+        <Box minHeight="calc(100vh - 130px)">
           <Switch>
             <Route exact path={DETAILS[HOME].pathname} component={Home} />
             <Box pt={10}>
