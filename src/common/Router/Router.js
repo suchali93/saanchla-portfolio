@@ -18,6 +18,7 @@ import {
   BLOCKERS_OF_SCAM,
   CULTURE_FIT,
   DETAILS,
+  FOOTER_HEIGHT,
   HOME,
   ORIGYNS,
   SIDE_GIGS,
@@ -31,7 +32,7 @@ const Router = () => {
       <BrowserRouter>
         <ScrollToTop />
         <Navigation />
-        <Box minHeight="calc(100vh - 130px)">
+        <Box minHeight={`calc(100vh - ${FOOTER_HEIGHT})`}>
           <Switch>
             <Route exact path={DETAILS[HOME].pathname} component={Home} />
             <Box pt={10}>

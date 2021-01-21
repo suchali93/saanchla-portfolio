@@ -3,6 +3,8 @@ import BOSImage from '../pages/CaseStudies/BOS/images/Banner.png';
 import TeamsVRImage from '../pages/CaseStudies/TeamsVR/images/Banner.png';
 import OrigynsImage from '../pages/CaseStudies/Origyns/images/Banner.png';
 
+export const FOOTER_HEIGHT = '85px';
+
 export const HOME = 'Home';
 export const SIDE_GIGS = 'Side Gigs';
 export const ABOUT = 'About';
