@@ -71,5 +71,5 @@ export const CaseStudyContent = styled(Box)`
 `;
 
 export const CaseStudyImage = styled.img`
-  padding: ${({ isMobile }) => (isMobile ? '50px 30px 0' : '30px')};
+  padding: ${({ isMobile }) => (isMobile ? '50px 30px 0' : '30px 0')};
 `;
