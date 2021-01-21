@@ -87,48 +87,80 @@ const BOS = () => {
       <Content heading="Market Research">
         <Grid container>
           <Grid item lg={6} md={6} sm={12} xs={12} justify="space-between">
-            <img src={images.virusTotal} alt="" />
-            <b>Virustotal</b> is an established company that combines AI powered
-            algorithms along with a user report system to identify malicious sites.
-            However, they do not have an extension and lack a space for their community to
-            interact.
+            <div style={{ paddingRight: '20px' }}>
+              <img
+                style={{
+                  height: '300px',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                }}
+                src={images.virusTotal}
+                alt=""
+              />
+              <div>
+                <b>Virustotal</b> is an established company that combines AI powered
+                algorithms along with a user report system to identify malicious sites.
+                However, they do not have an extension and lack a space for their
+                community to interact.
+              </div>
+            </div>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12}>
-            <img src={images.wot} alt="" />
-            <b>WOT</b> is a competitor of scamBlock that gives reputation and rating to
-            websites. They regularly post blogs in their platform, but seem to lack a
-            sense of community.
+            <div style={{ paddingRight: '20px' }}>
+              <img
+                style={{
+                  height: '300px',
+                  display: 'block',
+                  marginLeft: 'auto',
+                  marginRight: 'auto',
+                }}
+                src={images.wot}
+                alt=""
+              />
+              <div>
+                <b>WOT</b> is a competitor of scamBlock that gives reputation and rating
+                to websites. They regularly post blogs in their platform, but seem to lack
+                a sense of community.
+              </div>
+            </div>
           </Grid>
         </Grid>
       </Content>
 
       <Content heading="Redesigned Pages">
         <Content heading="Forum Page" level={2}>
-          <img src={images.forum} alt="" />
-          During market research, it was clear that many of our competitors lacked a sense
-          of community and largely ignored improving the interaction experience between
-          individual users. We wanted users to see the impact they are making by helping
-          each other on our platform. It also addressed some of the shortcomings of the
-          current Chrome extension.
-          <p>
-            Preliminary research showed that the highest mode of delivery used by scammers
-            is telephone, followed by online social networking. Ideally it would be best
-            to target mobile devices via an app to best mitigate scams used in the social
-            networking space. However, due to budget and time constraints, an extension
-            was used in order to focus on a much simpler platform. The forum allows the
-            community to discuss scams of all modes of delivery, not just limited to the
-            types of scams that the extension is currently able to address (ie. web
-            browsers).
-          </p>
-          <p>
-            The main focus of the forum was on how to make it more user-friendly. Most of
-            the existing forums we examined were not user-friendly and often contained
-            many irrelevant functions. In order to motivate users to utilise the forum, we
-            aimed to make the user experience less complicated. Based on research and
-            information we obtained from the client, we created suitable information
-            architecture for easy navigation. We conducted an internal card sorting
-            session to determine different forum categories.
-          </p>
+          <img
+            style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+            src={images.forum}
+            alt=""
+          />
+          <div>
+            During market research, it was clear that many of our competitors lacked a
+            sense of community and largely ignored improving the interaction experience
+            between individual users. We wanted users to see the impact they are making by
+            helping each other on our platform. It also addressed some of the shortcomings
+            of the current Chrome extension.
+            <p>
+              Preliminary research showed that the highest mode of delivery used by
+              scammers is telephone, followed by online social networking. Ideally it
+              would be best to target mobile devices via an app to best mitigate scams
+              used in the social networking space. However, due to budget and time
+              constraints, an extension was used in order to focus on a much simpler
+              platform. The forum allows the community to discuss scams of all modes of
+              delivery, not just limited to the types of scams that the extension is
+              currently able to address (ie. web browsers).
+            </p>
+            <p>
+              The main focus of the forum was on how to make it more user-friendly. Most
+              of the existing forums we examined were not user-friendly and often
+              contained many irrelevant functions. In order to motivate users to utilise
+              the forum, we aimed to make the user experience less complicated. Based on
+              research and information we obtained from the client, we created suitable
+              information architecture for easy navigation. We conducted an internal card
+              sorting session to determine different forum categories.
+            </p>
+          </div>
         </Content>
 
         <Content heading="Profile and Achievements Page" level={2}>
