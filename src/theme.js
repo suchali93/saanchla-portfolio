@@ -56,6 +56,7 @@ export const theme = createMuiTheme({
         boxShadow: 'none',
         fontFamily: ['Oswald', 'sans-serif'],
         fontWeight: 400,
+        letterSpacing: 1,
         marginTop: 30,
         minHeight: 45,
         minWidth: 200,

@@ -21,7 +21,10 @@ const Home = () => {
         <Box mb={isMobile ? 2 : 4} width="100%">
           <Intro variant="italic">Hello there, I am</Intro>
           <Intro>SAANCHLA TRIPATHI</Intro>
-          <Intro variant="italic">a Toronto based UX/UI designer.</Intro>
+          <Intro variant="italic">
+            With a background in HR, I’m passionate about converting ideas to
+            human-centered digital experiences
+          </Intro>
           <Button
             href="https://www.linkedin.com/in/sanchala-tripathi"
             variant="outlined"

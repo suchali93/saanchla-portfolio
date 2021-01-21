@@ -16,9 +16,9 @@ export const Header = styled(Box)`
 export const Intro = styled.div`
   font-family: ${({ variant }) =>
     variant === 'italic' ? "'EB Garamond', serif" : "'Oswald', sans-serif"};
-  font-size: ${({ variant }) => (variant === 'italic' ? '27px' : '65px')};
+  font-size: ${({ variant }) => (variant === 'italic' ? '23px' : '65px')};
   font-style: ${({ variant }) => (variant === 'italic' ? 'italic' : 'normal')};
-  font-weight: ${({ variant }) => (variant === 'italic' ? '500' : '400')};
+  font-weight: ${({ variant }) => (variant === 'italic' ? '600' : '400')};
   letter-spacing: ${({ variant }) => (variant === 'italic' ? '1px' : '5px')};
   margin-bottom: 10px;
 `;
