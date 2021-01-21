@@ -25,6 +25,7 @@ import './BOS.css';
 import BannerImage from './images/Banner.png';
 import CaseStudy from '..';
 import Content from '../Content';
+import { CenteredImage } from '../styledComponents';
 
 const BOS = () => {
   const theme = useTheme();
@@ -87,54 +88,32 @@ const BOS = () => {
       <Content heading="Market Research">
         <Grid container>
           <Grid item lg={6} md={6} sm={12} xs={12} justify="space-between">
-            <div style={{ paddingRight: '20px' }}>
-              <img
-                style={{
-                  height: '300px',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                }}
-                src={images.virusTotal}
-                alt=""
-              />
+            <Box pr={3}>
+              <CenteredImage height="300px" src={images.virusTotal} alt="" />
               <div>
                 <b>Virustotal</b> is an established company that combines AI powered
                 algorithms along with a user report system to identify malicious sites.
                 However, they do not have an extension and lack a space for their
                 community to interact.
               </div>
-            </div>
+            </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12}>
-            <div style={{ paddingRight: '20px' }}>
-              <img
-                style={{
-                  height: '300px',
-                  display: 'block',
-                  marginLeft: 'auto',
-                  marginRight: 'auto',
-                }}
-                src={images.wot}
-                alt=""
-              />
+            <Box pl={3}>
+              <CenteredImage height="300px" src={images.wot} alt="" />
               <div>
                 <b>WOT</b> is a competitor of scamBlock that gives reputation and rating
                 to websites. They regularly post blogs in their platform, but seem to lack
                 a sense of community.
               </div>
-            </div>
+            </Box>
           </Grid>
         </Grid>
       </Content>
 
       <Content heading="Redesigned Pages">
         <Content heading="Forum Page" level={2}>
-          <img
-            style={{ display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
-            src={images.forum}
-            alt=""
-          />
+          <CenteredImage src={images.forum} alt="" />
           <div>
             During market research, it was clear that many of our competitors lacked a
             sense of community and largely ignored improving the interaction experience

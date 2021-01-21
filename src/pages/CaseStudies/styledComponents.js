@@ -43,3 +43,11 @@ export const CaseStudyInfo = styled.div`
   margin: 0 10px 10px 0;
   text-transform: uppercase;
 `;
+
+export const CenteredImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  height: ${({ height }) => height || 'auto'};
+`;
