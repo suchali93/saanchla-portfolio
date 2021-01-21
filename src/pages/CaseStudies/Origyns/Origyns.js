@@ -30,7 +30,7 @@ const Origyns = () => {
     <CaseStudy
       myRole="UX Designer"
       tools="Figma, InVision, Sketch"
-      timeline="2 months"
+      timeline="Ongoing"
       platform="Desktop"
       imageSrc={BannerImage}
     >
