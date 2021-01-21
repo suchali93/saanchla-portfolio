@@ -3,16 +3,21 @@ import AppBar from '@material-ui/core/AppBar';
 
 export const NavBar = styled(AppBar)`
   && {
+    background: ${({ isMobile }) =>
+      isMobile
+        ? 'linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))'
+        : 'linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0))'};
+    height: 92px;
     a {
       color: #333;
-      font-weight: 400;
+      font-weight: ${({ isTablet }) => (isTablet ? '300' : '400')};
       font-size: ${({ isTablet }) => (isTablet ? '25px' : '14px')};
       margin: 0 30px;
       text-decoration: none;
       text-transform: uppercase;
       &.active {
         color: #4c6ae1;
-        font-weight: 600;
+        font-weight: ${({ isTablet }) => (isTablet ? '400' : '600')};
       }
       :hover {
         color: #4c6ae1;

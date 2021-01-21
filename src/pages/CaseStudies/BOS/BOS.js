@@ -8,7 +8,6 @@ import datahub from './images/Data_Hub-1.png';
 import faq1 from './images/FAQ-1.png';
 import faq2 from './images/FAQ5x-1.png';
 import forumnow from './images/Forum_Now-1.png';
-import forum1 from './images/Forum-1.png';
 import forumtilt from './images/Forum-tilt-1.png';
 import group112 from './images/Group-112.png';
 import marketingheader from './images/Marketing_Header-1.png';
@@ -21,8 +20,7 @@ import profile from './images/Profile5x-1.png';
 import servicepage from './images/Service_page-1.png';
 import services5x from './images/Services5x-1.png';
 import title from './images/Title-Banner.png';
-import virustotal from './images/VIRUSTOTAL.png';
-import wot from './images/WOT.png';
+import images from './images';
 import './BOS.css';
 import BannerImage from './images/Banner.png';
 import CaseStudy from '..';
@@ -46,57 +44,67 @@ const BOS = () => {
       <Content heading="Design Challenge">
         Redesign the current BOS website to match the business goals and accompany the
         scamBlock extension.
-        <Grid container spacing={4}>
-          <Grid item lg={4} md={4} sm={12} xs={12}>
-            <Paper>
-              <Box p={4}>
-                <b>Business Goals</b>
-                <p>
-                  The business goal is to develop a platform that is user friendly and
-                  community driven to help keep the internet browsing a safer space.
-                </p>
-              </Box>
-            </Paper>
+        <Box mt={5}>
+          <Grid container spacing={4}>
+            <Grid item lg={4} md={4} sm={12} xs={12}>
+              <Paper square elevation={2}>
+                <Box p={4}>
+                  <b>Business Goals</b>
+                  <p>
+                    The business goal is to develop a platform that is user friendly and
+                    community driven to help keep the internet browsing a safer space.
+                  </p>
+                </Box>
+              </Paper>
+            </Grid>
+            <Grid item lg={4} md={4} sm={12} xs={12}>
+              <Paper square elevation={2}>
+                <Box p={4}>
+                  <b>User Goals</b>
+                  <p>
+                    The user goals within this space is to gain and provide information on
+                    ways to browse the internet in a safe space without falling victim of
+                    scams.
+                  </p>
+                </Box>
+              </Paper>
+            </Grid>
+            <Grid item lg={4} md={4} sm={12} xs={12}>
+              <Paper square elevation={2}>
+                <Box p={4}>
+                  <b>Designer Goals</b>
+                  <p>
+                    Our team goal is to create clean, usable pages with intuitive site
+                    architecture while keeping the users in mind.
+                  </p>
+                </Box>
+              </Paper>
+            </Grid>
           </Grid>
-          <Grid item lg={4} md={4} sm={12} xs={12}>
-            <Paper>
-              <Box p={4}>
-                <b>User Goals</b>
-                <p>
-                  The user goals within this space is to gain and provide information on
-                  ways to browse the internet in a safe space without falling victim of
-                  scams.
-                </p>
-              </Box>
-            </Paper>
+        </Box>
+      </Content>
+
+      <Content heading="Market Research">
+        <Grid container>
+          <Grid item lg={6} md={6} sm={12} xs={12} justify="space-between">
+            <img src={images.virusTotal} alt="" />
+            <b>Virustotal</b> is an established company that combines AI powered
+            algorithms along with a user report system to identify malicious sites.
+            However, they do not have an extension and lack a space for their community to
+            interact.
           </Grid>
-          <Grid item lg={4} md={4} sm={12} xs={12}>
-            <Paper>
-              <Box p={4}>
-                <b>Designer Goals</b>
-                <p>
-                  Our team goal is to create clean, usable pages with intuitive site
-                  architecture while keeping the users in mind.
-                </p>
-              </Box>
-            </Paper>
+          <Grid item lg={6} md={6} sm={12} xs={12}>
+            <img src={images.wot} alt="" />
+            <b>WOT</b> is a competitor of scamBlock that gives reputation and rating to
+            websites. They regularly post blogs in their platform, but seem to lack a
+            sense of community.
           </Grid>
         </Grid>
       </Content>
 
-      <Content heading="Market Research">
-        <b>Virustotal</b> is an established company that combines AI powered algorithms
-        along with a user report system to identify malicious sites. However, they do not
-        have an extension and lack a space for their community to interact.
-        <p>
-          <b>WOT</b> is a competitor of scamBlock that gives reputation and rating to
-          websites. They regularly post blogs in their platform, but seem to lack a sense
-          of community.
-        </p>
-      </Content>
-
       <Content heading="Redesigned Pages">
         <Content heading="Forum Page" level={2}>
+          <img src={images.forum} alt="" />
           During market research, it was clear that many of our competitors lacked a sense
           of community and largely ignored improving the interaction experience between
           individual users. We wanted users to see the impact they are making by helping

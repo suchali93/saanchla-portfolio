@@ -13,9 +13,15 @@ import {
 const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const caseStudyImage = (
+    <Grid item lg={6} md={6} sm={12}>
+      <CaseStudyImage isMobile={isMobile} src={imageSrc} alt={title} />
+    </Grid>
+  );
   return (
     <CaseStudyBox my={isMobile ? 3 : 10} backgroundColor={backgroundColor}>
       <Grid container justify="space-between" alignItems="center">
+        {isMobile && caseStudyImage}
         <Grid item lg={6} md={6} sm={12}>
           <CaseStudyContent isMobile={isMobile} p={4}>
             <CaseStudyTitle>{title}</CaseStudyTitle>
@@ -37,9 +43,7 @@ const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgre
             </Button>
           </CaseStudyContent>
         </Grid>
-        <Grid item lg={6} md={6} sm={12} p={3}>
-          <CaseStudyImage src={imageSrc} alt={title} />
-        </Grid>
+        {!isMobile && caseStudyImage}
       </Grid>
     </CaseStudyBox>
   );

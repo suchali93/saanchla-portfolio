@@ -1,15 +1,24 @@
 import React from 'react';
-import { Box, Button, Container, Divider, Typography } from '@material-ui/core';
+import {
+  Box,
+  Button,
+  Container,
+  Divider,
+  useMediaQuery,
+  useTheme,
+} from '@material-ui/core';
 import background from './images/background.png';
 import CaseStudy from './CaseStudy';
 import { BannerBox, Header, Intro } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
 const Home = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <>
       <Header background={background} display="flex" alignItems="center" mb={10}>
-        <Box mb={5} width="100%">
+        <Box mb={isMobile ? 2 : 4} width="100%">
           <Intro variant="italic">Hello there, I am</Intro>
           <Intro>SAANCHLA TRIPATHI</Intro>
           <Intro variant="italic">a Toronto based UX/UI designer.</Intro>
@@ -23,7 +32,14 @@ const Home = () => {
           </Button>
         </Box>
       </Header>
-      <BannerBox display="flex" justifyContent="center" px={10} py={5} my={10}>
+      <BannerBox
+        display="flex"
+        justifyContent="center"
+        px={10}
+        py={5}
+        mt={10}
+        mb={isMobile ? 0 : 10}
+      >
         What would you like to see me solve?
       </BannerBox>
       <Container>

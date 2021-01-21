@@ -41,16 +41,6 @@ export const theme = createMuiTheme({
       root: {
         fontFamily: ['Oswald', 'sans-serif'],
       },
-      colorPrimary: {
-        backgroundColor: 'transparent',
-        background:
-          'linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0))',
-        fontSize: '14px',
-        '@media (max-width: 600px)': {
-          background:
-            'linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0))',
-        },
-      },
     },
     MuiContainer: {
       maxWidthLg: {
@@ -112,6 +102,11 @@ export const theme = createMuiTheme({
         maxWidth: '50%',
         marginLeft: 'auto',
         marginRight: 'auto',
+      },
+    },
+    MuiPaper: {
+      root: {
+        height: '100%',
       },
     },
   },

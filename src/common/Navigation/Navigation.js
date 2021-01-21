@@ -29,7 +29,7 @@ const Navigation = () => {
     setIsMenuOpen(isOpen);
   };
   return isMobile ? (
-    <NavBar isTablet={isTablet} elevation={0}>
+    <NavBar isMobile={isMobile} isTablet={isTablet} elevation={0}>
       <MobileNav isMenuOpen={isMenuOpen}>
         <Box display="flex" justifyContent="space-between" ml={1} mr={3} my={1}>
           <NavLink
