@@ -7,11 +7,17 @@ import { AboutContainer, AboutHeading, AboutContent } from './styledComponents';
 const About = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <AboutContainer>
       <Grid container>
         <Grid item lg={4} md={4} sm={12} xs={12}>
-          <Box display="flex" alignItems="center" height="100%">
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent={isTablet ? 'center' : 'inherit'}
+            height="100%"
+          >
             <img src={about} alt="" />
           </Box>
         </Grid>
