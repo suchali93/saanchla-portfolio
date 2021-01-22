@@ -60,6 +60,7 @@ export const CaseStudyTitle = styled.div`
   font-family: 'Oswald', sans-serif;
   font-size: 35px;
   font-weight: 400;
+  letter-spacing: 1px;
   line-height: 2;
   margin-bottom: 12px;
 `;

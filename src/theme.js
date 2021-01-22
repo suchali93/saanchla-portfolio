@@ -39,7 +39,8 @@ export const theme = createMuiTheme({
     },
     MuiAppBar: {
       root: {
-        fontFamily: ['Oswald', 'sans-serif'],
+        fontFamily: ['Montserrat', 'sans-serif'],
+        letterSpacing: 1,
       },
     },
     MuiContainer: {

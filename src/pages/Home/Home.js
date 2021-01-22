@@ -17,13 +17,14 @@ const Home = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   return (
     <>
-      <Header background={background} display="flex" alignItems="center" mb={10}>
+      <Header background={background} display="flex" alignItems="center" mb={7}>
         <Box mb={isMobile ? 2 : 4} width="100%">
           <Intro variant="italic">Hello there, I am</Intro>
           <Intro>SAANCHLA TRIPATHI</Intro>
           <Intro variant="italic">With a background in Human Resources,</Intro>
           <Intro variant="italic">
-            I’m passionate about converting ideas to human-centered digital experiences
+            I&apos;m passionate about converting ideas to human-centered digital
+            experiences
           </Intro>
           <Button
             href="https://www.linkedin.com/in/sanchala-tripathi"
@@ -40,8 +41,8 @@ const Home = () => {
         justifyContent="center"
         px={10}
         py={5}
-        mt={10}
-        mb={isMobile ? 0 : 10}
+        mt={7}
+        mb={isMobile ? 0 : 7}
       >
         What would you like to see me solve?
       </BannerBox>

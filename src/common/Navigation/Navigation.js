@@ -56,11 +56,11 @@ const Navigation = () => {
                 {HOME}
               </NavLink>
             </ListItem>
-            <ListItem button key={SIDE_GIGS}>
+            {/* <ListItem button key={SIDE_GIGS}>
               <NavLink to={DETAILS[SIDE_GIGS].pathname} activeClassName="active">
                 {SIDE_GIGS}
               </NavLink>
-            </ListItem>
+            </ListItem> */}
             <ListItem button key={ABOUT}>
               <NavLink to={DETAILS[ABOUT].pathname} activeClassName="active">
                 {ABOUT}
@@ -87,9 +87,9 @@ const Navigation = () => {
             <NavLink exact to={DETAILS[HOME].pathname} activeClassName="active">
               {HOME}
             </NavLink>
-            <NavLink exact to={DETAILS[SIDE_GIGS].pathname} activeClassName="active">
+            {/* <NavLink exact to={DETAILS[SIDE_GIGS].pathname} activeClassName="active">
               {SIDE_GIGS}
-            </NavLink>
+            </NavLink> */}
             <NavLink exact to={DETAILS[ABOUT].pathname} activeClassName="active">
               {ABOUT}
             </NavLink>

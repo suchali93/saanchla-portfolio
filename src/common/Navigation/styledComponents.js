@@ -10,14 +10,14 @@ export const NavBar = styled(AppBar)`
     height: 92px;
     a {
       color: #333;
-      font-weight: ${({ isTablet }) => (isTablet ? '300' : '400')};
+      font-weight: 500;
       font-size: ${({ isTablet }) => (isTablet ? '25px' : '14px')};
       margin: 0 30px;
       text-decoration: none;
       text-transform: uppercase;
       &.active {
         color: #4c6ae1;
-        font-weight: ${({ isTablet }) => (isTablet ? '400' : '600')};
+        font-weight: 700;
       }
       :hover {
         color: #4c6ae1;
