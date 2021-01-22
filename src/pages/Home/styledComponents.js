@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Box } from '@material-ui/core';
+import { Box, Button } from '@material-ui/core';
 
 export const Header = styled(Box)`
   && {
@@ -13,6 +13,12 @@ export const Header = styled(Box)`
   }
 `;
 
+export const HeaderButton = styled(Button)`
+  && {
+    margin-top: 60px;
+  }
+`;
+
 export const Intro = styled.div`
   font-family: ${({ variant }) =>
     variant === 'italic' ? "'EB Garamond', serif" : "'Oswald', sans-serif"};
@@ -21,6 +27,10 @@ export const Intro = styled.div`
   font-weight: ${({ variant }) => (variant === 'italic' ? '600' : '400')};
   letter-spacing: ${({ variant }) => (variant === 'italic' ? '1px' : '5px')};
   margin-bottom: 10px;
+  @media (max-width: 960px) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 `;
 
 export const BannerBox = styled(Box)`

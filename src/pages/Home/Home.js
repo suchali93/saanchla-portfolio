@@ -1,15 +1,8 @@
 import React from 'react';
-import {
-  Box,
-  Button,
-  Container,
-  Divider,
-  useMediaQuery,
-  useTheme,
-} from '@material-ui/core';
+import { Box, Container, Divider, useMediaQuery, useTheme } from '@material-ui/core';
 import background from './images/background.png';
 import CaseStudy from './CaseStudy';
-import { BannerBox, Header, Intro } from './styledComponents';
+import { BannerBox, Header, HeaderButton, Intro } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
 const Home = () => {
@@ -21,19 +14,27 @@ const Home = () => {
         <Box mb={isMobile ? 2 : 4} width="100%">
           <Intro variant="italic">Hello there, I am</Intro>
           <Intro>SAANCHLA TRIPATHI</Intro>
-          <Intro variant="italic">With a background in Human Resources,</Intro>
-          <Intro variant="italic">
-            I&apos;m passionate about converting ideas to human-centered digital
-            experiences
-          </Intro>
-          <Button
+          {isMobile ? (
+            <Intro variant="italic">
+              With a background in Human Resources, I&apos;m passionate about converting
+              ideas to human-centered digital experiences
+            </Intro>
+          ) : (
+            <>
+              <Intro variant="italic">With a background in Human Resources,</Intro>
+              <Intro variant="italic">
+                I&apos;m passionate about converting ideas to human-centered digital
+                experiences
+              </Intro>
+            </>
+          )}
+          <HeaderButton
             href="https://www.linkedin.com/in/sanchala-tripathi"
             variant="outlined"
             color="secondary"
-            mt={10}
           >
             Let&apos;s connect!
-          </Button>
+          </HeaderButton>
         </Box>
       </Header>
       <BannerBox
