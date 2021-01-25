@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "82152c52b15d7da2a0b12a602ce86552",
+    "revision": "4842dc258609ee46b5b69515524febf0",
     "url": "/index.html"
   },
   {
-    "revision": "7bf0696398f1e919f629",
+    "revision": "f861c5c6b9394cee9ef3",
     "url": "/static/css/main.5dbcd617.chunk.css"
   },
   {
-    "revision": "d47f810428f8027aede7",
-    "url": "/static/js/2.432c983d.chunk.js"
+    "revision": "658569fb755d847fb748",
+    "url": "/static/js/2.e7f57364.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.432c983d.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.e7f57364.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7bf0696398f1e919f629",
-    "url": "/static/js/main.bc4ae6d0.chunk.js"
+    "revision": "f861c5c6b9394cee9ef3",
+    "url": "/static/js/main.86d63877.chunk.js"
   },
   {
     "revision": "ba126735810163618457",
@@ -156,6 +156,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/background.38a6cfad.png"
   },
   {
+    "revision": "48f372855a0740eb75ed0cdad0d9e866",
+    "url": "/static/media/branding1.48f37285.png"
+  },
+  {
+    "revision": "1e82b38cd5251fa3e09e8e9fdaaa892b",
+    "url": "/static/media/branding2.1e82b38c.png"
+  },
+  {
+    "revision": "894a0ef019564e803310edc4ed730f01",
+    "url": "/static/media/concept1.894a0ef0.png"
+  },
+  {
+    "revision": "4b2a8f09713e3632c9f4df1ec4d59b9f",
+    "url": "/static/media/concept2.4b2a8f09.png"
+  },
+  {
+    "revision": "09126a167846cc5beef0ad844c6ea600",
+    "url": "/static/media/designChallenge.09126a16.png"
+  },
+  {
     "revision": "52576cd660c61d11c193c6780e508c67",
     "url": "/static/media/faq.52576cd6.png"
   },
@@ -166,6 +186,38 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3b3da2831f1f860b91eefb14214e64d2",
     "url": "/static/media/group.3b3da283.png"
+  },
+  {
+    "revision": "a0d4ebf1e618026c1d36110bba84efd7",
+    "url": "/static/media/insights.a0d4ebf1.png"
+  },
+  {
+    "revision": "6e27b3e2c12f92cbb5412a5478de493f",
+    "url": "/static/media/keyChange1.6e27b3e2.png"
+  },
+  {
+    "revision": "505ef949ac6fa064e861b5fd14e72be0",
+    "url": "/static/media/keyChange2.505ef949.png"
+  },
+  {
+    "revision": "cdd74cf78e6e21cfe365339e90bbd567",
+    "url": "/static/media/keyChange3.cdd74cf7.png"
+  },
+  {
+    "revision": "9b095c635c41b95558207c416f9115af",
+    "url": "/static/media/keyChange4.9b095c63.png"
+  },
+  {
+    "revision": "043c992d0d9c9625085afb25aa54cd1d",
+    "url": "/static/media/logo1.043c992d.png"
+  },
+  {
+    "revision": "f802f3e3790e6bf0348a0a447446a0dd",
+    "url": "/static/media/logo2.f802f3e3.png"
+  },
+  {
+    "revision": "3e35846d5e3bc2495a10be58ff93aaf2",
+    "url": "/static/media/marketing.3e35846d.png"
   },
   {
     "revision": "4258fcbb4881b6ed92d568929cdd737e",
@@ -188,12 +240,40 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/newsfeed3.259065ca.png"
   },
   {
+    "revision": "cda5df937c7e37034679a8e78aa75fa4",
+    "url": "/static/media/research1.cda5df93.png"
+  },
+  {
+    "revision": "d455bb4144e2031360e3b36cae72cef7",
+    "url": "/static/media/research2.d455bb41.png"
+  },
+  {
     "revision": "60c2642aa4b4289f03ccb4401d4c248f",
     "url": "/static/media/services.60c2642a.png"
   },
   {
+    "revision": "12d37e84aea67d2e07477eeee3bed82a",
+    "url": "/static/media/targetUser1.12d37e84.png"
+  },
+  {
+    "revision": "cfe70e37cba63450a5b2b6baaa50ea64",
+    "url": "/static/media/targetUser2.cfe70e37.png"
+  },
+  {
+    "revision": "a0ce716bda5314ebb13587fb5e0fdd74",
+    "url": "/static/media/userStory1.a0ce716b.png"
+  },
+  {
+    "revision": "15e7d9e938a3eefd0cbc03bd513e1853",
+    "url": "/static/media/userStory2.15e7d9e9.png"
+  },
+  {
     "revision": "32c5e75041fe0bb9b0d663deb3f8a20b",
     "url": "/static/media/virusTotal.32c5e750.png"
+  },
+  {
+    "revision": "8d90729d6ab6564de3a14e67942dab8b",
+    "url": "/static/media/wireframe.8d90729d.png"
   },
   {
     "revision": "8eac6f8babb6a21715e3a1fe87e699fb",
