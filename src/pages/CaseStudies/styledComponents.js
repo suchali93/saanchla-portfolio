@@ -46,16 +46,17 @@ export const CaseStudyInfo = styled.div`
 
 export const CenteredImage = styled.img`
   display: block;
-  margin: 20px auto;
+  margin: ${({ margin }) => margin || '20px auto'};
   height: ${({ height }) => height || 'auto'};
   width: ${({ width }) => width || 'auto'};
 `;
 
 export const List = styled.ul`
   margin: 0;
-  padding-left: 20px;
+  padding-left: ${({ listStyle }) => (listStyle === 'none' ? '0' : '20px')};
+  list-style: ${({ listStyle }) => listStyle || 'disc'};
 `;
 
 export const ListItem = styled.li`
-  margin-bottom: 20px;
+  margin: ${({ margin }) => margin || '0 0 20px 0'};
 `;
