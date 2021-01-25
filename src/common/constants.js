@@ -26,7 +26,7 @@ export const DETAILS = {
   [BLOCKERS_OF_SCAM]: {
     pathname: '/case/bos',
     description:
-      "A platform that compliments the existing 'scamBlock' Chrome extension in its goal of reporting potentially dangerous websites and social media profiles.",
+      'Redesigning the Blockers of Scam website to promote the new scamBlock Chrome extension and foster community engagement.',
     imageSrc: BOSImage,
   },
   [TEAMS_VR]: {

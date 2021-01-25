@@ -19,8 +19,10 @@ const BOS = () => {
       platform="Desktop"
     >
       <Content heading="Overview">
-        As designers we were tasked with redesigning the Blockers of Scam website to
-        promote the new scamBlock Chrome extension and foster community engagement.
+        Blockers of Scam is a cyber securuty company that aims to stop the rising threat
+        of online scams. As designers, we were tasked with redesigning the Blockers of
+        Scam website to promote the new scamBlock Chrome extension and foster community
+        engagement.
       </Content>
       <Content heading="Design Challenge">
         Redesign the current BOS website to match the business goals and accompany the
@@ -215,7 +217,7 @@ const BOS = () => {
           differentiation. We added another section to promote the chrome extension since
           that is another new product the company provides followed by the “Add to Chrome”
           CTA, to optimally use this space for marketing.
-          <CenteredImage src={images.services} alt="" />
+          <CenteredImage src={images.services} margin="40px auto 20px" alt="" />
         </Content>
 
         <Content heading="About Us Page" level={2}>
@@ -237,7 +239,7 @@ const BOS = () => {
           minimalistic look that ties into the overall website design. Contrary, this also
           helps guide a user to their answer faster by organizing frequently asked
           questions into category specific sections.
-          <CenteredImage src={images.faq} alt="" />
+          <CenteredImage src={images.faq} margin="40px auto 20px" alt="" />
         </Content>
       </Content>
 
