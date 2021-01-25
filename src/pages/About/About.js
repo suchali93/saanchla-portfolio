@@ -1,8 +1,9 @@
 import React from 'react';
-import { Box, Button, Container, Grid, useMediaQuery, useTheme } from '@material-ui/core';
+import { Box, Button, Grid, useMediaQuery, useTheme } from '@material-ui/core';
 
 import about from './images/about.png';
 import { AboutContainer, AboutHeading, AboutContent } from './styledComponents';
+import { P } from '../../common/styledComponents';
 
 const About = () => {
   const theme = useTheme();
@@ -25,7 +26,7 @@ const About = () => {
           <Box px={isMobile ? 3 : 0} pl={isMobile ? 3 : 10} py={5}>
             <AboutHeading>A little about me</AboutHeading>
             <AboutContent>
-              <p>
+              <P>
                 I am a curious, self-driven designer passionate in emerging technologies
                 and advocating UX design across all fields of work. Having studied
                 psychology in my undergrad, I worked as a recruiter for nearly 2 years.
@@ -39,21 +40,21 @@ const About = () => {
                 grasp on the fundamentals of design thinking, as well as the most
                 prominent design tools used in the industry. I look forward to continue to
                 apply this knowledge in new and challenging ways.
-              </p>
-              <p>
+              </P>
+              <P>
                 I am currently working as a freelance UX/UI Designer where I’m able to own
                 the full design process, and collaborate with some truly brilliant people.
                 I am also part of the senior testers at usertesting.com, which further
                 enhances my insights into creating great user experiences.
-              </p>
-              <p>
+              </P>
+              <P>
                 When I’m not wireframing, I like taking different dance classes, and
                 indulging my love for trying new foods.
-              </p>
-              <p>
+              </P>
+              <P>
                 Feel free to connect with me to discuss my work, or just geek out over
                 theories of human behavior!
-              </p>
+              </P>
               <Button
                 variant="outlined"
                 color="primary"

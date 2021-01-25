@@ -5,6 +5,7 @@ import CaseStudy from '..';
 import Content from '../Content';
 import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
+import { P } from '../../../common/styledComponents';
 
 const CultureFit = () => {
   const theme = useTheme();
@@ -36,10 +37,10 @@ const CultureFit = () => {
           to poor work quality, decreased job satisfaction and a potentially toxic
           environment. This results in turnover which has high costs both in time and
           money.
-          <p>
+          <P>
             Upon further investigation, I found that workplace culture fit independently
             predicts commitment, job satisfaction and job performance.
-          </p>
+          </P>
           <CenteredImage src={images.research2} margin="50px auto" alt="" />
         </Content>
         <Content heading="MARKET RESEARCH ON CURRENT INITIATIVES" level={2}>
@@ -152,12 +153,12 @@ const CultureFit = () => {
       <Content heading="Usability Testing">
         Two rounds of user testing were conducted with 10 participants, with the second
         round being a revised iteration based on feedback gathered from the first round.
-        <p>
+        <P>
           The user was told to use the app to <b>create an assessment</b> to measure
           candidates’ alignment with Amazon’s workplace culture, specifically in the role
           of a UX Designer. They will then <b>look up the results of assessment</b> to
           decide who to interview.
-        </p>
+        </P>
         <Content heading="KEY CHANGES" level={2}>
           <Grid container>
             <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -226,10 +227,10 @@ const CultureFit = () => {
           with <b>trust</b> and <b>confidence</b>. I wanted to stick to a{' '}
           <b>monochromatic palette</b> as it is easy on the eyes and portrays a{' '}
           <b>clean</b> and <b>elegant</b> scheme.
-          <p>
+          <P>
             For typography, I used a font that conveyed the same feeling without seeming
             text heavy on small screens.
-          </p>
+          </P>
           <Grid container>
             <Grid item lg={7} md={7} sm={12} xs={12}>
               <CenteredImage src={images.branding1} margin="40px auto 20px" alt="" />
@@ -283,7 +284,7 @@ const CultureFit = () => {
             As an additional challenge, I created a landing page for a responsive website
             to market CultureFit. The main goal of this website was to advertise my app’s
             value proposition in order for my target users to want to download the app.
-            <p>You can view the prototypes here : Desktop | Mobile</p>
+            <P>You can view the prototypes here : Desktop | Mobile</P>
           </Grid>
           <Grid item lg={5} md={6} sm={12} xs={12}>
             <CenteredImage src={images.marketing} margin="0 auto" alt="" />
@@ -318,11 +319,11 @@ const CultureFit = () => {
               <Paper square elevation={2}>
                 <Box p={4}>
                   <b>Validate Ideas Early and Often</b>
-                  <p>
+                  <P>
                     Getting feedback early on, no matter how rough the ideas are, is
                     invaluable. What might be obvious to you might not be to the user. The
                     smallest changes can have the biggest impact.
-                  </p>
+                  </P>
                 </Box>
               </Paper>
             </Grid>
@@ -330,10 +331,10 @@ const CultureFit = () => {
               <Paper square elevation={2}>
                 <Box p={4}>
                   <b>Paper and pen are your best friends</b>
-                  <p>
+                  <P>
                     Quick and rough iterations before moving to a digital medium can help
                     to speed up the process and prevent wasted time.
-                  </p>
+                  </P>
                 </Box>
               </Paper>
             </Grid>
@@ -341,10 +342,10 @@ const CultureFit = () => {
               <Paper square elevation={2}>
                 <Box p={4}>
                   <b>Only build what you need to test</b>
-                  <p>
+                  <P>
                     Prototyping is fun. However if a prototyped feature isn't used in a
                     test, did it ever truly exist?
-                  </p>
+                  </P>
                 </Box>
               </Paper>
             </Grid>

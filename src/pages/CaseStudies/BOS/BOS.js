@@ -6,6 +6,7 @@ import CaseStudy from '..';
 import Content from '../Content';
 import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
+import { P } from '../../../common/styledComponents';
 
 const BOS = () => {
   const theme = useTheme();
@@ -33,10 +34,10 @@ const BOS = () => {
               <Paper square elevation={2}>
                 <Box p={4}>
                   <b>Business Goals</b>
-                  <p>
+                  <P>
                     The business goal is to develop a platform that is user friendly and
                     community driven to help keep the internet browsing a safer space.
-                  </p>
+                  </P>
                 </Box>
               </Paper>
             </Grid>
@@ -44,11 +45,11 @@ const BOS = () => {
               <Paper square elevation={2}>
                 <Box p={4}>
                   <b>User Goals</b>
-                  <p>
+                  <P>
                     The user goals within this space is to gain and provide information on
                     ways to browse the internet in a safe space without falling victim of
                     scams.
-                  </p>
+                  </P>
                 </Box>
               </Paper>
             </Grid>
@@ -56,10 +57,10 @@ const BOS = () => {
               <Paper square elevation={2}>
                 <Box p={4}>
                   <b>Designer Goals</b>
-                  <p>
+                  <P>
                     Our team goal is to create clean, usable pages with intuitive site
                     architecture while keeping the users in mind.
-                  </p>
+                  </P>
                 </Box>
               </Paper>
             </Grid>
@@ -102,7 +103,7 @@ const BOS = () => {
             between individual users. We wanted users to see the impact they are making by
             helping each other on our platform. It also addressed some of the shortcomings
             of the current Chrome extension.
-            <p>
+            <P>
               Preliminary research showed that the highest mode of delivery used by
               scammers is telephone, followed by online social networking. Ideally it
               would be best to target mobile devices via an app to best mitigate scams
@@ -111,8 +112,8 @@ const BOS = () => {
               platform. The forum allows the community to discuss scams of all modes of
               delivery, not just limited to the types of scams that the extension is
               currently able to address (ie. web browsers).
-            </p>
-            <p>
+            </P>
+            <P>
               The main focus of the forum was on how to make it more user-friendly. Most
               of the existing forums we examined were not user-friendly and often
               contained many irrelevant functions. In order to motivate users to utilise
@@ -120,7 +121,7 @@ const BOS = () => {
               research and information we obtained from the client, we created suitable
               information architecture for easy navigation. We conducted an internal card
               sorting session to determine different forum categories.
-            </p>
+            </P>
           </div>
         </Content>
 
@@ -132,32 +133,40 @@ const BOS = () => {
           design team soon found ourselves struggling to simply define a purpose for the
           site. With an existing Chrome extension that could both collect scam reports and
           warn individual users of potentially dangerous webpages, why would users even
-          find themselves on our site in the first place? Community engagement. Alone, the
-          term means nothing - after all, our users can and do engage with each other on
-          the countless social networking mediums out there. Our challenge, then, was to
-          pick up their slack and provide a platform where users who are concerned by the
-          current state of Internet security can reliably communicate and help one
-          another. There’s an anonymity that comes with the Internet that is not conducive
-          with the concept of Internet security. Many of our interviewees found it
-          difficult to trust and engage with anonymous profiles online, regardless of if
-          they were giving or soliciting advice. To offset this effect, we took a beat
-          from the gamification trend of 2020 to foster legitimacy within our Scamblockers
-          community. By creating profiles with associated achievements, we were able to
-          commodify activity on our site and give users a reason to both post and reply on
-          the forum. Those who visit our site can verify the Internet security advice they
-          come across against the profile/achievements of the original poster, in addition
-          to the replies, simply by clicking on the poster’s profile image.
+          find themselves on our site in the first place?
+          <P>
+            <b>Community engagement.</b> Alone, the term means nothing - after all, our
+            users can and do engage with each other on the countless social networking
+            mediums out there. Our challenge, then, was to pick up their slack and provide
+            a platform where users who are concerned by the current state of Internet
+            security can reliably communicate and help one another.
+          </P>
+          <P>
+            There’s an anonymity that comes with the Internet that is not conducive with
+            the concept of Internet security. Many of our interviewees found it difficult
+            to trust and engage with anonymous profiles online, regardless of if they were
+            giving or soliciting advice. To offset this effect, we took a beat from the
+            gamification trend of 2020 to foster legitimacy within our Scamblockers
+            community. By creating profiles with associated achievements, we were able to
+            commodify activity on our site and give users a reason to both post and reply
+            on the forum. Those who visit our site can verify the Internet security advice
+            they come across against the profile/achievements of the original poster, in
+            addition to the replies, simply by clicking on the poster’s profile image.
+          </P>
         </Content>
 
         <Content heading="Newsfeed Page" level={2}>
           For the redesign of the newsfeed page we decided to take inspiration from
           existing news websites. The original website did not have a hero section to
           capture visitor’s attention and was lacking hierarchy in the typography and
-          design. In the new design we included a carousel section, where breaking news is
-          featured. Visitors can easily see the latest stories and become immediately
-          aware of the most common scams affecting people today. The images and texts are
-          large in this section and are visually captivating to keep the visitors
-          interested on this page.
+          design.
+          <P>
+            In the new design we included a carousel section, where breaking news is
+            featured. Visitors can easily see the latest stories and become immediately
+            aware of the most common scams affecting people today. The images and texts
+            are large in this section and are visually captivating to keep the visitors
+            interested on this page.
+          </P>
           <CenteredImage src={images.newsfeed1} alt="" />
           <Grid container>
             <Grid item lg={8} md={6} sm={12} xs={12}>
