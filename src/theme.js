@@ -1,7 +1,15 @@
 import { createMuiTheme } from '@material-ui/core';
 import './typography/fonts.css';
 
+export const PRIMARY_COLOUR = '#ef5d4c';
+
 export const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: PRIMARY_COLOUR,
+      contrastText: '#fff', // button text white instead of black
+    },
+  },
   typography: {
     fontFamily: ['Montserrat', 'sans-serif'],
   },
@@ -64,20 +72,20 @@ export const theme = createMuiTheme({
         transition: 'all 0.1s',
       },
       outlinedPrimary: {
-        border: '2px solid #4c6ae1',
+        border: `2px solid ${PRIMARY_COLOUR}`,
         '&:hover': {
-          backgroundColor: '#4c6ae1',
-          border: '2px solid #4c6ae1',
+          backgroundColor: PRIMARY_COLOUR,
+          border: `2px solid ${PRIMARY_COLOUR}`,
           color: '#fff',
         },
       },
       outlinedSecondary: {
-        backgroundColor: '#4c6ae1',
-        border: '2px solid #4c6ae1',
+        backgroundColor: PRIMARY_COLOUR,
+        border: `2px solid ${PRIMARY_COLOUR}`,
         color: '#fff',
         '&:hover': {
-          backgroundColor: '#4c6ae1',
-          border: '2px solid #4c6ae1',
+          backgroundColor: PRIMARY_COLOUR,
+          border: `2px solid ${PRIMARY_COLOUR}`,
           color: '#fff',
         },
       },

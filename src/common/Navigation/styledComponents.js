@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import AppBar from '@material-ui/core/AppBar';
+import { PRIMARY_COLOUR } from '../../theme';
 
 export const NavBar = styled(AppBar)`
   && {
@@ -16,11 +17,11 @@ export const NavBar = styled(AppBar)`
       text-decoration: none;
       text-transform: uppercase;
       &.active {
-        color: #4c6ae1;
+        color: ${PRIMARY_COLOUR};
         font-weight: 700;
       }
       :hover {
-        color: #4c6ae1;
+        color: ${PRIMARY_COLOUR};
       }
     }
   }
