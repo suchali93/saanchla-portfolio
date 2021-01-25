@@ -46,8 +46,16 @@ export const CaseStudyInfo = styled.div`
 
 export const CenteredImage = styled.img`
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
   height: ${({ height }) => height || 'auto'};
+  width: ${({ width }) => width || 'auto'};
+`;
+
+export const List = styled.ul`
+  margin: 0;
+  padding-left: 20px;
+`;
+
+export const ListItem = styled.li`
+  margin-bottom: 20px;
 `;
