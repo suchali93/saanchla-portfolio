@@ -1,11 +1,10 @@
 import React from 'react';
 import { Box, Grid, Paper, useMediaQuery, useTheme } from '@material-ui/core';
 
-import images from './images';
 import './BOS.css';
-import BannerImage from './images/Banner.png';
 import CaseStudy from '..';
 import Content from '../Content';
+import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
 
 const BOS = () => {
@@ -16,7 +15,7 @@ const BOS = () => {
       myRole="UX Designer"
       timeline="2 months"
       tools="Figma, InVision"
-      imageSrc={BannerImage}
+      imageSrc={images.banner}
       platform="Desktop"
     >
       <Content heading="Overview">

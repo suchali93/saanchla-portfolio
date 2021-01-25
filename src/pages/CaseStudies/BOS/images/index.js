@@ -1,3 +1,4 @@
+import banner from './Banner.png';
 import virusTotal from './virusTotal.png';
 import wot from './wot.png';
 import forum from './forum.png';
@@ -12,6 +13,7 @@ import aboutUs from './aboutUs.png';
 import faq from './faq.png';
 
 export default {
+  banner,
   virusTotal,
   wot,
   forum,
