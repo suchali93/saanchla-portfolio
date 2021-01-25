@@ -32,8 +32,8 @@ const About = () => {
                 During my tenure, I had the opportunity to meet a diverse range of people
                 and developed a keen ability to tangibly assess their skill set, and apply
                 that towards my clients’ needs. Most importantly, I learned to make the
-                candidate the focus of the process. Communication and empathy is what
-                I’m all about. This is what led me to pursue a career in UX design. At
+                candidate the focus of the process. Communication and empathy is what I’m
+                all about. This is what led me to pursue a career in UX design. At
                 BrainStation I learned to take skills from my previous role and apply them
                 to creating fulfilling experiences for users. I was able to gain a firm
                 grasp on the fundamentals of design thinking, as well as the most
@@ -47,7 +47,7 @@ const About = () => {
                 enhances my insights into creating great user experiences.
               </p>
               <p>
-                When I&apos;m not wireframing, I like taking different dance classes, and
+                When I’m not wireframing, I like taking different dance classes, and
                 indulging my love for trying new foods.
               </p>
               <p>

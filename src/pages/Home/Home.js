@@ -16,14 +16,14 @@ const Home = () => {
           <Intro>SAANCHLA TRIPATHI</Intro>
           {isMobile ? (
             <Intro variant="italic">
-              With a background in Human Resources, I&apos;m passionate about converting
-              ideas to human-centered digital experiences
+              With a background in Human Resources, I’m passionate about converting ideas
+              to human-centered digital experiences
             </Intro>
           ) : (
             <>
               <Intro variant="italic">With a background in Human Resources,</Intro>
               <Intro variant="italic">
-                I&apos;m passionate about converting ideas to human-centered digital
+                I’m passionate about converting ideas to human-centered digital
                 experiences
               </Intro>
             </>
@@ -33,7 +33,7 @@ const Home = () => {
             variant="outlined"
             color="secondary"
           >
-            Let&apos;s connect!
+            Let’s connect!
           </HeaderButton>
         </Box>
       </Header>
