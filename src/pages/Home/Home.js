@@ -12,17 +12,17 @@ const Home = () => {
     <>
       <Header background={background} display="flex" alignItems="center" mb={7}>
         <Box mb={isMobile ? 2 : 4} width="100%">
-          <Intro variant="italic">Hello there, I am</Intro>
+          <Intro variant="small">Hello there, I am</Intro>
           <Intro>SAANCHLA TRIPATHI</Intro>
           {isMobile ? (
-            <Intro variant="italic">
+            <Intro variant="small">
               With a background in Human Resources, I’m passionate about converting ideas
               to human-centered digital experiences
             </Intro>
           ) : (
             <>
-              <Intro variant="italic">With a background in Human Resources,</Intro>
-              <Intro variant="italic">
+              <Intro variant="small">With a background in Human Resources,</Intro>
+              <Intro variant="small">
                 I’m passionate about converting ideas to human-centered digital
                 experiences
               </Intro>

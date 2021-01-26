@@ -21,12 +21,11 @@ export const HeaderButton = styled(Button)`
 
 export const Intro = styled.div`
   font-family: ${({ variant }) =>
-    variant === 'italic' ? "'EB Garamond', serif" : "'Oswald', sans-serif"};
-  font-size: ${({ variant }) => (variant === 'italic' ? '23px' : '65px')};
-  font-style: ${({ variant }) => (variant === 'italic' ? 'italic' : 'normal')};
-  font-weight: ${({ variant }) => (variant === 'italic' ? '600' : '400')};
-  letter-spacing: ${({ variant }) => (variant === 'italic' ? '1px' : '5px')};
-  margin-bottom: 10px;
+    variant === 'small' ? "'Montserrat', serif" : "'Oswald', sans-serif"};
+  font-size: ${({ variant }) => (variant === 'small' ? '23px' : '65px')};
+  font-weight: 400;
+  letter-spacing: ${({ variant }) => (variant === 'small' ? '1px' : '5px')};
+  margin-bottom: ${({ variant }) => (variant === 'small' ? '5px' : '50px')};
   @media (max-width: 960px) {
     margin-left: 10%;
     margin-right: 10%;
