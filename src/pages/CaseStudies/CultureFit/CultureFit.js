@@ -5,7 +5,7 @@ import CaseStudy from '..';
 import Content from '../Content';
 import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
-import { P } from '../../../common/styledComponents';
+import { P, Link } from '../../../common/styledComponents';
 
 const CultureFit = () => {
   const theme = useTheme();
@@ -298,7 +298,16 @@ const CultureFit = () => {
             As an additional challenge, I created a landing page for a responsive website
             to market CultureFit. The main goal of this website was to advertise my app’s
             value proposition in order for my target users to want to download the app.
-            <P>You can view the prototypes here : Desktop | Mobile</P>
+            <P>
+              You can view the prototypes here :{' '}
+              <Link href="https://sanchala646197.invisionapp.com/console/share/VE12HVEU9C">
+                Desktop
+              </Link>{' '}
+              |{' '}
+              <Link href="https://sanchala646197.invisionapp.com/console/share/6R12HVEYAZ">
+                Mobile
+              </Link>
+            </P>
           </Grid>
           <Grid item lg={5} md={6} sm={12} xs={12}>
             <CenteredImage src={images.marketing} margin="0 auto" alt="" />

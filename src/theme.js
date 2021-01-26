@@ -1,7 +1,7 @@
 import { createMuiTheme } from '@material-ui/core';
 import './typography/fonts.css';
 
-export const PRIMARY_COLOUR = '#ef5d4c';
+export const PRIMARY_COLOUR = '#4c6ae1';
 
 export const theme = createMuiTheme({
   palette: {
@@ -77,6 +77,9 @@ export const theme = createMuiTheme({
           backgroundColor: PRIMARY_COLOUR,
           border: `2px solid ${PRIMARY_COLOUR}`,
           color: '#fff',
+          '@media (hover: none)': {
+            backgroundColor: PRIMARY_COLOUR,
+          },
         },
       },
       outlinedSecondary: {
@@ -87,6 +90,9 @@ export const theme = createMuiTheme({
           backgroundColor: PRIMARY_COLOUR,
           border: `2px solid ${PRIMARY_COLOUR}`,
           color: '#fff',
+          '@media (hover: none)': {
+            backgroundColor: PRIMARY_COLOUR,
+          },
         },
       },
     },

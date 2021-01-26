@@ -6,7 +6,7 @@ import CaseStudy from '..';
 import Content from '../Content';
 import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
-import { P } from '../../../common/styledComponents';
+import { P, Link } from '../../../common/styledComponents';
 
 const BOS = () => {
   const theme = useTheme();
@@ -22,7 +22,9 @@ const BOS = () => {
         title: 'Deliverable',
         detail: (
           <>
-            <a href="https://www.scamblock.org/wp/">https://www.scamblock.org/wp/</a>
+            <Link href="https://www.scamblock.org/wp/">
+              https://www.scamblock.org/wp/
+            </Link>
             <br />
             (currently undergoing rebranding and relaunch post recent acquisition)
           </>
