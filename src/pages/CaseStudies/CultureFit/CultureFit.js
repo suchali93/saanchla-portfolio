@@ -29,7 +29,7 @@ const CultureFit = () => {
         skills on their resume, some candidates did not last more than 6 months on the
         job. The reason? They did not fit into the workplace culture. To ensure there was
         no bias, I decided to start with research to lead my journey.
-        <Content heading="PRELIMINARY RESEARCH FINDINGS" level={2}>
+        <Content heading="Preliminary Research Findings" level={2}>
           The term “culture fit” means the alignment of goals and values between the
           employee and their workplace.
           <CenteredImage src={images.research1} margin="40px auto" alt="" />
@@ -43,7 +43,7 @@ const CultureFit = () => {
           </P>
           <CenteredImage src={images.research2} margin="50px auto" alt="" />
         </Content>
-        <Content heading="MARKET RESEARCH ON CURRENT INITIATIVES" level={2}>
+        <Content heading="Market Research on Current Initiatives" level={2}>
           Current practices to ensure culture fit include measures like preparing{' '}
           <b>behavioural interview questions</b>, involving a{' '}
           <b>cross-functional selection committee</b> in the screening process, or giving
@@ -62,7 +62,7 @@ const CultureFit = () => {
         hypothesis that creating a platform to assess the alignment of a candidate to the
         workplace culture will help recruiters in the selection process, and reduce
         turnover.
-        <Content heading="INTERVIEW PARTICIPANT CRITERIA" level={2}>
+        <Content heading="Interview Participant Criteria" level={2}>
           <List listStyle="none">
             <ListItem>
               <b>Recruiters with 2-7 years of experience in full-cycle recruitment</b>
@@ -89,7 +89,7 @@ const CultureFit = () => {
             </ListItem>
           </List>
         </Content>
-        <Content heading="KEY INSIGHTS" level={2}>
+        <Content heading="Key Insights" level={2}>
           <Grid container>
             <Grid item lg={7} md={6} sm={12} xs={12}>
               <Box height="100%" display="flex" alignItems="center" pr={isMobile ? 0 : 4}>
@@ -144,7 +144,7 @@ const CultureFit = () => {
             <CenteredImage src={images.concept2} alt="" />
           </Grid>
         </Grid>
-        <Content heading="LOW-FIDELITY WIREFRAMES" level={2}>
+        <Content heading="Low-Fidelity Wireframes" level={2}>
           The first set of wireframes were done in low fidelity in order to focus on the
           overall structure and layout of the design.
           <CenteredImage src={images.wireframe} alt="" />
@@ -159,7 +159,7 @@ const CultureFit = () => {
           of a UX Designer. They will then <b>look up the results of assessment</b> to
           decide who to interview.
         </P>
-        <Content heading="KEY CHANGES" level={2}>
+        <Content heading="Key Changes" level={2}>
           <Grid container>
             <Grid item lg={6} md={6} sm={12} xs={12}>
               <Box pr={isMobile ? 0 : 3}>
@@ -167,11 +167,7 @@ const CultureFit = () => {
                   The Dashboard needed a redesign to present an overview of relevant
                   information
                 </div>
-                <CenteredImage
-                  src={images.keyChange1}
-                  margin="20px auto 80px auto"
-                  alt=""
-                />
+                <CenteredImage src={images.keyChange1} margin="20px auto 80px" alt="" />
               </Box>
             </Grid>
             <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -179,11 +175,7 @@ const CultureFit = () => {
                 <div>
                   Some screens were were too information dense and needed to be broken up
                 </div>
-                <CenteredImage
-                  src={images.keyChange2}
-                  margin="20px auto 80px auto"
-                  alt=""
-                />
+                <CenteredImage src={images.keyChange2} margin="20px auto 80px" alt="" />
               </Box>
             </Grid>
           </Grid>
@@ -193,7 +185,7 @@ const CultureFit = () => {
                 <div>Some terminology and icons weren’t intuitive</div>
                 <CenteredImage
                   src={images.keyChange3}
-                  margin={isMobile ? '20px auto 80px auto' : '20px auto'}
+                  margin={isMobile ? '20px auto 80px' : '20px auto'}
                   alt=""
                 />
               </Box>
@@ -222,7 +214,7 @@ const CultureFit = () => {
           <ListItem margin="0">approachable</ListItem>
           <ListItem margin="0">modern</ListItem>
         </List>
-        <Content heading="BRAND COLOUR AND TYPOGRAPHY" level={2}>
+        <Content heading="Brand colour and typography" level={2}>
           I decided to use shades of <b>blue</b> for my brand because it is associated
           with <b>trust</b> and <b>confidence</b>. I wanted to stick to a{' '}
           <b>monochromatic palette</b> as it is easy on the eyes and portrays a{' '}
@@ -233,14 +225,14 @@ const CultureFit = () => {
           </P>
           <Grid container>
             <Grid item lg={7} md={7} sm={12} xs={12}>
-              <CenteredImage src={images.branding1} margin="40px auto 20px" alt="" />
+              <CenteredImage src={images.branding1} alt="" />
             </Grid>
             <Grid item lg={5} md={5} sm={12} xs={12}>
               <CenteredImage src={images.branding2} margin="40px auto 0" alt="" />
             </Grid>
           </Grid>
         </Content>
-        <Content heading="APP NAME AND LOGO" level={2}>
+        <Content heading="App name and logo" level={2}>
           <Grid container>
             <Grid item lg={6} md={6} sm={12} xs={12}>
               <Box height="100%" display="flex" alignItems="center" pr={isMobile ? 0 : 4}>
@@ -248,25 +240,47 @@ const CultureFit = () => {
                 like pieces of a puzzle that fit together perfectly.
               </Box>
             </Grid>
-            <Grid item lg={3} md={3} sm={6} xs={6}>
-              <CenteredImage src={images.logo1} alt="" />
+            <Grid item lg={3} md={3} sm={12} xs={12}>
+              <CenteredImage
+                src={images.logo1}
+                margin={isMobile ? '20px auto' : '0 auto'}
+                alt=""
+              />
             </Grid>
-            <Grid item lg={3} md={3} sm={6} xs={6}>
-              <CenteredImage src={images.logo2} alt="" />
+            <Grid item lg={3} md={3} sm={12} xs={12}>
+              <CenteredImage
+                src={images.logo2}
+                margin={isMobile ? '0 auto 30px' : '0 auto'}
+                alt=""
+              />
             </Grid>
           </Grid>
           <Grid container>
             <Grid item lg={6} md={6} sm={12} xs={12}>
-              <Box height="100%" display="flex" alignItems="center" pr={isMobile ? 0 : 4}>
+              <Box
+                height="100%"
+                display="flex"
+                alignItems="center"
+                pr={isMobile ? 0 : 4}
+                mt={isMobile ? 0 : 4}
+              >
                 To keep the feeling of a corporate app, the minimalistic word mark was
                 inspired by LinkedIn.
               </Box>
             </Grid>
-            <Grid item lg={3} md={3} sm={6} xs={6}>
-              <CenteredImage src={images.name1} margin="20px auto 0" alt="" />
+            <Grid item lg={3} md={3} sm={12} xs={12}>
+              <CenteredImage
+                src={images.name1}
+                margin={isMobile ? '0 auto' : '50px auto 0'}
+                alt=""
+              />
             </Grid>
-            <Grid item lg={3} md={3} sm={6} xs={6}>
-              <CenteredImage src={images.name2} margin="54px auto 20px" alt="" />
+            <Grid item lg={3} md={3} sm={12} xs={12}>
+              <CenteredImage
+                src={images.name2}
+                margin={isMobile ? '30px auto 0' : '84px auto 20px'}
+                alt=""
+              />
             </Grid>
           </Grid>
         </Content>
@@ -343,7 +357,7 @@ const CultureFit = () => {
                 <Box p={4}>
                   <b>Only build what you need to test</b>
                   <P>
-                    Prototyping is fun. However if a prototyped feature isn't used in a
+                    Prototyping is fun. However if a prototyped feature isn’t used in a
                     test, did it ever truly exist?
                   </P>
                 </Box>

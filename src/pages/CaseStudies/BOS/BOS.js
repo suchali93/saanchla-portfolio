@@ -18,6 +18,16 @@ const BOS = () => {
       tools="Figma, InVision"
       imageSrc={images.banner}
       platform="Desktop"
+      misc={{
+        title: 'Deliverable',
+        detail: (
+          <>
+            <a href="https://www.scamblock.org/wp/">https://www.scamblock.org/wp/</a>
+            <br />
+            (currently undergoing rebranding and relaunch post recent acquisition)
+          </>
+        ),
+      }}
     >
       <Content heading="Overview">
         Blockers of Scam is a cyber securuty company that aims to stop the rising threat
@@ -226,7 +236,7 @@ const BOS = () => {
           differentiation. We added another section to promote the chrome extension since
           that is another new product the company provides followed by the “Add to Chrome”
           CTA, to optimally use this space for marketing.
-          <CenteredImage src={images.services} margin="40px auto 20px" alt="" />
+          <CenteredImage src={images.services} alt="" />
         </Content>
 
         <Content heading="About Us Page" level={2}>
@@ -248,7 +258,7 @@ const BOS = () => {
           minimalistic look that ties into the overall website design. Contrary, this also
           helps guide a user to their answer faster by organizing frequently asked
           questions into category specific sections.
-          <CenteredImage src={images.faq} margin="40px auto 20px" alt="" />
+          <CenteredImage src={images.faq} alt="" />
         </Content>
       </Content>
 

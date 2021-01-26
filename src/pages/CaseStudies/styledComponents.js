@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Heading = styled.div`
   font-family: 'Oswald', sans-serif;
-  ${({ variant }) => {
+  ${({ variant, isMobile }) => {
     if (variant === 'sm') {
       return `
       font-size: 16px;
@@ -16,7 +16,7 @@ export const Heading = styled.div`
       line-height: 2.8;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 20px;
+      margin-bottom: ${isMobile ? '5px' : '20px'};
       `;
     }
     if (variant === 'lg') {
@@ -46,7 +46,7 @@ export const CaseStudyInfo = styled.div`
 
 export const CenteredImage = styled.img`
   display: block;
-  margin: ${({ margin }) => margin || '20px auto'};
+  margin: ${({ margin }) => margin || '40px auto 20px'};
   height: ${({ height }) => height || 'auto'};
   width: ${({ width }) => width || 'auto'};
 `;
