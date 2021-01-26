@@ -11,7 +11,7 @@ import SideGigs from '../../pages/SideGigs';
 import About from '../../pages/About';
 import CultureFit from '../../pages/CaseStudies/CultureFit';
 import BOS from '../../pages/CaseStudies/BOS';
-import TeamsVR from '../../pages/CaseStudies/TeamsVR';
+import VRTeams from '../../pages/CaseStudies/VRTeams';
 import Origyns from '../../pages/CaseStudies/Origyns';
 import {
   ABOUT,
@@ -22,7 +22,7 @@ import {
   HOME,
   ORIGYNS,
   SIDE_GIGS,
-  TEAMS_VR,
+  VR_TEAMS,
 } from '../constants';
 
 const Router = () => {
@@ -40,7 +40,7 @@ const Router = () => {
               <Route path={DETAILS[ABOUT].pathname} component={About} />
               <Route path={DETAILS[CULTURE_FIT].pathname} component={CultureFit} />
               <Route path={DETAILS[BLOCKERS_OF_SCAM].pathname} component={BOS} />
-              <Route path={DETAILS[TEAMS_VR].pathname} component={TeamsVR} />
+              <Route path={DETAILS[VR_TEAMS].pathname} component={VRTeams} />
               <Route path={DETAILS[ORIGYNS].pathname} component={Origyns} />
             </Box>
           </Switch>

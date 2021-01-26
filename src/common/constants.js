@@ -1,6 +1,6 @@
 import CultureFitImage from '../pages/CaseStudies/CultureFit/images/Banner.png';
 import BOSImage from '../pages/CaseStudies/BOS/images/Banner.png';
-import TeamsVRImage from '../pages/CaseStudies/TeamsVR/images/Banner.png';
+import VRTeamsImage from '../pages/CaseStudies/VRTeams/images/Banner.png';
 import OrigynsImage from '../pages/CaseStudies/Origyns/images/Banner.png';
 
 export const FOOTER_HEIGHT = '85px';
@@ -10,7 +10,7 @@ export const SIDE_GIGS = 'Side Gigs';
 export const ABOUT = 'About';
 export const CULTURE_FIT = 'CultureFit';
 export const BLOCKERS_OF_SCAM = 'Blockers of Scam';
-export const TEAMS_VR = 'TeamsVR';
+export const VR_TEAMS = 'VR Teams';
 export const ORIGYNS = 'Origyns';
 
 export const DETAILS = {
@@ -29,11 +29,11 @@ export const DETAILS = {
       'Redesigning the Blockers of Scam website to promote the new scamBlock Chrome extension and foster community engagement.',
     imageSrc: BOSImage,
   },
-  [TEAMS_VR]: {
-    pathname: '/case/teams-vr',
+  [VR_TEAMS]: {
+    pathname: '/case/vr-teams',
     description:
       'An extension for Microsoft Teams to support a better work from home experience.',
-    imageSrc: TeamsVRImage,
+    imageSrc: VRTeamsImage,
   },
   [ORIGYNS]: {
     pathname: '/case/origyns',
@@ -43,4 +43,4 @@ export const DETAILS = {
   },
 };
 
-export const CASE_STUDY_PAGES = [CULTURE_FIT, TEAMS_VR, BLOCKERS_OF_SCAM, ORIGYNS];
+export const CASE_STUDY_PAGES = [CULTURE_FIT, VR_TEAMS, BLOCKERS_OF_SCAM, ORIGYNS];
