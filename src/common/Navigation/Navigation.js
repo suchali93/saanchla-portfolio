@@ -10,7 +10,7 @@ import {
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
-import logo from './images/logo.png';
+import logo from './images/logo.svg';
 import HideOnScroll from './HideOnScroll';
 import { Logo, MobileNav, MobileNavList, NavBar } from './styledComponents';
 import { ABOUT, DETAILS, HOME, SIDE_GIGS } from '../constants';
