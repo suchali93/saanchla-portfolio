@@ -1,4 +1,4 @@
-import banner from './Banner.png';
+import banner from './banner.png';
 import targetUser1 from './targetUser1.png';
 import targetUser2 from './targetUser2.png';
 import concept1 from './concept1.png';

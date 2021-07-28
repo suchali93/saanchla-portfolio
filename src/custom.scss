@@ -1,0 +1,263 @@
+// change the theme
+$theme-colors: (
+  "primary": #5453dc,
+  // "outline-primary": yellow,
+);
+
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap.scss';
+
+// spacing
+.m-6 {
+  margin: 4rem !important;
+}
+
+.m-7 {
+  margin: 5rem !important;
+}
+
+.m-8 {
+  margin: 6rem !important;
+}
+
+.m-9 {
+  margin: 7rem !important;
+}
+
+.mx-6 {
+  margin-right: 4rem !important;
+  margin-left: 4rem !important;
+}
+
+.mx-7 {
+  margin-right: 5rem !important;
+  margin-left: 5rem !important;
+}
+
+.mx-8 {
+  margin-right: 6rem !important;
+  margin-left: 6rem !important;
+}
+
+.mx-9 {
+  margin-right: 7rem !important;
+  margin-left: 7rem !important;
+}
+
+.my-6 {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+
+.my-7 {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+
+.my-8 {
+  margin-top: 6rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.my-9 {
+  margin-top: 7rem !important;
+  margin-bottom: 7rem !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+.mt-7 {
+  margin-top: 5rem !important;
+}
+
+.mt-8 {
+  margin-top: 6rem !important;
+}
+
+.mt-9 {
+  margin-top: 7rem !important;
+}
+
+.me-6 {
+  margin-right: 4rem !important;
+}
+
+.me-7 {
+  margin-right: 5rem !important;
+}
+
+.me-8 {
+  margin-right: 6rem !important;
+}
+
+.me-9 {
+  margin-right: 7rem !important;
+}
+
+.mb-6 {
+  margin-bottom: 4rem !important;
+}
+
+.mb-7 {
+  margin-bottom: 5rem !important;
+}
+
+.mb-8 {
+  margin-bottom: 6rem !important;
+}
+
+.mb-9 {
+  margin-bottom: 7rem !important;
+}
+
+.ms-6 {
+  margin-left: 4rem !important;
+}
+
+.ms-7 {
+  margin-left: 5rem !important;
+}
+
+.ms-8 {
+  margin-left: 6rem !important;
+}
+
+.ms-9 {
+  margin-left: 7rem !important;
+}
+
+.p-6 {
+  padding: 4rem !important;
+}
+
+.p-7 {
+  padding: 5rem !important;
+}
+
+.p-8 {
+  padding: 6rem !important;
+}
+
+.p-9 {
+  padding: 7rem !important;
+}
+
+.px-6 {
+  padding-right: 4rem !important;
+  padding-left: 4rem !important;
+}
+
+.px-7 {
+  padding-right: 5rem !important;
+  padding-left: 5rem !important;
+}
+
+.px-8 {
+  padding-right: 6rem !important;
+  padding-left: 6rem !important;
+}
+
+.px-9 {
+  padding-right: 7rem !important;
+  padding-left: 7rem !important;
+}
+
+.py-6 {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.py-7 {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.py-8 {
+  padding-top: 6rem !important;
+  padding-bottom: 6rem !important;
+}
+
+.py-9 {
+  padding-top: 7rem !important;
+  padding-bottom: 7rem !important;
+}
+
+.pt-6 {
+  padding-top: 4rem !important;
+}
+
+.pt-7 {
+  padding-top: 5rem !important;
+}
+
+.pt-8 {
+  padding-top: 6rem !important;
+}
+
+.pt-9 {
+  padding-top: 7rem !important;
+}
+
+.pe-6 {
+  padding-right: 4rem !important;
+}
+
+.pe-7 {
+  padding-right: 5rem !important;
+}
+
+.pe-8 {
+  padding-right: 6rem !important;
+}
+
+.pe-9 {
+  padding-right: 7rem !important;
+}
+
+.pb-6 {
+  padding-bottom: 4rem !important;
+}
+
+.pb-7 {
+  padding-bottom: 5rem !important;
+}
+
+.pb-8 {
+  padding-bottom: 6rem !important;
+}
+
+.pb-9 {
+  padding-bottom: 7rem !important;
+}
+
+.ps-6 {
+  padding-left: 4rem !important;
+}
+
+.ps-7 {
+  padding-left: 5rem !important;
+}
+
+.ps-8 {
+  padding-left: 6rem !important;
+}
+
+.ps-9 {
+  padding-left: 7rem !important;
+}
+
+// custom 
+.btn {
+  box-shadow: 0 0 0 0 !important;
+  font-size: 14px;
+  font-weight: 600;
+  min-width: 120px;
+  &.btn-outline-primary {
+    &:hover, &:active {
+      background-color: #f6f6ff;
+      color: #4747bb;
+    }
+  }
+}

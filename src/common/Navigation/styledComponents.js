@@ -10,18 +10,26 @@ export const NavBar = styled(AppBar)`
         : 'linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0))'};
     height: 92px;
     a {
-      color: #333;
-      font-weight: 500;
-      font-size: ${({ isTablet }) => (isTablet ? '25px' : '14px')};
+      padding-bottom: 5px;
+      color: #000;
+      font-size: ${({ showHamburger }) => (showHamburger ? '25px' : '14px')};
       margin: 0 30px;
       text-decoration: none;
-      text-transform: uppercase;
       &.active {
-        color: ${PRIMARY_COLOUR};
-        font-weight: 700;
+        border-bottom: 2px solid ${PRIMARY_COLOUR};
+      }
+      &.logo {
+        border: none;
       }
       :hover {
         color: ${PRIMARY_COLOUR};
+      }
+      @media (max-width: 767.95px) {
+        &.active {
+          color: ${PRIMARY_COLOUR};
+          border: none;
+          font-weight: 600;
+        }
       }
     }
   }

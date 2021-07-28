@@ -10,7 +10,7 @@ import { P, Link } from '../../../common/styledComponents';
 
 const BOS = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <CaseStudy
       myRole="UX Designer"

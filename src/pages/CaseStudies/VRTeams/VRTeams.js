@@ -9,7 +9,7 @@ import { CenteredImage, List, ListItem } from '../styledComponents';
 
 const VRTeams = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <CaseStudy
       myRole="UX Research, UX Strategy, UI Design"
@@ -20,14 +20,14 @@ const VRTeams = () => {
       misc={{ title: 'Result', detail: '2nd of 22 Teams' }}
     >
       <Content heading="Overview">
-        I participated in Hackathon hosted by BrainStation x Microsoft along with 5 
-        other UX designers. The goal was to create a digital prototype to support a 
-        better Work From Home experience in a span of 3 days. 
+        I participated in Hackathon hosted by BrainStation x Microsoft along with 5 other
+        UX designers. The goal was to create a digital prototype to support a better Work
+        From Home experience in a span of 3 days.
         <P>
-        Our solution was VR Teams, a virtual reality extension for Microsoft Teams targeted at young
-        professionals working from home. It brings the office space to you so you can
-        still experience an “in person” work environment with your colleagues while
-        working remotely.
+          Our solution was VR Teams, a virtual reality extension for Microsoft Teams
+          targeted at young professionals working from home. It brings the office space to
+          you so you can still experience an “in person” work environment with your
+          colleagues while working remotely.
         </P>
       </Content>
       <Content heading="Researching the Problem Space">

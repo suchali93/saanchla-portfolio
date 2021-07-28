@@ -1,4 +1,4 @@
-import banner from './Banner.png';
+import banner from './banner.png';
 import research1 from './research1.png';
 import research2 from './research2.png';
 import designChallenge from './designChallenge.png';

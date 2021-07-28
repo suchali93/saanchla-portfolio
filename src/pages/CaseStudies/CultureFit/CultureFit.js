@@ -9,7 +9,7 @@ import { P, Link } from '../../../common/styledComponents';
 
 const CultureFit = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <CaseStudy
       myRole="Lead UX/UI Designer"
@@ -288,7 +288,11 @@ const CultureFit = () => {
       <Content heading="Final Prototype">
         With all this as my inspiration, I created my final UI design. Below are some of
         the high-fidelity screens from my app.
-        <Button href="https://sanchala646197.invisionapp.com/console/share/RA11MXQI6Y" variant="outlined" color="primary">
+        <Button
+          href="https://sanchala646197.invisionapp.com/console/share/RA11MXQI6Y"
+          variant="outlined"
+          color="primary"
+        >
           View Prototype
         </Button>
       </Content>

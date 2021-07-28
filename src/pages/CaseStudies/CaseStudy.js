@@ -17,7 +17,7 @@ import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 
 const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, misc, children }) => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
   const activePath = useLocation().pathname;
   const currentPageIdx = CASE_STUDY_PAGES.findIndex(

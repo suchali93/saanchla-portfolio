@@ -1,72 +1,121 @@
 import React from 'react';
-import { Box, Button, Grid, useMediaQuery, useTheme } from '@material-ui/core';
+import { Box, useMediaQuery, useTheme } from '@material-ui/core';
 
-import about from './images/about.png';
-import { AboutContainer, AboutHeading, AboutContent } from './styledComponents';
-import { P } from '../../common/styledComponents';
+import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
+// import about1 from './images/about1.jpeg';
+// import about2 from './images/about2.jpeg';
+// import about3 from './images/about3.jpeg';
+// import about4 from './images/about4.jpeg';
+import group from './images/group.png';
+import about1crop from './images/about1crop.jpeg';
+import about2crop from './images/about2crop.jpeg';
+import about3crop from './images/about3crop.jpeg';
+import about4crop from './images/about4crop.jpeg';
+import { AboutContent } from './styledComponents';
+import { Heading, P } from '../../common/styledComponents';
 
 const About = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+  const isVerticallyStacked = useMediaQuery(theme.breakpoints.down('lg'));
   return (
-    <AboutContainer>
-      <Grid container>
-        <Grid item lg={4} md={4} sm={12} xs={12}>
-          <Box
-            display="flex"
-            alignItems="center"
-            justifyContent={isTablet ? 'center' : 'inherit'}
-            height="100%"
-          >
-            <img src={about} alt="" />
-          </Box>
-        </Grid>
-        <Grid item lg={8} md={8} sm={12} xs={12}>
-          <Box px={isMobile ? 3 : 0} pl={isMobile ? 3 : 10} py={5}>
-            <AboutHeading>A little about me</AboutHeading>
+    <Container className="d-block mb-7">
+      <Row>
+        <Col lg={6} className="d-flex justify-content-center">
+          {isVerticallyStacked ? (
+            <Box>
+              <Carousel>
+                <Carousel.Item>
+                  <img
+                    isVerticallyStacked={isVerticallyStacked}
+                    src={about1crop}
+                    alt=""
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    isVerticallyStacked={isVerticallyStacked}
+                    src={about2crop}
+                    alt=""
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    isVerticallyStacked={isVerticallyStacked}
+                    src={about3crop}
+                    alt=""
+                  />
+                </Carousel.Item>
+                <Carousel.Item>
+                  <img
+                    isVerticallyStacked={isVerticallyStacked}
+                    src={about4crop}
+                    alt=""
+                  />
+                </Carousel.Item>
+              </Carousel>
+            </Box>
+          ) : (
+            <Box className="position-relative" maxWidth="550px">
+              <img isVerticallyStacked={isVerticallyStacked} src={group} alt="" />
+            </Box>
+          )}
+        </Col>
+        <Col lg={6}>
+          <Box className="px-4">
+            <Heading size="40px" weight="600" className="mb-5">
+              What’s my story?
+            </Heading>
             <AboutContent>
               <P>
-                I am a curious, self-driven designer passionate in emerging technologies
-                and advocating UX design across all fields of work. Having studied
-                psychology in my undergrad, I worked as a recruiter for nearly 2 years.
-                During my tenure, I had the opportunity to meet a diverse range of people
-                and developed a keen ability to tangibly assess their skill set, and apply
-                that towards my clients’ needs. Most importantly, I learned to make the
-                candidate the focus of the process. Communication and empathy is what I’m
-                all about. This is what led me to pursue a career in UX design. At
-                BrainStation I learned to take skills from my previous role and apply them
-                to creating fulfilling experiences for users. I was able to gain a firm
-                grasp on the fundamentals of design thinking, as well as the most
-                prominent design tools used in the industry. I look forward to continue to
-                apply this knowledge in new and challenging ways.
+                I am a curious, self-driven designer passionate in emerging technologies.
+                Having studied psychology in my undergrad, I worked as a recruiter for
+                nearly 2 years. During my tenure, I had the opportunity to meet a diverse
+                range of people and developed a keen ability to tangibly assess their
+                skill set, and apply that towards my clients’ needs. Most importantly, I
+                learned to make the candidate the focus of the process. Communication and
+                empathy is what I’m all about. This is what led me to pursue a career in
+                UX design.{' '}
+                <b>
+                  I discovered that my background in psychology, experience in HR and
+                  knowledge of user-centred design gives me a holistic understanding of
+                  user behaviours, allowing me to always put the user first.
+                </b>
               </P>
               <P>
-                I am currently working as a freelance UX/UI Designer where I’m able to own
-                the full design process, and collaborate with some truly brilliant people.
-                I am also part of the senior testers at usertesting.com, which further
-                enhances my insights into creating great user experiences.
+                I believe design is not just making products - it’s strategy, it’s an
+                experience, it’s a feeling. <b>Simply put, design is intent.</b>
+              </P>
+              <P size="28px" className="my-5">
+                “I know I have done my job well when the user says ‘this product gets me!’
+                ”
               </P>
               <P>
-                When I’m not wireframing, I like taking different dance classes, and
-                indulging my love for trying new foods.
+                I am currently working as a freelance Product Designer where I’m able to
+                own the full design process, and collaborate with some truly brilliant
+                people. I am also a seasoned participant of usertesting.com, which further
+                enhances my insights into creating fulfilling user experiences. I am
+                constantly looking to improve my skills and welcome feedback.
               </P>
               <P>
+                When I’m not wireframing, you’ll find me taking different dance classes,
+                exploring hiking trails, or biking around the city.
+              </P>
+              <P className="mb-5">
                 Feel free to connect with me to discuss my work, or just geek out over
                 theories of human behavior!
               </P>
               <Button
-                variant="outlined"
-                color="primary"
-                href="mailto:sanch.tripathi@gmail.com"
+                href="https://www.linkedin.com/in/sanchala-tripathi"
+                variant="primary"
+                type="button"
               >
-                Send me an email
+                LET’S CHAT
               </Button>
             </AboutContent>
           </Box>
-        </Grid>
-      </Grid>
-    </AboutContainer>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

@@ -1,58 +1,59 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Grid, Typography, useMediaQuery, useTheme } from '@material-ui/core';
+import { Box } from '@material-ui/core';
 
 import { Link } from 'react-router-dom';
+import { Col } from 'react-bootstrap';
 import {
-  CaseStudyBox,
   CaseStudyTitle,
   CaseStudyContent,
   CaseStudyImage,
+  CaseStudyHover,
 } from './styledComponents';
+import { Heading } from '../../common/styledComponents';
 
-const CaseStudy = ({ to, title, description, imageSrc, backgroundColor, inProgress }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const caseStudyImage = (
-    <Grid item lg={6} md={6} sm={12}>
-      <CaseStudyImage isMobile={isMobile} src={imageSrc} alt={title} />
-    </Grid>
-  );
+const CaseStudy = ({
+  to,
+  order,
+  title,
+  type,
+  description,
+  imageSrc,
+  backgroundColor,
+  inProgress,
+}) => {
   return (
-    <CaseStudyBox my={isMobile ? 3 : 10} backgroundColor={backgroundColor}>
-      <Grid container justify="space-between" alignItems="center">
-        {isMobile && caseStudyImage}
-        <Grid item lg={6} md={6} sm={12}>
-          <CaseStudyContent isMobile={isMobile} py={4} pr={4}>
-            <CaseStudyTitle>{title}</CaseStudyTitle>
-            <Typography variant="body1" gutterBottom>
-              {description}
-            </Typography>
-            <Button
-              variant="outlined"
-              color="primary"
-              component={Link}
-              to={to}
-              aria-label={
-                inProgress
-                  ? `${title} case study coming soon`
-                  : `View ${title} case study`
-              }
-            >
-              {inProgress ? 'Coming Soon' : 'View Case Study'}
-            </Button>
+    <Col lg={6} className="gy-2">
+      <CaseStudyHover as={Link} to={to}>
+        <Box style={{ backgroundColor }}>
+          <CaseStudyContent
+            p={4}
+            display="flex"
+            justifyContent="flex-end"
+            position="relative"
+          >
+            <CaseStudyTitle>
+              <Heading weight={500}>{title}</Heading>
+              <Heading size="14px" weight={300} color="light">
+                {type}
+              </Heading>
+            </CaseStudyTitle>
+            <Box display="flex" alignItems="flex-end">
+              <CaseStudyImage src={imageSrc} alt={title} />
+            </Box>
           </CaseStudyContent>
-        </Grid>
-        {!isMobile && caseStudyImage}
-      </Grid>
-    </CaseStudyBox>
+        </Box>
+      </CaseStudyHover>
+    </Col>
   );
 };
 
 CaseStudy.propTypes = {
   to: PropTypes.string.isRequired,
+  order: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  description: PropTypes.string,
   imageSrc: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
   inProgress: PropTypes.bool,
@@ -60,6 +61,7 @@ CaseStudy.propTypes = {
 
 CaseStudy.defaultProps = {
   backgroundColor: '#fff',
+  description: '',
   inProgress: false,
 };
 

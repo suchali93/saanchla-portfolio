@@ -17,8 +17,7 @@ import { ABOUT, DETAILS, HOME, SIDE_GIGS } from '../constants';
 
 const Navigation = () => {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-  const isTablet = useMediaQuery(theme.breakpoints.down('md'));
+  const showHamburger = useMediaQuery(theme.breakpoints.down('md'));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = (isOpen) => (event) => {
@@ -28,8 +27,8 @@ const Navigation = () => {
     document.body.style.overflow = isOpen ? 'hidden' : 'auto';
     setIsMenuOpen(isOpen);
   };
-  return isMobile ? (
-    <NavBar isMobile={isMobile} isTablet={isTablet} elevation={0}>
+  return showHamburger ? (
+    <NavBar showHamburger={showHamburger} elevation={0}>
       <MobileNav isMenuOpen={isMenuOpen}>
         <Box display="flex" justifyContent="space-between" ml={1} mr={3} my={1}>
           <NavLink
@@ -38,7 +37,7 @@ const Navigation = () => {
             to={DETAILS[HOME].pathname}
             className="logo"
           >
-            <Logo isMobile={isMobile} src={logo} alt="logo" aria-hidden />
+            <Logo src={logo} alt="logo" aria-hidden />
           </NavLink>
           <IconButton onClick={toggleMenu(!isMenuOpen)} size="small" aria-label="menu">
             {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
@@ -80,10 +79,10 @@ const Navigation = () => {
           justifyContent="space-between"
           my={2}
         >
-          <NavLink exact to={DETAILS[HOME].pathname}>
+          <NavLink exact to={DETAILS[HOME].pathname} className="logo">
             <Logo src={logo} alt="logo" aria-hidden />
           </NavLink>
-          <Box>
+          <Box className="h-100 d-flex align-items-center">
             <NavLink exact to={DETAILS[HOME].pathname} activeClassName="active">
               {HOME}
             </NavLink>

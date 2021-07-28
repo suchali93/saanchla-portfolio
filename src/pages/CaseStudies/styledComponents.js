@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Heading = styled.div`
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rubik Variable', serif;
   ${({ variant, isMobile }) => {
     if (variant === 'sm') {
       return `
@@ -38,7 +38,7 @@ export const CaseStudyImage = styled.img`
 
 export const CaseStudyInfo = styled.div`
   font-size: 18px;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Rubik Variable', serif;
   font-weight: 400;
   margin: 0 10px 10px 0;
   text-transform: uppercase;

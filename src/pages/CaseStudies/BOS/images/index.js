@@ -1,4 +1,4 @@
-import banner from './Banner.png';
+import banner from './banner.png';
 import virusTotal from './virusTotal.png';
 import wot from './wot.png';
 import forum from './forum.png';

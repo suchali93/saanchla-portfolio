@@ -1,9 +1,27 @@
 import { createMuiTheme } from '@material-ui/core';
 import './typography/fonts.css';
 
-export const PRIMARY_COLOUR = '#4c6ae1';
+export const PRIMARY_COLOUR = '#5453dc';
+
+// react bootstrap breakpoints
+// xs <576px
+// sm ≥576px
+// md ≥768px
+// lg ≥992px
+// xl ≥1200px
+// xxl ≥1400px
 
 export const theme = createMuiTheme({
+  breakpoints: {
+    values: {
+      xs: false,
+      sm: 0, // <576
+      md: 576, // <768
+      lg: 768, // <992
+      xl: 992, // <1200
+      xxl: 1200,
+    },
+  },
   palette: {
     primary: {
       main: PRIMARY_COLOUR,
@@ -11,7 +29,7 @@ export const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: ['Montserrat', 'sans-serif'],
+    fontFamily: ['Poppins', 'sans-serif'],
   },
   props: {
     MuiTypography: {
@@ -26,7 +44,7 @@ export const theme = createMuiTheme({
       '@global': {
         body: {
           fontWeight: 400,
-          fontSize: '16px',
+          fontSize: '18px',
           color: '#333',
           backgroundColor: '#fff',
         },
@@ -34,11 +52,11 @@ export const theme = createMuiTheme({
     },
     MuiTypography: {
       h1: {
-        fontFamily: ['Oswald', 'sans-serif'],
         fontSize: '50px',
         fontWeight: 400,
       },
       body1: {
+        fontSize: '18px',
         lineHeight: 1.75,
       },
       gutterBottom: {
@@ -47,7 +65,8 @@ export const theme = createMuiTheme({
     },
     MuiAppBar: {
       root: {
-        fontFamily: ['Montserrat', 'sans-serif'],
+        fontFamily: ['Rubik Variable', 'serif'],
+        fontWeight: 400,
         letterSpacing: 1,
       },
     },
@@ -63,7 +82,6 @@ export const theme = createMuiTheme({
         backgroundColor: '#fff',
         borderRadius: 5,
         boxShadow: 'none',
-        fontFamily: ['Oswald', 'sans-serif'],
         fontWeight: 400,
         letterSpacing: 1,
         marginTop: 30,
@@ -98,13 +116,13 @@ export const theme = createMuiTheme({
     },
     MuiIconButton: {
       root: {
-        color: '#000',
-        fontFamily: ['Oswald', 'sans-serif'],
+        color: PRIMARY_COLOUR,
         fontWeight: 400,
         transition: 'all 0.2s',
         '&:hover': {
+          color: '#4747bb',
           backgroundColor: 'transparent',
-          transform: 'scale(1.5)',
+          transform: 'scale(1.1)',
         },
       },
       sizeSmall: {

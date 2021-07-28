@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
 import Router from './common/Router';
+import './custom.scss';
 
 ReactDOM.render(
   <React.StrictMode>
