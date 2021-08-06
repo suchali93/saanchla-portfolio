@@ -1,4 +1,4 @@
-import banner from './banner.png';
+import topImage from './top.png';
 import research1 from './research1.png';
 import research2 from './research2.png';
 import designChallenge from './designChallenge.png';
@@ -23,7 +23,7 @@ import name2 from './name2.png';
 import marketing from './marketing.png';
 
 export default {
-  banner,
+  topImage,
   research1,
   research2,
   designChallenge,

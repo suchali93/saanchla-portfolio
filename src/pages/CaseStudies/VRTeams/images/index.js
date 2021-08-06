@@ -1,4 +1,4 @@
-import banner from './banner.png';
+import topImage from './top.png';
 import targetUser1 from './targetUser1.png';
 import targetUser2 from './targetUser2.png';
 import concept1 from './concept1.png';
@@ -12,7 +12,7 @@ import prototype3 from './prototype3.png';
 import prototype4 from './prototype4.png';
 
 export default {
-  banner,
+  topImage,
   targetUser1,
   targetUser2,
   concept1,

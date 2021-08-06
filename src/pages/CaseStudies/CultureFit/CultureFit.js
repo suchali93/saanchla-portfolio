@@ -6,17 +6,21 @@ import Content from '../Content';
 import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
 import { P, Link } from '../../../common/styledComponents';
+import { CULTURE_FIT } from '../../../common/constants';
 
 const CultureFit = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <CaseStudy
+      name={CULTURE_FIT}
       myRole="Lead UX/UI Designer"
       timeline="10 weeks"
-      imageSrc={images.banner}
+      imageSrc={images.topImage}
       tools="Sketch, InVision"
       platform="iOS"
+      result=""
+      prototypeLink=""
     >
       <Content heading="Overview">
         CultureFit is a platform for recruiters to evaluate candidates beyond the resume,

@@ -18,7 +18,7 @@ const About = () => {
   const theme = useTheme();
   const isVerticallyStacked = useMediaQuery(theme.breakpoints.down('lg'));
   return (
-    <Container className="d-block mb-7">
+    <Container className="d-block my-7">
       <Row>
         <Col lg={6} className="d-flex justify-content-center">
           {isVerticallyStacked ? (
@@ -104,11 +104,7 @@ const About = () => {
                 Feel free to connect with me to discuss my work, or just geek out over
                 theories of human behavior!
               </P>
-              <Button
-                href="https://www.linkedin.com/in/sanchala-tripathi"
-                variant="primary"
-                type="button"
-              >
+              <Button type="button" href="https://www.linkedin.com/in/sanchala-tripathi">
                 LET’S CHAT
               </Button>
             </AboutContent>

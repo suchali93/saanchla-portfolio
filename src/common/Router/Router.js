@@ -35,7 +35,7 @@ const Router = () => {
         <Box minHeight={`calc(100vh - ${FOOTER_HEIGHT})`}>
           <Switch>
             <Route exact path={DETAILS[HOME].pathname} component={Home} />
-            <Box pt={10}>
+            <Box>
               <Route path={DETAILS[SIDE_GIGS].pathname} component={SideGigs} />
               <Route path={DETAILS[ABOUT].pathname} component={About} />
               <Route path={DETAILS[CULTURE_FIT].pathname} component={CultureFit} />

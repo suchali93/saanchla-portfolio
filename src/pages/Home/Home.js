@@ -14,8 +14,8 @@ const Home = () => {
   const showHamburger = useMediaQuery(theme.breakpoints.down('md'));
   const isVerticallyStacked = useMediaQuery(theme.breakpoints.down('lg'));
   return (
-    <Container className="d-block mb-7">
-      <Row className={`${showHamburger ? 'mt-5 mb-7' : 'mt-7 mb-9'}`}>
+    <Container className={`d-block ${showHamburger ? 'my-5' : 'my-7'}`}>
+      <Row className={`${showHamburger ? 'mb-7' : 'mb-9'}`}>
         <Col md={4} className={`m-auto ${showHamburger ? '' : 'p-0'}`}>
           <img src={home} alt="Saanchla Tripathi" />
         </Col>
@@ -47,9 +47,8 @@ const Home = () => {
             human-centered digital experiences.
           </Heading>
           <Button
-            href="https://www.linkedin.com/in/sanchala-tripathi"
-            variant="primary"
             type="button"
+            href="https://www.linkedin.com/in/sanchala-tripathi"
             className="me-4"
           >
             LET’S CHAT
@@ -75,9 +74,9 @@ const Home = () => {
                   title={caseStudy}
                   type={DETAILS[caseStudy].type}
                   to={DETAILS[caseStudy].pathname}
-                  description={DETAILS[caseStudy].description}
+                  // description={DETAILS[caseStudy].description}
                   imageSrc={DETAILS[caseStudy].imageSrc}
-                  backgroundColor={DETAILS[caseStudy].backgroundColor}
+                  backgroundColor={DETAILS[caseStudy].home.backgroundColor}
                   inProgress={DETAILS[caseStudy].inProgress}
                 />
               ),

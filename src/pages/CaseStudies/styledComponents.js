@@ -1,16 +1,59 @@
+import { Box } from '@material-ui/core';
 import styled from 'styled-components';
+
+export const Section = styled.h1`
+  font-family: 'Rubik Variable', serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+`;
+
+export const SubSection = styled.h2`
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+`;
+
+export const CenteredBox = styled(Box)`
+  font-family: 'Rubik Variable', serif;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 7.5rem;
+  margin: auto;
+  > div {
+    font-size: 18px;
+  }
+`;
+
+export const BannerBox = styled(Box)`
+  font-size: 24px;
+  font-weight: 600;
+  min-height: ${({ height }) => height};
+  text-align: center;
+  > div {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: ${({ height }) => height};
+    background-color: ${({ backgroundColor }) => backgroundColor};
+  }
+`;
 
 export const Heading = styled.div`
   font-family: 'Rubik Variable', serif;
-  ${({ variant, isMobile }) => {
-    if (variant === 'sm') {
+  ${({ variant, headingType, isMobile }) => {
+    if (variant === 'sm' || headingType === 'sm') {
       return `
       font-size: 16px;
       line-height: 2.2;
       letter-spacing: 1px;
       `;
     }
-    if (variant === 'md') {
+    if (variant === 'md' || headingType === 'md') {
       return `
       font-size: 20px;
       line-height: 2.8;
@@ -19,12 +62,11 @@ export const Heading = styled.div`
       margin-bottom: ${isMobile ? '5px' : '20px'};
       `;
     }
-    if (variant === 'lg') {
+    if (variant === 'lg' || headingType === 'lg') {
       return `
-      font-size: 35px;
-      font-weight: 400;
-      line-height: 2;
-      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 8px;
       `;
     }
     return '';
@@ -49,6 +91,7 @@ export const CenteredImage = styled.img`
   margin: ${({ margin }) => margin || '40px auto 20px'};
   height: ${({ height }) => height || 'auto'};
   width: ${({ width }) => width || 'auto'};
+  max-height: ${({ maxHeight }) => maxHeight || 'auto'};
 `;
 
 export const List = styled.ul`

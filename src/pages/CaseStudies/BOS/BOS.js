@@ -7,17 +7,20 @@ import Content from '../Content';
 import images from './images';
 import { CenteredImage, List, ListItem } from '../styledComponents';
 import { P, Link } from '../../../common/styledComponents';
+import { BLOCKERS_OF_SCAM } from '../../../common/constants';
 
 const BOS = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <CaseStudy
+      name={BLOCKERS_OF_SCAM}
       myRole="UX Designer"
       timeline="2 months"
       tools="Figma, InVision"
-      imageSrc={images.banner}
+      imageSrc={images.topImage}
       platform="Desktop"
+      result=""
       misc={{
         title: 'Deliverable',
         detail: (

@@ -13,11 +13,15 @@ const headingVariant = (level) => {
   return 'lg';
 };
 
-const contentBox = (children, level, heading, showDivider) => {
+const contentBox = (children, level, heading, headingType, showDivider) => {
   return (
     <>
       <Box mt={level === 1 ? 7 : 3} mb={7}>
-        {heading && <Heading variant={headingVariant(level)}>{heading}</Heading>}
+        {heading && (
+          <Heading headingType={headingType} variant={headingVariant(level)}>
+            {heading}
+          </Heading>
+        )}
         <Typography variant="body1">
           {React.Children.map(children, (child) => {
             if (child.type?.name === 'Content') {

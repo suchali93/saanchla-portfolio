@@ -6,17 +6,20 @@ import CaseStudy from '..';
 import Content from '../Content';
 import { P, Text } from '../../../common/styledComponents';
 import { CenteredImage, List, ListItem } from '../styledComponents';
+import { VR_TEAMS } from '../../../common/constants';
 
 const VRTeams = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   return (
     <CaseStudy
+      name={VR_TEAMS}
       myRole="UX Research, UX Strategy, UI Design"
       timeline="3 days"
-      imageSrc={images.banner}
+      imageSrc={images.topImage}
       tools="Figma, Adobe XD"
       platform="VR"
+      result="2nd of 22 Teams"
       misc={{ title: 'Result', detail: '2nd of 22 Teams' }}
     >
       <Content heading="Overview">

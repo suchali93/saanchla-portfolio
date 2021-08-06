@@ -1,21 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import {
-  Box,
-  Container,
-  Grid,
-  IconButton,
-  Typography,
-  useMediaQuery,
-  useTheme,
-} from '@material-ui/core';
+import { Box, IconButton, useMediaQuery, useTheme } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { CaseStudyImage, Heading } from './styledComponents';
+import { Button, Col, Container, Row } from 'react-bootstrap';
+import { CaseStudyImage, CenteredImage, Heading, Section } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
+import { P } from '../../common/styledComponents';
 
-const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, misc, children }) => {
+const CaseStudy = ({
+  name,
+  myRole,
+  tools,
+  timeline,
+  result,
+  platform,
+  prototypeLink,
+  imageSrc,
+  misc,
+  children,
+}) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
@@ -53,8 +58,51 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, misc, children
   const detailMargin = misc.title ? 0 : 3;
 
   return (
-    <Container>
-      <Grid container>
+    <>
+      <Container
+        fluid
+        className="mb-5 p-0"
+        style={{
+          backgroundColor: DETAILS[name].caseStudy.backgroundColor,
+        }}
+      >
+        <CenteredImage margin="0 auto" maxHeight="550px" src={imageSrc} alt="" />
+      </Container>
+      <Container className="d-block">
+        <h1>{name}</h1>
+        <P>{DETAILS[name].description}</P>
+        <Row className="my-5">
+          <Col>
+            <Section as="div">My Role</Section>
+            <span className="font-sm">{myRole}</span>
+          </Col>
+          <Col>
+            <Section as="div">Timeline</Section>
+            <span className="font-sm">{timeline}</span>
+          </Col>
+        </Row>
+        <Row className="my-5">
+          <Col>
+            <Section as="div">Tools</Section>
+            <span className="font-sm">{tools}</span>
+          </Col>
+          <Col>
+            {result && (
+              <>
+                <Section as="div">Result</Section>
+                <span className="font-sm">{result}</span>
+              </>
+            )}
+          </Col>
+        </Row>
+        {prototypeLink && (
+          <Box className="mb-6 text-center">
+            <Button type="button" variant="secondary" href={prototypeLink}>
+              View Prototype
+            </Button>
+          </Box>
+        )}
+        {/* <Grid container>
         <Grid item lg={7} md={7} sm={12} xs={12}>
           <Box height="100%" display="flex" alignItems="center">
             <CaseStudyImage src={imageSrc} alt="" />
@@ -118,12 +166,13 @@ const CaseStudy = ({ myRole, tools, timeline, platform, imageSrc, misc, children
             </Typography>
           </Box>
         )}
-      </Grid>
-      {children}
-      <Box display="flex" justifyContent="space-between" my={5}>
-        {showNextAndPrev()}
-      </Box>
-    </Container>
+      </Grid> */}
+        {children}
+        <Box display="flex" justifyContent="space-between" my={5}>
+          {showNextAndPrev()}
+        </Box>
+      </Container>
+    </>
   );
 };
 
@@ -134,13 +183,15 @@ CaseStudy.propTypes = {
   timeline: PropTypes.string,
   platform: PropTypes.string,
   misc: PropTypes.object,
+  prototypeLink: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
 CaseStudy.defaultProps = {
-  tools: '',
-  timeline: '',
-  platform: '',
+  tools: undefined,
+  timeline: undefined,
+  platform: undefined,
+  prototypeLink: undefined,
   misc: {},
 };
 

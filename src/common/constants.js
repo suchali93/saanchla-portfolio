@@ -1,8 +1,8 @@
-import AthleisureCoImage from '../pages/CaseStudies/AthleisureCo/images/banner.png';
-import BOSImage from '../pages/CaseStudies/BOS/images/banner.png';
-import CultureFitImage from '../pages/CaseStudies/CultureFit/images/banner.png';
-import OrigynsImage from '../pages/CaseStudies/Origyns/images/banner.png';
-import VRTeamsImage from '../pages/CaseStudies/VRTeams/images/banner.png';
+import AthleisureCoImage from '../pages/CaseStudies/AthleisureCo/images/landing.png';
+import BOSImage from '../pages/CaseStudies/BOS/images/landing.png';
+import CultureFitImage from '../pages/CaseStudies/CultureFit/images/landing.png';
+import OrigynsImage from '../pages/CaseStudies/Origyns/images/landing.png';
+import VRTeamsImage from '../pages/CaseStudies/VRTeams/images/landing.png';
 
 export const FOOTER_HEIGHT = '112px';
 
@@ -26,7 +26,8 @@ export const DETAILS = {
     type: 'Website Design',
     description: 'A furniture company that designs and sells modern pieces.',
     imageSrc: AthleisureCoImage,
-    backgroundColor: '#FFF8F7',
+    home: { backgroundColor: '#fff8f7' },
+    caseStudy: { backgroundColor: '#ffeae6' },
     inProgress: true,
   },
   [BLOCKERS_OF_SCAM]: {
@@ -35,7 +36,8 @@ export const DETAILS = {
     description:
       'Redesigning the Blockers of Scam website to promote the new scamBlock Chrome extension and foster community engagement.',
     imageSrc: BOSImage,
-    backgroundColor: '#F5FBF9',
+    home: { backgroundColor: '#f5fBf9' },
+    caseStudy: { backgroundColor: '#e4f3ed' },
   },
   [CULTURE_FIT]: {
     pathname: '/case/culture-fit',
@@ -43,14 +45,17 @@ export const DETAILS = {
     description:
       'A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit.',
     imageSrc: CultureFitImage,
-    backgroundColor: '#F3F8FF',
+    home: { backgroundColor: '#f3f8ff' },
+    caseStudy: { backgroundColor: '#b9d4fe' },
   },
   [ORIGYNS]: {
     pathname: '/case/origyns',
     type: 'Product Design',
-    description: 'A furniture company that designs and sells modern pieces.',
+    description:
+      'A luxury furniture e-commerce website that allows users to confidently create and shop fully customizable furniture online, while supporting the local Canadian economy.',
     imageSrc: OrigynsImage,
-    backgroundColor: '#F9F8F7',
+    home: { backgroundColor: '#f9f8f7' },
+    caseStudy: { backgroundColor: '#eae9e4' },
     inProgress: true,
   },
   [VR_TEAMS]: {
@@ -59,7 +64,8 @@ export const DETAILS = {
     description:
       'An extension for Microsoft Teams to support a better work from home experience.',
     imageSrc: VRTeamsImage,
-    backgroundColor: '#F6F6F8',
+    home: { backgroundColor: '#f6f6f8' },
+    caseStudy: { backgroundColor: '#e4e4ea' },
   },
 };
 

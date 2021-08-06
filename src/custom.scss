@@ -1,7 +1,7 @@
 // change the theme
 $theme-colors: (
   "primary": #5453dc,
-  // "outline-primary": yellow,
+  "secondary": #4a4a4a,
 );
 
 // Import Bootstrap and its default variables
@@ -248,16 +248,38 @@ $theme-colors: (
   padding-left: 7rem !important;
 }
 
+.font-sm {
+  font-size: 14px;
+}
+
 // custom 
 .btn {
   box-shadow: 0 0 0 0 !important;
   font-size: 14px;
   font-weight: 600;
   min-width: 120px;
+  padding: 0.5rem 1.25rem;
+  text-transform: uppercase;
   &.btn-outline-primary {
     &:hover, &:active {
       background-color: #f6f6ff;
       color: #4747bb;
     }
   }
+}
+
+.font-rubik {
+  font-family: 'Rubik Variable', serif;
+}
+
+a {
+  color: #4747bb;
+  text-decoration: none;
+  &:hover, &:active {
+    color: #4747bb;
+  }
+}
+
+ul, ol {
+  padding-left: 1.5rem;
 }
