@@ -105,7 +105,7 @@ const About = () => {
                 theories of human behavior!
               </P>
               <Button type="button" href="https://www.linkedin.com/in/sanchala-tripathi">
-                LET’S CHAT
+                Let’s Chat
               </Button>
             </AboutContent>
           </Box>

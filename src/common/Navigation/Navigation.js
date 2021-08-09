@@ -13,9 +13,9 @@ import CloseIcon from '@material-ui/icons/Close';
 import logo from './images/logo.svg';
 import HideOnScroll from './HideOnScroll';
 import { Logo, MobileNav, MobileNavList, NavBar } from './styledComponents';
-import { ABOUT, DETAILS, HOME, SIDE_GIGS } from '../constants';
+import { ABOUT, DETAILS, HOME, SIDE_GIGS, WORK } from '../constants';
 
-const Navigation = () => {
+const Navigation = ({ workRef }) => {
   const theme = useTheme();
   const showHamburger = useMediaQuery(theme.breakpoints.down('md'));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,6 +60,14 @@ const Navigation = () => {
                 {SIDE_GIGS}
               </NavLink>
             </ListItem> */}
+            {/* <ListItem button key={WORK}>
+              <NavLink
+                to={() => workRef?.current?.scrollIntoView()}
+                activeClassName="active"
+              >
+                {WORK}
+              </NavLink>
+            </ListItem> */}
             <ListItem button key={ABOUT}>
               <NavLink to={DETAILS[ABOUT].pathname} activeClassName="active">
                 {ABOUT}
@@ -88,6 +96,12 @@ const Navigation = () => {
             </NavLink>
             {/* <NavLink exact to={DETAILS[SIDE_GIGS].pathname} activeClassName="active">
               {SIDE_GIGS}
+            </NavLink> */}
+            {/* <NavLink
+              to={() => workRef?.current?.scrollIntoView()}
+              activeClassName="active"
+            >
+              {WORK}
             </NavLink> */}
             <NavLink exact to={DETAILS[ABOUT].pathname} activeClassName="active">
               {ABOUT}

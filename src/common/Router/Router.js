@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Box, CssBaseline, ThemeProvider } from '@material-ui/core';
 
@@ -26,23 +26,27 @@ import {
 } from '../constants';
 
 const Router = () => {
+  const workRef = useRef(null);
+  console.log('work', workRef);
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <BrowserRouter>
         <ScrollToTop />
-        <Navigation />
+        <Navigation workRef={workRef} />
         <Box minHeight={`calc(100vh - ${FOOTER_HEIGHT})`}>
           <Switch>
-            <Route exact path={DETAILS[HOME].pathname} component={Home} />
-            <Box>
-              <Route path={DETAILS[SIDE_GIGS].pathname} component={SideGigs} />
-              <Route path={DETAILS[ABOUT].pathname} component={About} />
-              <Route path={DETAILS[CULTURE_FIT].pathname} component={CultureFit} />
-              <Route path={DETAILS[BLOCKERS_OF_SCAM].pathname} component={BOS} />
-              <Route path={DETAILS[VR_TEAMS].pathname} component={VRTeams} />
-              <Route path={DETAILS[ORIGYNS].pathname} component={Origyns} />
-            </Box>
+            <Route
+              exact
+              path={DETAILS[HOME].pathname}
+              component={() => <Home workRef={workRef} />}
+            />
+            <Route path={DETAILS[SIDE_GIGS].pathname} component={SideGigs} />
+            <Route path={DETAILS[ABOUT].pathname} component={About} />
+            <Route path={DETAILS[CULTURE_FIT].pathname} component={CultureFit} />
+            <Route path={DETAILS[BLOCKERS_OF_SCAM].pathname} component={BOS} />
+            <Route path={DETAILS[VR_TEAMS].pathname} component={VRTeams} />
+            <Route path={DETAILS[ORIGYNS].pathname} component={Origyns} />
           </Switch>
         </Box>
         <Footer />

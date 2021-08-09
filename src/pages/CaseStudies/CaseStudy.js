@@ -167,7 +167,9 @@ const CaseStudy = ({
           </Box>
         )}
       </Grid> */}
-        {children}
+      </Container>
+      {children}
+      <Container className="d-block">
         <Box display="flex" justifyContent="space-between" my={5}>
           {showNextAndPrev()}
         </Box>

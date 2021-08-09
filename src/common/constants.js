@@ -7,6 +7,7 @@ import VRTeamsImage from '../pages/CaseStudies/VRTeams/images/landing.png';
 export const FOOTER_HEIGHT = '112px';
 
 export const HOME = 'Home';
+export const WORK = 'Work';
 export const SIDE_GIGS = 'Side Gigs';
 export const ABOUT = 'About';
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import images from './images';
 import CaseStudy from '..';
 import Content from '../Content';
@@ -16,10 +17,12 @@ const AthleisureCo = () => {
       imageSrc={images.topImage}
       result=""
     >
-      <Content heading="Overview">Goes here</Content>
-      <Content>
-        <Text>More details coming soon!</Text>
-      </Content>
+      <Container className="d-block">
+        <Content heading="Overview">Goes here</Content>
+        <Content>
+          <Text>More details coming soon!</Text>
+        </Content>
+      </Container>
     </CaseStudy>
   );
 };

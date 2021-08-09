@@ -30,17 +30,9 @@ export const CenteredBox = styled(Box)`
 export const BannerBox = styled(Box)`
   font-size: 24px;
   font-weight: 600;
-  min-height: ${({ height }) => height};
   text-align: center;
-  > div {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: ${({ height }) => height};
-    background-color: ${({ backgroundColor }) => backgroundColor};
-  }
+  padding: ${({ padding }) => padding || '4rem 0'};
+  background-color: ${({ backgroundColor }) => backgroundColor};
 `;
 
 export const Heading = styled.div`

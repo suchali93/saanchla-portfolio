@@ -272,6 +272,10 @@ $theme-colors: (
   font-family: 'Rubik Variable', serif;
 }
 
+.no-show {
+  opacity: 0;
+}
+
 a {
   color: #4747bb;
   text-decoration: none;

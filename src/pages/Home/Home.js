@@ -9,7 +9,7 @@ import { Heading } from '../../common/styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 import { pairwise } from '../../utils';
 
-const Home = () => {
+const Home = ({ workRef }) => {
   const theme = useTheme();
   const showHamburger = useMediaQuery(theme.breakpoints.down('md'));
   const isVerticallyStacked = useMediaQuery(theme.breakpoints.down('lg'));
@@ -51,14 +51,14 @@ const Home = () => {
             href="https://www.linkedin.com/in/sanchala-tripathi"
             className="me-4"
           >
-            LET’S CHAT
+            Let’s Chat
           </Button>
           <Button as={Link} to="/about" variant="outline-primary" type="button">
-            ABOUT
+            About
           </Button>
         </Col>
       </Row>
-      <Row className={isVerticallyStacked ? 'mb-4' : 'mb-5'}>
+      <Row ref={workRef} className={isVerticallyStacked ? 'mb-4' : 'mb-5'}>
         <Heading size="40px" weight="600">
           Latest Projects
         </Heading>
