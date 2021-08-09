@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.efc8956a.chunk.css",
-    "main.js": "/static/js/main.05658b87.chunk.js",
-    "main.js.map": "/static/js/main.05658b87.chunk.js.map",
+    "main.js": "/static/js/main.131facd5.chunk.js",
+    "main.js.map": "/static/js/main.131facd5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3374ac37.js",
     "runtime-main.js.map": "/static/js/runtime-main.3374ac37.js.map",
     "static/js/2.218414cc.chunk.js": "/static/js/2.218414cc.chunk.js",
     "static/js/2.218414cc.chunk.js.map": "/static/js/2.218414cc.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fe74dde23c2dc42293733312aaeb1d81.js": "/precache-manifest.fe74dde23c2dc42293733312aaeb1d81.js",
+    "precache-manifest.ad0066fbe4c5d039050947d905e7a600.js": "/precache-manifest.ad0066fbe4c5d039050947d905e7a600.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.efc8956a.chunk.css.map": "/static/css/main.efc8956a.chunk.css.map",
     "static/js/2.218414cc.chunk.js.LICENSE.txt": "/static/js/2.218414cc.chunk.js.LICENSE.txt",
@@ -31,7 +31,7 @@
     "static/media/forum.png": "/static/media/forum.a8aa5012.png",
     "static/media/group.png": "/static/media/group.c265140c.png",
     "static/media/hifi1.png": "/static/media/hifi1.36aa0525.png",
-    "static/media/home.png": "/static/media/home.f10ec771.png",
+    "static/media/home.png": "/static/media/home.ddf0aca9.png",
     "static/media/infoArch1.png": "/static/media/infoArch1.34917d12.png",
     "static/media/infoArch2.png": "/static/media/infoArch2.d69e4cc1.png",
     "static/media/insights.png": "/static/media/insights.a0d4ebf1.png",
@@ -88,6 +88,6 @@
     "static/js/runtime-main.3374ac37.js",
     "static/js/2.218414cc.chunk.js",
     "static/css/main.efc8956a.chunk.css",
-    "static/js/main.05658b87.chunk.js"
+    "static/js/main.131facd5.chunk.js"
   ]
 }
