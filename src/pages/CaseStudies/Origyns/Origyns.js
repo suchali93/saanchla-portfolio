@@ -19,7 +19,7 @@ const Origyns = () => {
   const isSmScreen = useMediaQuery(theme.breakpoints.down('sm')); // upto 576
   const isMdScreen = useMediaQuery(theme.breakpoints.between('xl', 1200)); // between 992 and 1200
 
-  const prototypeLink = '/';
+  const prototypeLink = '';
 
   return (
     <CaseStudy
