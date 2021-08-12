@@ -27,7 +27,6 @@ import {
 
 const Router = () => {
   const workRef = useRef(null);
-  console.log('work', workRef);
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

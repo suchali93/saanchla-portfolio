@@ -17,6 +17,18 @@ export const CaseStudyContent = styled(Box)`
 export const CaseStudyImage = styled.img`
   max-height: 300px;
   max-width: 430px;
+  @media (min-width: 990px) and (max-width: 1200px) {
+    max-height: 270px;
+    max-width: 390px;
+  }
+  @media (max-width: 576px) {
+    max-height: 270px;
+    max-width: 330px;
+  }
+  @media (max-width: 420px) {
+    max-height: 250px;
+    max-width: 300px;
+  }
 `;
 
 export const CaseStudyHover = styled.a``;

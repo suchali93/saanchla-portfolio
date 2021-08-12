@@ -17,14 +17,22 @@ export const SubSection = styled.h2`
 
 export const CenteredBox = styled(Box)`
   font-family: 'Rubik Variable', serif;
-  font-size: 60px;
+  font-size: ${({ fontSize }) => fontSize || '60px'};
   font-weight: 300;
   text-align: center;
-  max-width: 7.5rem;
+  width: ${({ width }) => width || '7.5rem'};
   margin: auto;
   > div {
     font-size: 18px;
   }
+`;
+
+export const CenteredImage = styled.img`
+  display: block;
+  margin: ${({ margin }) => margin || '40px auto 20px'};
+  height: ${({ height }) => height || 'auto'};
+  width: ${({ width }) => width || 'auto'};
+  max-height: ${({ maxHeight }) => maxHeight || 'auto'};
 `;
 
 export const BannerBox = styled(Box)`
@@ -68,22 +76,6 @@ export const Heading = styled.div`
 export const CaseStudyImage = styled.img`
   width: 100%;
   box-sizing: border-box;
-`;
-
-export const CaseStudyInfo = styled.div`
-  font-size: 18px;
-  font-family: 'Rubik Variable', serif;
-  font-weight: 400;
-  margin: 0 10px 10px 0;
-  text-transform: uppercase;
-`;
-
-export const CenteredImage = styled.img`
-  display: block;
-  margin: ${({ margin }) => margin || '40px auto 20px'};
-  height: ${({ height }) => height || 'auto'};
-  width: ${({ width }) => width || 'auto'};
-  max-height: ${({ maxHeight }) => maxHeight || 'auto'};
 `;
 
 export const List = styled.ul`

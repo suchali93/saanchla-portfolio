@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useMediaQuery, useTheme } from '@material-ui/core';
@@ -64,7 +65,10 @@ const Home = ({ workRef }) => {
         </Heading>
       </Row>
       {pairwise(CASE_STUDY_PAGES).map((pair) => (
-        <Row className={isVerticallyStacked ? '' : 'mb-3'}>
+        <Row
+          key={`row-${pair[0].replace(/\s+/g, '')}${pair[1].replace(/\s+/g, '')}`}
+          className={isVerticallyStacked ? '' : 'mb-3'}
+        >
           {pair.map(
             (caseStudy, idx) =>
               caseStudy && (
@@ -85,6 +89,17 @@ const Home = ({ workRef }) => {
       ))}
     </Container>
   );
+};
+
+Home.propTypes = {
+  workRef: PropTypes.oneOfType([
+    PropTypes.func,
+    PropTypes.shape({ current: PropTypes.instanceOf(Element) }),
+  ]),
+};
+
+Home.defaultProps = {
+  workRef: undefined,
 };
 
 export default Home;

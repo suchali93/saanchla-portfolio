@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import { Box, IconButton, useMediaQuery, useTheme } from '@material-ui/core';
+import { Box, IconButton } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import { CaseStudyImage, CenteredImage, Heading, Section } from './styledComponents';
+import { CenteredImage, Section } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 import { P } from '../../common/styledComponents';
 
@@ -15,15 +15,10 @@ const CaseStudy = ({
   tools,
   timeline,
   result,
-  platform,
   prototypeLink,
   imageSrc,
-  misc,
   children,
 }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
   const activePath = useLocation().pathname;
   const currentPageIdx = CASE_STUDY_PAGES.findIndex(
     (caseStudy) => DETAILS[caseStudy].pathname === activePath,
@@ -54,8 +49,6 @@ const CaseStudy = ({
       )}
     </>
   );
-
-  const detailMargin = misc.title ? 0 : 3;
 
   return (
     <>
@@ -102,71 +95,6 @@ const CaseStudy = ({
             </Button>
           </Box>
         )}
-        {/* <Grid container>
-        <Grid item lg={7} md={7} sm={12} xs={12}>
-          <Box height="100%" display="flex" alignItems="center">
-            <CaseStudyImage src={imageSrc} alt="" />
-          </Box>
-        </Grid>
-        <Grid item lg={5} md={5} sm={12} xs={12}>
-          <Box
-            ml={isMobile ? 0 : 10}
-            mt={isMobile ? 5 : detailMargin}
-            height="100%"
-            display={isMobile ? 'flex' : 'block'}
-            justifyContent={isMobile ? 'space-between' : 'normal'}
-          >
-            <Box maxWidth={isMobile ? '50%' : '100%'}>
-              <Heading isMobile={isMobile} variant={isMobile ? 'md' : 'sm'}>
-                My role
-              </Heading>
-              <Typography variant="body1" gutterBottom>
-                {myRole}
-              </Typography>
-              <Heading isMobile={isMobile} variant={isMobile ? 'md' : 'sm'}>
-                Tools
-              </Heading>
-              <Typography variant="body1" gutterBottom>
-                {tools}
-              </Typography>
-            </Box>
-            <Box>
-              <Heading isMobile={isMobile} variant={isMobile ? 'md' : 'sm'}>
-                Timeline
-              </Heading>
-              <Typography variant="body1" gutterBottom>
-                {timeline}
-              </Typography>
-              <Heading isMobile={isMobile} variant={isMobile ? 'md' : 'sm'}>
-                Platform
-              </Heading>
-              <Typography variant="body1" gutterBottom>
-                {platform}
-              </Typography>
-            </Box>
-            {!isMobile && misc.title && (
-              <Box>
-                <Heading isMobile={isMobile} variant={isMobile ? 'md' : 'sm'}>
-                  {misc.title}
-                </Heading>
-                <Typography variant="body1" gutterBottom>
-                  {misc.detail}
-                </Typography>
-              </Box>
-            )}
-          </Box>
-        </Grid>
-        {isMobile && misc.title && (
-          <Box>
-            <Heading isMobile={isMobile} variant={isMobile ? 'md' : 'sm'}>
-              {misc.title}
-            </Heading>
-            <Typography variant="body1" gutterBottom>
-              {misc.detail}
-            </Typography>
-          </Box>
-        )}
-      </Grid> */}
       </Container>
       {children}
       <Container className="d-block">
@@ -179,12 +107,12 @@ const CaseStudy = ({
 };
 
 CaseStudy.propTypes = {
+  name: PropTypes.string.isRequired,
   myRole: PropTypes.string.isRequired,
   imageSrc: PropTypes.string.isRequired,
   tools: PropTypes.string,
+  result: PropTypes.string,
   timeline: PropTypes.string,
-  platform: PropTypes.string,
-  misc: PropTypes.object,
   prototypeLink: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
@@ -192,9 +120,8 @@ CaseStudy.propTypes = {
 CaseStudy.defaultProps = {
   tools: undefined,
   timeline: undefined,
-  platform: undefined,
+  result: undefined,
   prototypeLink: undefined,
-  misc: {},
 };
 
 export default CaseStudy;

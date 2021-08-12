@@ -44,7 +44,7 @@ export const DETAILS = {
     pathname: '/case/culture-fit',
     type: 'Product Design',
     description:
-      'A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit.',
+      'A platform for recruiters to evaluate candidates beyond the resume, by focussing on workplace culture fit. This was completed as an individual project during the full-time UX Design program at Brainstation.',
     imageSrc: CultureFitImage,
     home: { backgroundColor: '#f3f8ff' },
     caseStudy: { backgroundColor: '#b9d4fe' },

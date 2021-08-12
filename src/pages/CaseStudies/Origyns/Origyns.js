@@ -19,7 +19,7 @@ const Origyns = () => {
   const isSmScreen = useMediaQuery(theme.breakpoints.down('sm')); // upto 576
   const isMdScreen = useMediaQuery(theme.breakpoints.between('xl', 1200)); // between 992 and 1200
 
-  const prototypeLink = '';
+  const prototypeLink = '/';
 
   return (
     <CaseStudy
@@ -32,7 +32,7 @@ const Origyns = () => {
       result={
         // eslint-disable-next-line react/jsx-wrap-multilines
         <>
-          <a href="https://www.origyns.ca" target="_blank" rel="noreferrer">
+          <a href="https://www.origyns.ca" target="_blank" rel="noopener noreferrer">
             www.origyns.ca
           </a>
           <br />
@@ -164,7 +164,7 @@ const Origyns = () => {
             <ul>
               <li>
                 Most online furniture shoppers are female millenials between the ages of{' '}
-                <b>30 -40 years</b>
+                <b>30-40 years</b>
               </li>
               <li>
                 Customer <b>reviews</b> are important to most shoppers
@@ -240,18 +240,18 @@ const Origyns = () => {
         </Section>
         <Box className="mb-7">
           <Row>
-            <Col>
+            <Col sm={4}>
               <CenteredBox>
                 27%<div>Increased Conversion</div>
               </CenteredBox>
             </Col>
-            <Col>
-              <CenteredBox>
+            <Col sm={4}>
+              <CenteredBox className={isSmScreen ? 'pt-4' : ''}>
                 15%<div>Reduced Returns</div>
               </CenteredBox>
             </Col>
-            <Col>
-              <CenteredBox>
+            <Col sm={4}>
+              <CenteredBox className={isSmScreen ? 'pt-4' : ''}>
                 83%<div>Increased Trust</div>
               </CenteredBox>
             </Col>
@@ -333,6 +333,7 @@ const Origyns = () => {
                 <Col sm={12}>
                   <Box className="d-flex">
                     <CenteredImage
+                      style={{ marginLeft: isSmScreen ? '0' : 'auto' }}
                       maxHeight={isMdScreen ? '300px' : '350px'}
                       src={images.wireframe1}
                     />
@@ -345,6 +346,7 @@ const Origyns = () => {
                 <Col sm={12}>
                   <Box className="d-flex">
                     <CenteredImage
+                      style={{ marginLeft: isSmScreen ? '0' : 'auto' }}
                       maxHeight={isMdScreen ? '300px' : '350px'}
                       src={images.wireframe3}
                     />
@@ -357,6 +359,7 @@ const Origyns = () => {
                 <Col sm={12}>
                   <Box className="d-flex">
                     <CenteredImage
+                      style={{ marginLeft: isSmScreen ? '0' : 'auto' }}
                       maxHeight={isMdScreen ? '300px' : '350px'}
                       src={images.wireframe5}
                     />
@@ -479,14 +482,6 @@ const Origyns = () => {
         </Box>
       </Container>
 
-      <BannerBox
-        className="mb-7"
-        padding="0"
-        backgroundColor={DETAILS[ORIGYNS].caseStudy.backgroundColor}
-      >
-        <CenteredImage margin="auto" maxHeight="550px" src={images.mid} alt="" />
-      </BannerBox>
-
       {prototypeLink && (
         <Box className="mb-6 text-center">
           <Button type="button" variant="secondary" href={prototypeLink}>
@@ -494,6 +489,14 @@ const Origyns = () => {
           </Button>
         </Box>
       )}
+
+      <BannerBox
+        className="mb-7"
+        padding="0"
+        backgroundColor={DETAILS[ORIGYNS].caseStudy.backgroundColor}
+      >
+        <CenteredImage margin="auto" maxHeight="550px" src={images.mid} alt="" />
+      </BannerBox>
 
       <BannerBox
         className="mb-7"

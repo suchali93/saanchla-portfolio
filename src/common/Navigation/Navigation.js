@@ -13,9 +13,9 @@ import CloseIcon from '@material-ui/icons/Close';
 import logo from './images/logo.svg';
 import HideOnScroll from './HideOnScroll';
 import { Logo, MobileNav, MobileNavList, NavBar } from './styledComponents';
-import { ABOUT, DETAILS, HOME, SIDE_GIGS, WORK } from '../constants';
+import { ABOUT, DETAILS, HOME } from '../constants';
 
-const Navigation = ({ workRef }) => {
+const Navigation = () => {
   const theme = useTheme();
   const showHamburger = useMediaQuery(theme.breakpoints.down('md'));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navigation = ({ workRef }) => {
     setIsMenuOpen(isOpen);
   };
   return showHamburger ? (
-    <NavBar showHamburger={showHamburger} elevation={0}>
+    <NavBar $showHamburger={showHamburger} elevation={0}>
       <MobileNav isMenuOpen={isMenuOpen}>
         <Box display="flex" justifyContent="space-between" ml={1} mr={3} my={1}>
           <NavLink

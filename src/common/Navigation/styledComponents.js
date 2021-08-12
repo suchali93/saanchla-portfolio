@@ -12,7 +12,7 @@ export const NavBar = styled(AppBar)`
     a {
       padding-bottom: 5px;
       color: #000;
-      font-size: ${({ showHamburger }) => (showHamburger ? '25px' : '14px')};
+      font-size: ${({ $showHamburger }) => ($showHamburger ? '25px' : '14px')};
       margin: 0 30px;
       text-decoration: none;
       &.active {

@@ -21,9 +21,10 @@ const CaseStudy = ({
   imageSrc,
   backgroundColor,
   inProgress,
+  ...rest
 }) => {
   return (
-    <Col lg={6} className="gy-2">
+    <Col lg={6} className="gy-2" {...rest}>
       <CaseStudyHover as={Link} to={to}>
         <Box style={{ backgroundColor }}>
           <CaseStudyContent

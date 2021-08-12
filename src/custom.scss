@@ -272,6 +272,18 @@ $theme-colors: (
   font-family: 'Rubik Variable', serif;
 }
 
+.fw-mid {
+  font-weight: 500 !important;
+}
+
+.fw-semibold {
+  font-weight: 600 !important;
+}
+
+.font-md {
+  font-size: 16px !important;
+}
+
 .no-show {
   opacity: 0;
 }
@@ -282,6 +294,10 @@ a {
   &:hover, &:active {
     color: #4747bb;
   }
+}
+
+b {
+  font-weight: 600 !important;
 }
 
 ul, ol {
