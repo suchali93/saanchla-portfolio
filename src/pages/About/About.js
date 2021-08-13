@@ -44,7 +44,7 @@ const About = () => {
           )}
         </Col>
         <Col lg={6}>
-          <Box className={`px-4 ${isVerticallyStacked ? 'pt-5' : ''}`}>
+          <Box className={isVerticallyStacked ? 'pt-5' : 'px-4'}>
             <Heading size="40px" weight="600" className="mb-5">
               What’s my story?
             </Heading>

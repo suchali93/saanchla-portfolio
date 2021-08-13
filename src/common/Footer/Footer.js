@@ -2,15 +2,17 @@ import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
 import { Col, Container, Row } from 'react-bootstrap';
-import { IconButton } from '@material-ui/core';
+import { IconButton, useMediaQuery, useTheme } from '@material-ui/core';
 import { FooterWrapper } from './styledComponents';
 
 const Footer = () => {
+  const theme = useTheme();
+  const isSmScreen = useMediaQuery(theme.breakpoints.down('sm')); // upto 576
   return (
     <FooterWrapper>
       <Container className="d-block h-100">
         <Row className="d-flex h-100 align-items-center">
-          <Col xs={9} md={10}>
+          <Col xs={9} md={10} className={isSmScreen ? 'font-normal' : ''}>
             I am currently looking for full-time opportunities. Let’s work together!
           </Col>
           <Col xs={3} md={2} className="p-0 d-flex justify-content-end">

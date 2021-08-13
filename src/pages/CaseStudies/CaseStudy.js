@@ -36,7 +36,7 @@ const CaseStudy = ({
       {prevPage ? (
         <IconButton
           size="small"
-          style={isSmScreen ? { fontSize: '16px' } : {}}
+          className={isSmScreen ? 'font-md' : ''}
           component={Link}
           to={DETAILS[prevPage].pathname}
         >
@@ -49,7 +49,7 @@ const CaseStudy = ({
       {nextPage ? (
         <IconButton
           size="small"
-          style={isSmScreen ? { fontSize: '16px' } : {}}
+          className={isSmScreen ? 'font-md' : ''}
           component={Link}
           to={DETAILS[nextPage].pathname}
         >

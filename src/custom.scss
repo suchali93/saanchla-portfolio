@@ -248,10 +248,6 @@ $theme-colors: (
   padding-left: 7rem !important;
 }
 
-.font-sm {
-  font-size: 14px;
-}
-
 // custom 
 .btn {
   box-shadow: 0 0 0 0 !important;
@@ -280,8 +276,16 @@ $theme-colors: (
   font-weight: 600 !important;
 }
 
+.font-sm {
+  font-size: 14px !important;
+}
+
 .font-md {
   font-size: 16px !important;
+}
+
+.font-normal {
+  font-size: 18px !important;
 }
 
 .no-show {
