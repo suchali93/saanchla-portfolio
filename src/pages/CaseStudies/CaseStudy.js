@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, useLocation } from 'react-router-dom';
-import { Box, IconButton } from '@material-ui/core';
+import { Box, IconButton, useMediaQuery, useTheme } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import { Button, Col, Container, Row } from 'react-bootstrap';
@@ -19,6 +19,8 @@ const CaseStudy = ({
   imageSrc,
   children,
 }) => {
+  const theme = useTheme();
+  const isSmScreen = useMediaQuery(theme.breakpoints.down('sm')); // upto 576
   const activePath = useLocation().pathname;
   const currentPageIdx = CASE_STUDY_PAGES.findIndex(
     (caseStudy) => DETAILS[caseStudy].pathname === activePath,
@@ -32,7 +34,12 @@ const CaseStudy = ({
   const showNextAndPrev = () => (
     <>
       {prevPage ? (
-        <IconButton size="small" component={Link} to={DETAILS[prevPage].pathname}>
+        <IconButton
+          size="small"
+          style={isSmScreen ? { fontSize: '16px' } : {}}
+          component={Link}
+          to={DETAILS[prevPage].pathname}
+        >
           <ChevronLeftIcon />
           Prev: {prevPage}
         </IconButton>
@@ -40,7 +47,12 @@ const CaseStudy = ({
         <IconButton size="small" disabled />
       )}
       {nextPage ? (
-        <IconButton size="small" component={Link} to={DETAILS[nextPage].pathname}>
+        <IconButton
+          size="small"
+          style={isSmScreen ? { fontSize: '16px' } : {}}
+          component={Link}
+          to={DETAILS[nextPage].pathname}
+        >
           Next: {nextPage}
           <ChevronRightIcon />
         </IconButton>
