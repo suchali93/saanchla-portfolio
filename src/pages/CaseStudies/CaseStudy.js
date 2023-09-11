@@ -1,10 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Button, Col, Container, Row } from 'react-bootstrap';
 import { Link, useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { Box, IconButton, useMediaQuery, useTheme } from '@material-ui/core';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import { Button, Col, Container, Row } from 'react-bootstrap';
+
 import { CenteredImage, Section } from './styledComponents';
 import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
 import { P } from '../../common/styledComponents';

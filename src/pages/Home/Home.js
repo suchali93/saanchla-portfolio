@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import { useMediaQuery, useTheme } from '@material-ui/core';
-import home from './images/home.png';
 
-import CaseStudy from './CaseStudy';
 import { Heading } from '../../common/styledComponents';
-import { CASE_STUDY_PAGES, DETAILS } from '../../common/constants';
+import { CASE_STUDY_PAGES, DETAILS, LINKEDIN } from '../../common/constants';
 import { pairwise } from '../../utils';
+import home from './images/home.png';
+import CaseStudy from './CaseStudy';
 
 const Home = ({ workRef }) => {
   const theme = useTheme();
@@ -49,7 +49,7 @@ const Home = ({ workRef }) => {
           </Heading>
           <Button
             type="button"
-            href="https://www.linkedin.com/in/sanchala-tripathi"
+            href={LINKEDIN}
             className="me-4"
           >
             Let’s Chat

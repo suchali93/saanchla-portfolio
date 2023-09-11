@@ -1,13 +1,13 @@
 import React from 'react';
-
-import { Box, Button, Grid, Paper, useMediaQuery, useTheme } from '@material-ui/core';
 import { Container } from 'react-bootstrap';
-import images from './images';
+import { Box, Button, Grid, Paper, useMediaQuery, useTheme } from '@material-ui/core';
+
+import { P, Text } from '../../../common/styledComponents';
+import { VR_TEAMS } from '../../../common/constants';
 import CaseStudy from '..';
 import Content from '../Content';
-import { P, Text } from '../../../common/styledComponents';
 import { CenteredImage, List, ListItem } from '../styledComponents';
-import { VR_TEAMS } from '../../../common/constants';
+import images from './images';
 
 const VRTeams = () => {
   const theme = useTheme();

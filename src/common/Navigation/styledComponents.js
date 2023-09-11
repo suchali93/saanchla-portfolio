@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import AppBar from '@material-ui/core/AppBar';
+
 import { PRIMARY_COLOUR } from '../../theme';
 
 export const NavBar = styled(AppBar)`

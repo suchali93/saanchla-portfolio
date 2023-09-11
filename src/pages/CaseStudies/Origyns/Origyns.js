@@ -1,10 +1,10 @@
 import React from 'react';
-import { Box, useMediaQuery, useTheme } from '@material-ui/core';
 import { Button, Col, Container, Row } from 'react-bootstrap';
-import images from './images';
-import CaseStudy from '..';
+import { Box, useMediaQuery, useTheme } from '@material-ui/core';
+
 import { P } from '../../../common/styledComponents';
 import { DETAILS, ORIGYNS } from '../../../common/constants';
+import CaseStudy from '..';
 import {
   CenteredImage,
   Section,
@@ -12,6 +12,7 @@ import {
   CenteredBox,
   BannerBox,
 } from '../styledComponents';
+import images from './images';
 
 const Origyns = () => {
   const theme = useTheme();

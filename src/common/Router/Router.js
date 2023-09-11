@@ -3,9 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Box, CssBaseline, ThemeProvider } from '@material-ui/core';
 
 import theme from '../../theme';
-import Navigation from '../Navigation';
-import ScrollToTop from '../ScrollToTop';
-import Footer from '../Footer';
 import Home from '../../pages/Home';
 import SideGigs from '../../pages/SideGigs';
 import About from '../../pages/About';
@@ -13,6 +10,9 @@ import CultureFit from '../../pages/CaseStudies/CultureFit';
 import BOS from '../../pages/CaseStudies/BOS';
 import VRTeams from '../../pages/CaseStudies/VRTeams';
 import Origyns from '../../pages/CaseStudies/Origyns';
+import Footer from '../Footer';
+import Navigation from '../Navigation';
+import ScrollToTop from '../ScrollToTop';
 import {
   ABOUT,
   BLOCKERS_OF_SCAM,

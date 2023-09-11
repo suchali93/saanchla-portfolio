@@ -1,14 +1,14 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import { Box, Grid, Paper, useMediaQuery, useTheme } from '@material-ui/core';
 
 import './BOS.css';
-import { Container } from 'react-bootstrap';
-import CaseStudy from '..';
-import Content from '../Content';
-import images from './images';
-import { CenteredImage, List, ListItem } from '../styledComponents';
 import { P, Link } from '../../../common/styledComponents';
 import { BLOCKERS_OF_SCAM } from '../../../common/constants';
+import CaseStudy from '..';
+import Content from '../Content';
+import { CenteredImage, List, ListItem } from '../styledComponents';
+import images from './images';
 
 const BOS = () => {
   const theme = useTheme();

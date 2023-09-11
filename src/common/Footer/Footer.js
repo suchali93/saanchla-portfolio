@@ -1,8 +1,10 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import EmailIcon from '@material-ui/icons/Email';
-import { Col, Container, Row } from 'react-bootstrap';
 import { IconButton, useMediaQuery, useTheme } from '@material-ui/core';
+
+import { LINKEDIN } from '../constants';
 import { FooterWrapper } from './styledComponents';
 
 const Footer = () => {
@@ -17,7 +19,7 @@ const Footer = () => {
           </Col>
           <Col xs={3} md={2} className="p-0 d-flex justify-content-end">
             <IconButton
-              href="https://www.linkedin.com/in/sanchala-tripathi"
+              href={LINKEDIN}
               disableRipple
               aria-label="linked in"
             >

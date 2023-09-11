@@ -1,17 +1,14 @@
 import React from 'react';
+import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
 import { Box, useMediaQuery, useTheme } from '@material-ui/core';
 
-import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
-// import about1 from './images/about1.jpeg';
-// import about2 from './images/about2.jpeg';
-// import about3 from './images/about3.jpeg';
-// import about4 from './images/about4.jpeg';
+import { Heading, P } from '../../common/styledComponents';
+import { LINKEDIN } from '../../common/constants';
 import group from './images/group.png';
 import about1crop from './images/about1crop.jpeg';
 import about2crop from './images/about2crop.jpeg';
 import about3crop from './images/about3crop.jpeg';
 import about4crop from './images/about4crop.jpeg';
-import { Heading, P } from '../../common/styledComponents';
 
 const About = () => {
   const theme = useTheme();
@@ -84,7 +81,7 @@ const About = () => {
               Feel free to connect with me to discuss my work, or just geek out over
               theories of human behavior!
             </P>
-            <Button type="button" href="https://www.linkedin.com/in/sanchala-tripathi">
+            <Button type="button" href={LINKEDIN}>
               Let’s Chat
             </Button>
           </Box>

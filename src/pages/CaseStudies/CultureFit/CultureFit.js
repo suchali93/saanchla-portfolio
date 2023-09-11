@@ -1,8 +1,10 @@
 import React from 'react';
-import { Box, useMediaQuery, useTheme } from '@material-ui/core';
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Box, useMediaQuery, useTheme } from '@material-ui/core';
 
-import images from './images';
+import { P } from '../../../common/styledComponents';
+import { CULTURE_FIT, DETAILS } from '../../../common/constants';
+import CaseStudy from "..";
 import {
   BannerBox,
   CenteredBox,
@@ -10,9 +12,8 @@ import {
   Section,
   SubSection,
 } from '../styledComponents';
-import { P } from '../../../common/styledComponents';
-import { CULTURE_FIT, DETAILS } from '../../../common/constants';
-import CaseStudy from '..';
+import images from './images';
+
 
 const CultureFit = () => {
   const theme = useTheme();

@@ -4,6 +4,8 @@ import CultureFitImage from '../pages/CaseStudies/CultureFit/images/landing.png'
 import OrigynsImage from '../pages/CaseStudies/Origyns/images/landing.png';
 import VRTeamsImage from '../pages/CaseStudies/VRTeams/images/landing.png';
 
+export const LINKEDIN = "https://www.linkedin.com/in/saanchla-tripathi/";
+
 export const FOOTER_HEIGHT = '112px';
 
 export const HOME = 'Home';

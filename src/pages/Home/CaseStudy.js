@@ -1,16 +1,16 @@
 import React from 'react';
+import { Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Box } from '@material-ui/core';
 
-import { Link } from 'react-router-dom';
-import { Col } from 'react-bootstrap';
+import { Heading } from '../../common/styledComponents';
 import {
   CaseStudyTitle,
   CaseStudyContent,
   CaseStudyImage,
   CaseStudyHover,
 } from './styledComponents';
-import { Heading } from '../../common/styledComponents';
 
 const CaseStudy = ({
   to,
